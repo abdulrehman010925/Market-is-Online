@@ -1,0 +1,1 @@
+Upload source ZIP first, then every assets-part ZIP. Extract all into one project root.

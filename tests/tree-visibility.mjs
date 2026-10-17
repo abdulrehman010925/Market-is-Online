@@ -1,0 +1,54 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFile,readdir,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const source=new URL('..',import.meta.url).pathname.replace(/\/$/,'');
+const output='/workspace/scratch/5eb5b713d378/network-simulation-4';
+const db=new PGlite();
+const q=(sql,args=[])=>db.query(sql,args), scalar=async(sql,args=[])=>Object.values((await q(sql,args)).rows[0])[0];
+const uid=n=>{const h=createHash('sha256').update('MIO simulation seed 20261002:'+n).digest('hex').slice(0,32);return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`};
+let seed=20261002;const random=()=>{seed^=seed<<13;seed^=seed>>>17;seed^=seed<<5;return (seed>>>0)/4294967296};
+const int=(a,b)=>a+Math.floor(random()*(b-a+1));
+const as=async id=>q("select set_config('request.jwt.claim.sub',$1,false)",[id]);
+await db.exec(`create role anon;create role authenticated;create role service_role;create schema auth;
+create table auth.users(id uuid primary key,email text,raw_user_meta_data jsonb,raw_app_meta_data jsonb);
+create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
+alter default privileges grant execute on functions to anon,authenticated,service_role;
+grant usage on schema auth to anon,authenticated;grant execute on function auth.uid() to anon,authenticated;`);
+const files=(await readdir(source+'/schema')).filter(x=>/^\d+.*\.sql$/.test(x)).sort();
+for(const file of files)await db.exec(await readFile(source+'/schema/'+file,'utf8'));
+
+console.log('Loaded exact website migrations:',files.length);
+const company=uid(0),root=uid(1);
+await q("update private.operator_setup set email='simulation-company@example.invalid'");
+await q("insert into auth.users(id,email,raw_user_meta_data,raw_app_meta_data) values($1,'simulation-company@example.invalid','{\"full_name\":\"Simulation company\"}','{\"provider\":\"google\"}')",[company]);
+await q("insert into public.user_roles(user_id,role) values($1,'admin')",[company]);
+await q("update public.member_profiles set status='active',terms_accepted_at=now() where user_id=$1",[company]);
+const companyRef=await scalar('select referral_code from public.member_profiles where user_id=$1',[company]);
+await q('insert into auth.users(id,email,raw_user_meta_data,raw_app_meta_data) values($1,$2,$3,$4)',[root,'simulation-root@example.invalid',JSON.stringify({full_name:'SIM-0001 Premium root',phone:'00000000',terms_accepted:true,referral_code:companyRef}),'{}']);
+await q("select set_config('request.jwt.claims',$1,false)",[JSON.stringify({aal:'aal2',amr:[{method:'totp',timestamp:Math.floor(Date.now()/1000)}]})]);
+await as(company);
+const rootCode=await scalar('select member_code from public.member_profiles where user_id=$1',[root]);
+await q('select public.admin_place_binary_member($1,null,null)',[rootCode]);
+await q('insert into private.network_foundation values(true,$1,$2)',[company,root]);
+await q("select public.admin_mint_own_mio(550,'Simulation root funding','simulation-root-mint-20261002')");
+await q("select public.mio_transfer($1,550,'simulation-root-transfer-20261002')",[root]);
+await as(root);const rootActivation=await scalar("select public.activate_package_with_mio('PREMIUM','simulation-root-package-20261002')");
+await q("update public.package_activations set activated_at='2026-09-28T12:00:00Z' where id=$1",[rootActivation]);
+
+let parent=root;
+for(let i=2;i<=13;i++){
+ await q('insert into auth.users(id,email,raw_user_meta_data,raw_app_meta_data) values($1,$2,$3,$4)',[uid(i),`tree-${i}@example.invalid`,JSON.stringify({full_name:`Tree ${i}`,phone:'00000000',terms_accepted:true,referral_code:await scalar('select referral_code from public.member_profiles where user_id=$1',[root])}),'{}']);
+ await db.exec('alter table public.member_profiles disable trigger user');
+ await q("update public.member_profiles set sponsor_id=$2 where user_id=$1",[uid(i),parent]);await db.exec('alter table public.member_profiles enable trigger user');parent=uid(i);
+}
+await as(root);
+const normal=await scalar("select public.my_network('generation',null,10)");assert.equal(normal.nodes.length,11);
+const tenth=await scalar('select member_code from public.member_profiles where user_id=$1',[uid(11)]);
+assert.equal((await scalar("select public.my_network('generation',$1,10)",[tenth])).nodes.length,1);
+let rejected=false;try{await q("select public.my_network('generation',null,0)")}catch{rejected=true}assert.ok(rejected);
+const eleventh=await scalar('select member_code from public.member_profiles where user_id=$1',[uid(12)]);
+rejected=false;try{await q("select public.my_network('generation',$1,10)",[eleventh])}catch{rejected=true}assert.ok(rejected);
+await as(company);const master=await scalar("select public.my_network('generation',null,0)");assert.equal(master.nodes.length,14);assert.equal(Math.max(...master.nodes.map(n=>n.depth)),13);
+assert.equal((await scalar("select public.my_network('generation',$1,0)",[eleventh])).nodes.length,2);
+console.log('PASS master all levels; member absolute 10 levels; drill-down cannot bypass; member all-level request rejected');await db.close();

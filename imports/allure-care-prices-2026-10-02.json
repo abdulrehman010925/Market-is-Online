@@ -1,0 +1,843 @@
+{
+  "source": "https://allurecarein.com/products.json?limit=250",
+  "currency": "PKR",
+  "products": [
+    {
+      "sku": "ALLURE-10627536945430",
+      "price": "0.00",
+      "compare_at": null,
+      "source_product_id": "10627536945430",
+      "variants": [
+        {
+          "id": 51572383514902,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "0.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 10627536945430,
+          "created_at": "2026-07-17T13:36:09+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10627535700246",
+      "price": "0.00",
+      "compare_at": null,
+      "source_product_id": "10627535700246",
+      "variants": [
+        {
+          "id": 51572381122838,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "0.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 10627535700246,
+          "created_at": "2026-07-17T13:33:08+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10627535208726",
+      "price": "0.00",
+      "compare_at": null,
+      "source_product_id": "10627535208726",
+      "variants": [
+        {
+          "id": 51572380598550,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "0.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 10627535208726,
+          "created_at": "2026-07-17T13:31:08+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608418160918",
+      "price": "1595.00",
+      "compare_at": "1800.00",
+      "source_product_id": "10608418160918",
+      "variants": [
+        {
+          "id": 51532555780374,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1800.00",
+          "position": 1,
+          "product_id": 10608418160918,
+          "created_at": "2026-07-11T15:10:33+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608277586198",
+      "price": "1595.00",
+      "compare_at": "1700.00",
+      "source_product_id": "10608277586198",
+      "variants": [
+        {
+          "id": 51531761975574,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1700.00",
+          "position": 1,
+          "product_id": 10608277586198,
+          "created_at": "2026-07-11T14:51:33+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608277356822",
+      "price": "1595.00",
+      "compare_at": "1700.00",
+      "source_product_id": "10608277356822",
+      "variants": [
+        {
+          "id": 51531761746198,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1700.00",
+          "position": 1,
+          "product_id": 10608277356822,
+          "created_at": "2026-07-11T14:51:28+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608272343318",
+      "price": "1595.00",
+      "compare_at": "1700.00",
+      "source_product_id": "10608272343318",
+      "variants": [
+        {
+          "id": 51531478073622,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1700.00",
+          "position": 1,
+          "product_id": 10608272343318,
+          "created_at": "2026-07-11T14:46:15+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608271458582",
+      "price": "1595.00",
+      "compare_at": "1700.00",
+      "source_product_id": "10608271458582",
+      "variants": [
+        {
+          "id": 51531350802710,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1700.00",
+          "position": 1,
+          "product_id": 10608271458582,
+          "created_at": "2026-07-11T14:44:12+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608270442774",
+      "price": "2350.00",
+      "compare_at": "2500.00",
+      "source_product_id": "10608270442774",
+      "variants": [
+        {
+          "id": 51531243913494,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "2350.00",
+          "grams": 0,
+          "compare_at_price": "2500.00",
+          "position": 1,
+          "product_id": 10608270442774,
+          "created_at": "2026-07-11T14:41:39+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608270311702",
+      "price": "1895.00",
+      "compare_at": "2000.00",
+      "source_product_id": "10608270311702",
+      "variants": [
+        {
+          "id": 51531243061526,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1895.00",
+          "grams": 0,
+          "compare_at_price": "2000.00",
+          "position": 1,
+          "product_id": 10608270311702,
+          "created_at": "2026-07-11T14:39:50+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608270115094",
+      "price": "1595.00",
+      "compare_at": "1700.00",
+      "source_product_id": "10608270115094",
+      "variants": [
+        {
+          "id": 51531242602774,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1700.00",
+          "position": 1,
+          "product_id": 10608270115094,
+          "created_at": "2026-07-11T14:38:18+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608269787414",
+      "price": "1950.00",
+      "compare_at": "2200.00",
+      "source_product_id": "10608269787414",
+      "variants": [
+        {
+          "id": 51531224547606,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1950.00",
+          "grams": 0,
+          "compare_at_price": "2200.00",
+          "position": 1,
+          "product_id": 10608269787414,
+          "created_at": "2026-07-11T14:36:22+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608268837142",
+      "price": "1695.00",
+      "compare_at": "1800.00",
+      "source_product_id": "10608268837142",
+      "variants": [
+        {
+          "id": 51531110973718,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1695.00",
+          "grams": 0,
+          "compare_at_price": "1800.00",
+          "position": 1,
+          "product_id": 10608268837142,
+          "created_at": "2026-07-11T14:34:19+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608266969366",
+      "price": "2450.00",
+      "compare_at": "2600.00",
+      "source_product_id": "10608266969366",
+      "variants": [
+        {
+          "id": 51530892607766,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "2450.00",
+          "grams": 0,
+          "compare_at_price": "2600.00",
+          "position": 1,
+          "product_id": 10608266969366,
+          "created_at": "2026-07-11T14:30:09+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608266084630",
+      "price": "1195.00",
+      "compare_at": "1400.00",
+      "source_product_id": "10608266084630",
+      "variants": [
+        {
+          "id": 51530832412950,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1195.00",
+          "grams": 0,
+          "compare_at_price": "1400.00",
+          "position": 1,
+          "product_id": 10608266084630,
+          "created_at": "2026-07-11T14:28:54+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608259825942",
+      "price": "1895.00",
+      "compare_at": "2100.00",
+      "source_product_id": "10608259825942",
+      "variants": [
+        {
+          "id": 51530292068630,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1895.00",
+          "grams": 0,
+          "compare_at_price": "2100.00",
+          "position": 1,
+          "product_id": 10608259825942,
+          "created_at": "2026-07-11T14:19:12+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608258744598",
+      "price": "1800.00",
+      "compare_at": "2100.00",
+      "source_product_id": "10608258744598",
+      "variants": [
+        {
+          "id": 51530247602454,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1800.00",
+          "grams": 0,
+          "compare_at_price": "2100.00",
+          "position": 1,
+          "product_id": 10608258744598,
+          "created_at": "2026-07-11T14:17:45+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608254714134",
+      "price": "2375.00",
+      "compare_at": "2500.00",
+      "source_product_id": "10608254714134",
+      "variants": [
+        {
+          "id": 51530040017174,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "2375.00",
+          "grams": 0,
+          "compare_at_price": "2500.00",
+          "position": 1,
+          "product_id": 10608254714134,
+          "created_at": "2026-07-11T14:13:55+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608095559958",
+      "price": "1375.00",
+      "compare_at": "1500.00",
+      "source_product_id": "10608095559958",
+      "variants": [
+        {
+          "id": 51525963120918,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1375.00",
+          "grams": 0,
+          "compare_at_price": "1500.00",
+          "position": 1,
+          "product_id": 10608095559958,
+          "created_at": "2026-07-11T12:40:04+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608094839062",
+      "price": "1275.00",
+      "compare_at": "1500.00",
+      "source_product_id": "10608094839062",
+      "variants": [
+        {
+          "id": 51525961777430,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1275.00",
+          "grams": 0,
+          "compare_at_price": "1500.00",
+          "position": 1,
+          "product_id": 10608094839062,
+          "created_at": "2026-07-11T12:37:37+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608094740758",
+      "price": "1495.00",
+      "compare_at": "1700.00",
+      "source_product_id": "10608094740758",
+      "variants": [
+        {
+          "id": 51525961482518,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1495.00",
+          "grams": 0,
+          "compare_at_price": "1700.00",
+          "position": 1,
+          "product_id": 10608094740758,
+          "created_at": "2026-07-11T12:36:21+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608090284310",
+      "price": "999.00",
+      "compare_at": "1400.00",
+      "source_product_id": "10608090284310",
+      "variants": [
+        {
+          "id": 51525956894998,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "999.00",
+          "grams": 0,
+          "compare_at_price": "1400.00",
+          "position": 1,
+          "product_id": 10608090284310,
+          "created_at": "2026-07-11T12:33:31+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608082518294",
+      "price": "1375.00",
+      "compare_at": "1600.00",
+      "source_product_id": "10608082518294",
+      "variants": [
+        {
+          "id": 51525949161750,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1375.00",
+          "grams": 0,
+          "compare_at_price": "1600.00",
+          "position": 1,
+          "product_id": 10608082518294,
+          "created_at": "2026-07-11T12:31:50+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608080191766",
+      "price": "2450.00",
+      "compare_at": "2800.00",
+      "source_product_id": "10608080191766",
+      "variants": [
+        {
+          "id": 51525867307286,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "2450.00",
+          "grams": 0,
+          "compare_at_price": "2800.00",
+          "position": 1,
+          "product_id": 10608080191766,
+          "created_at": "2026-07-11T12:28:13+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608079962390",
+      "price": "1750.00",
+      "compare_at": "2100.00",
+      "source_product_id": "10608079962390",
+      "variants": [
+        {
+          "id": 51525867241750,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1750.00",
+          "grams": 0,
+          "compare_at_price": "2100.00",
+          "position": 1,
+          "product_id": 10608079962390,
+          "created_at": "2026-07-11T12:26:49+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608079896854",
+      "price": "2350.00",
+      "compare_at": "2600.00",
+      "source_product_id": "10608079896854",
+      "variants": [
+        {
+          "id": 51525867110678,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "2350.00",
+          "grams": 0,
+          "compare_at_price": "2600.00",
+          "position": 1,
+          "product_id": 10608079896854,
+          "created_at": "2026-07-11T12:25:18+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608079634710",
+      "price": "2150.00",
+      "compare_at": "2600.00",
+      "source_product_id": "10608079634710",
+      "variants": [
+        {
+          "id": 51525866979606,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "2150.00",
+          "grams": 0,
+          "compare_at_price": "2600.00",
+          "position": 1,
+          "product_id": 10608079634710,
+          "created_at": "2026-07-11T12:22:06+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608079372566",
+      "price": "1595.00",
+      "compare_at": "1900.00",
+      "source_product_id": "10608079372566",
+      "variants": [
+        {
+          "id": 51525866750230,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1900.00",
+          "position": 1,
+          "product_id": 10608079372566,
+          "created_at": "2026-07-11T12:19:20+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608079143190",
+      "price": "1595.00",
+      "compare_at": "1900.00",
+      "source_product_id": "10608079143190",
+      "variants": [
+        {
+          "id": 51525866651926,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "1900.00",
+          "position": 1,
+          "product_id": 10608079143190,
+          "created_at": "2026-07-11T12:17:53+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10608078127382",
+      "price": "1895.00",
+      "compare_at": "2300.00",
+      "source_product_id": "10608078127382",
+      "variants": [
+        {
+          "id": 51525865570582,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1895.00",
+          "grams": 0,
+          "compare_at_price": "2300.00",
+          "position": 1,
+          "product_id": 10608078127382,
+          "created_at": "2026-07-11T12:10:48+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    },
+    {
+      "sku": "ALLURE-10607997387030",
+      "price": "1595.00",
+      "compare_at": "2000.00",
+      "source_product_id": "10607997387030",
+      "variants": [
+        {
+          "id": 51524768760086,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": false,
+          "featured_image": null,
+          "available": true,
+          "price": "1595.00",
+          "grams": 0,
+          "compare_at_price": "2000.00",
+          "position": 1,
+          "product_id": 10607997387030,
+          "created_at": "2026-07-11T11:15:40+05:00",
+          "updated_at": "2026-10-02T17:35:23+05:00"
+        }
+      ]
+    }
+  ]
+}

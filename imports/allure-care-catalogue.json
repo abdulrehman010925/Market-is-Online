@@ -1,0 +1,1278 @@
+{
+  "source": "https://allurecarein.com/products.json?limit=250",
+  "currency_evidence": "Homepage Shopify.currency.active = PKR",
+  "products": [
+    {
+      "sku": "ALLURE-10627536945430",
+      "name": "Care Anti-Acne Clear Skin Bundle – Charcoal Scrub, Anti-Acne Serum & Anti Acne Gel",
+      "description": "Take control of breakouts and achieve a flawless, smooth complexion with the Allure Care Anti-Acne Clear Skin Bundle. Specifically formulated for oily and acne-prone skin types, this targeted 3-step routine works systematically to eliminate active acne, wipe out blackheads, and fade stubborn acne scars. Packed with dermatologist-approved clarifying ingredients, this kit features our deeply purifying Charcoal Scrub, the advanced Anti-Acne Serum, and the fast-acting Anti Acne Gel.\nThe routine begins with the Charcoal Scrub, an intensive treatment engineered to pull deep-seated impurities, dirt, and excess oil directly out of your pores while smoothing away rough skin. Follow up with the lightweight Anti-Acne Serum, featuring a potent blend of 1% Salicylic Acid, 10% Niacinamide, and Melaleuca Alternifolia (Tea Tree) to act as a radical dark spot corrector and whiten acne scars. Finish your routine with the targeted Anti Acne Gel, which combines Salicylic Acid and Tea Tree Oil to calm inflammation and prevent future flare-ups. Together, they balance sebum production and reveal beautifully retexturized, clear skin.",
+      "category": "Skincare bundles",
+      "price_pkr": "0.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10627536945430-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10627536945430-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10627536945430-0.png",
+      "source_url": "https://allurecarein.com/products/care-anti-acne-clear-skin-bundle-charcoal-scrub-anti-acne-serum-anti-acne-gel",
+      "source_details": {
+        "source_product_id": "10627536945430",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51572383514902,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "0.00",
+            "grams": 0,
+            "compare_at_price": null,
+            "position": 1,
+            "product_id": 10627536945430,
+            "created_at": "2026-07-17T13:36:09+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval. Source price is zero: enter a confirmed PKR price."
+    },
+    {
+      "sku": "ALLURE-10627535700246",
+      "name": "Vitamin C Skincare Bundle – Moisturiser, Night Repair Cream & Vitamin C Serum",
+      "description": "Unlock a luminous, even-toned complexion with the Allure Care Vitamin C Glow Bundle. This high-performance, 3-step routine is specifically engineered to target dullness, dark spots, and uneven skin texture. Powered by potent antioxidants and stabilized Vitamin C derivatives, this bundle includes the ultra-potent C+ Vitamin C Serum, the deeply hydrating Vitamin C Moisturiser, and the intensive Vitamin C Night Repair Cream to protect, brighten, and restore your skin around the clock.\nStart your morning by applying the C+ Serum, which features a advanced blend of 10% Ascorbyl Glucoside, 2% Ferulic Acid, and 1% Glutathione to defend against environmental stressors and fade pigmentation. Lock it in with the Vitamin C Moisturiser to plump, smooth, and instantly brighten your skin for a healthy daytime glow. Before bed, let the Vitamin C Night Repair Cream take over; its rich formula works overnight to stimulate cellular renewal and repair daily damage. Suitable for all skin types, this comprehensive system delivers maximum radiance and a youthful bounce with every application.",
+      "category": "Skincare bundles",
+      "price_pkr": "0.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10627535700246-0.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10627535700246-0.png",
+      "source_url": "https://allurecarein.com/products/vitamin-c-skincare-bundle-moisturiser-night-repair-cream-vitamin-c-serum",
+      "source_details": {
+        "source_product_id": "10627535700246",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51572381122838,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": null,
+            "available": true,
+            "price": "0.00",
+            "grams": 0,
+            "compare_at_price": null,
+            "position": 1,
+            "product_id": 10627535700246,
+            "created_at": "2026-07-17T13:33:08+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval. Source price is zero: enter a confirmed PKR price."
+    },
+    {
+      "sku": "ALLURE-10627535208726",
+      "name": "Vitamin C Cleanser, Apricot Scrub, Quick Fix & Mud Mask",
+      "description": "Transform your skincare routine with the Allure Complete Skincare Bundle, featuring the Vitamin C Ceramide Cleanser, Apricot Scrub, Quick Fix Facial Scrub, and Mud Mask. This complete collection is designed to cleanse, exfoliate, and purify your skin while helping it look brighter, smoother, and healthier. The Vitamin C Cleanser gently removes dirt and excess oil, the Apricot and Quick Fix Scrubs exfoliate dead skin cells for a refreshed complexion, and the Mud Mask deeply detoxifies pores to reveal naturally radiant skin. Suitable for all skin types, this all-in-one bundle makes achieving fresh, glowing skin simple and effective every day.",
+      "category": "Skincare",
+      "price_pkr": "0.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10627535208726-0.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10627535208726-0.png",
+      "source_url": "https://allurecarein.com/products/vitamin-c-cleanser-apricot-scrub-quick-fix-mud-mask",
+      "source_details": {
+        "source_product_id": "10627535208726",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51572380598550,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "0.00",
+            "grams": 0,
+            "compare_at_price": null,
+            "position": 1,
+            "product_id": 10627535208726,
+            "created_at": "2026-07-17T13:31:08+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval. Source price is zero: enter a confirmed PKR price."
+    },
+    {
+      "sku": "ALLURE-10608418160918",
+      "name": "Charcoal Deep Cleansing Scrub",
+      "description": "Purify your skin with Allure Charcoal Deep Cleansing Scrub, an advanced exfoliating formula designed to deeply cleanse pores, remove impurities and reveal a smoother, healthier-looking complexion. Powered by Activated Charcoal and gentle exfoliating particles, this scrub effectively lifts away dead skin cells, excess oil and everyday pollutants while helping restore your skin's natural freshness.\nIts detoxifying formula helps unclog pores, minimize the appearance of blackheads and control excess oil without stripping the skin's natural moisture. With regular use, it refines skin texture, improves clarity and leaves your skin feeling soft, refreshed and visibly cleaner after every exfoliation.\nPerfect for weekly skincare, Allure Charcoal Deep Cleansing Scrub helps maintain a balanced, clear and naturally radiant complexion for oily, combination and acne-prone skin.\nKey Benefits\n✓ Deeply exfoliates dead skin cells and impurities\n✓ Helps remove blackheads and unclog pores\n✓ Controls excess oil and reduces shine\n✓ Detoxifies the skin with Activated Charcoal\n✓ Smooths rough skin texture for a softer feel\n✓ Refreshes and revitalizes dull-looking skin\n✓ Leaves skin clean, balanced and naturally radiant\n✓ Suitable for regular exfoliation\nBest For\nOily, combination and acne-prone skin with clogged pores, blackheads, excess oil and uneven texture.\nHow to Use\nApply to damp skin and gently massage in circular motions for 1–2 minutes, concentrating on the T-zone and areas with clogged pores. Rinse thoroughly with lukewarm water and pat dry. Use 2–3 times per week, followed by a moisturizer for best results.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608418160918-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608418160918-1.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608418160918-2.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608418160918-0.png",
+      "source_url": "https://allurecarein.com/products/charcoal-deep-cleansing-scrub",
+      "source_details": {
+        "source_product_id": "10608418160918",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51532555780374,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1800.00",
+            "position": 1,
+            "product_id": 10608418160918,
+            "created_at": "2026-07-11T15:10:33+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608277586198",
+      "name": "Quick Fix Urgent Facial",
+      "description": "Get salon-like radiance in minutes with Allure Quick Fix Urgent Facial, a fast-acting facial treatment specially formulated to instantly refresh dull, tired-looking skin. Designed for quick beauty touch-ups, this nourishing formula deeply cleanses, hydrates and revitalizes the skin, leaving your complexion brighter, smoother and naturally radiant after just one use.\nWhether you're preparing for a wedding, party, meeting or any special occasion, this facial treatment helps restore freshness, improve skin texture and enhance your natural glow. Its lightweight, skin-friendly formula delivers deep nourishment without feeling heavy, making it suitable for regular skincare routines as well as last-minute glow-ups.\nReveal soft, healthy-looking and luminous skin anytime with Allure Quick Fix Urgent Facial—your perfect solution for instant confidence and event-ready beauty.\nKey Benefits\n✓ Provides an instant healthy glow and radiance\n✓ Refreshes dull and tired-looking skin\n✓ Helps improve skin brightness and complexion\n✓ Deeply hydrates and nourishes the skin\n✓ Smooths skin texture for a softer feel\n✓ Leaves skin fresh, revitalized and radiant\n✓ Perfect for quick beauty treatments before special occasions\n✓ Suitable for all skin types\nBest For\nDull, tired-looking skin, pre-event skincare, weddings, parties, photoshoots and everyday glow enhancement.\nHow to Use\nApply an even layer to clean, dry skin while avoiding the eye area. Leave on for 10–15 minutes, then rinse thoroughly with lukewarm water or wipe away with a damp cloth. Follow with a moisturizer for enhanced hydration. Use 1–2 times per week or whenever your skin needs an instant glow boost.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608277586198-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608277586198-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608277586198-0.png",
+      "source_url": "https://allurecarein.com/products/quick-fix-urgent-facial-1",
+      "source_details": {
+        "source_product_id": "10608277586198",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531761975574,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1700.00",
+            "position": 1,
+            "product_id": 10608277586198,
+            "created_at": "2026-07-11T14:51:33+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608277356822",
+      "name": "Mud Mask",
+      "description": "Experience the power of a facial mask and scrub in one with Allure Charcoal Mud Mask & Scrub. Formulated with activated charcoal and mineral-rich mud, this dual-action treatment deeply detoxifies the skin by drawing out dirt, excess oil and impurities while gently exfoliating dead skin cells for a smoother, healthier-looking complexion.\nIts deep-cleansing formula helps unclog pores, reduce the appearance of blackheads and control excess oil without leaving the skin feeling overly dry. Regular use refines skin texture, improves clarity and restores a naturally fresh, balanced glow, making it an excellent weekly treatment for maintaining clear and radiant skin.\nIdeal for oily, combination and acne-prone skin, Allure Charcoal Mud Mask & Scrub leaves your skin feeling purified, soft and visibly refreshed after every use.\nKey Benefits\n✓ Deeply detoxifies the skin by removing impurities\n✓ Helps unclog pores and reduce blackheads\n✓ Gently exfoliates dead skin cells for smoother skin\n✓ Controls excess oil and shine\n✓ Helps improve overall skin clarity and texture\n✓ Leaves skin soft, refreshed and naturally radiant\n✓ Combines the benefits of a mud mask and facial scrub\n✓ Suitable for weekly deep-cleansing treatments\nBest For\nOily, combination and acne-prone skin with clogged pores, blackheads, excess oil and dullness.\nHow to Use\nApply an even layer to clean, dry skin, avoiding the eye and lip area. Leave on for 10–15 minutes until partially dry. Wet your fingertips and gently massage in circular motions to exfoliate before rinsing thoroughly with lukewarm water. Use 1–2 times per week, followed by a moisturizer.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608277356822-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608277356822-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608277356822-0.png",
+      "source_url": "https://allurecarein.com/products/charcoal-mud-mask-scrub",
+      "source_details": {
+        "source_product_id": "10608277356822",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531761746198,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1700.00",
+            "position": 1,
+            "product_id": 10608277356822,
+            "created_at": "2026-07-11T14:51:28+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608272343318",
+      "name": "Apricot Radiance Scrub",
+      "description": "Reveal softer, brighter and healthier-looking skin with Allure Apricot Radiance Scrub. Infused with the natural goodness of Apricot Extract and gentle exfoliating particles, this refreshing facial scrub effectively removes dead skin cells, excess oil and everyday impurities to reveal a smoother, more radiant complexion.\nIts skin-polishing formula helps unclog pores, improve skin texture and reduce the appearance of blackheads while encouraging healthy skin renewal. Regular use leaves your skin feeling clean, soft and refreshed without stripping away its natural moisture, making it perfect for maintaining a naturally glowing complexion.\nGentle enough for routine use, Allure Apricot Radiance Scrub revitalizes dull skin and enhances your skin's natural brightness for a smooth, healthy-looking finish.\nKey Benefits\n✓ Gently exfoliates dead skin cells\n✓ Helps improve skin texture and smoothness\n✓ Assists in reducing blackheads and clogged pores\n✓ Removes dirt, excess oil and everyday impurities\n✓ Promotes healthy skin renewal\n✓ Boosts the skin's natural glow and radiance\n✓ Leaves skin soft, refreshed and polished\n✓ Suitable for regular use on all skin types\nBest For\nDull, rough, normal, combination and oily skin looking for gentle exfoliation and a naturally radiant complexion.\nHow to Use\nApply to damp skin and gently massage in circular motions for 1–2 minutes, avoiding the eye area. Rinse thoroughly with lukewarm water and pat dry. Use 2–3 times per week, followed by a moisturizer for best results.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608272343318-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608272343318-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608272343318-0.png",
+      "source_url": "https://allurecarein.com/products/apricot-radiance-scrub",
+      "source_details": {
+        "source_product_id": "10608272343318",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531478073622,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1700.00",
+            "position": 1,
+            "product_id": 10608272343318,
+            "created_at": "2026-07-11T14:46:15+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608271458582",
+      "name": "Hand & Nail Repair Balm",
+      "description": "Restore softness to your hands and strengthen your nails with Allure Hand & Nail Repair Balm. Enriched with Hyaluronic Acid and nourishing moisturizers, this intensive balm is specially formulated to hydrate dry hands, soften cuticles and improve overall nail health.\nIts rich yet fast-absorbing formula deeply penetrates the skin to replenish moisture, repair dryness and protect against everyday environmental stress. Regular use helps strengthen brittle nails, reduce roughness and keep hands feeling smooth, soft and comfortable without leaving a greasy residue.\nPerfect for everyday care, Allure Hand & Nail Repair Balm delivers long-lasting hydration while promoting healthier hands, softer cuticles and stronger-looking nails.\nKey Benefits\n✓ Helps strengthen weak and brittle nails\n✓ Nourishes and softens dry cuticles\n✓ Deeply moisturizes dry hands\n✓ Helps prevent dryness and rough skin\n✓ Improves skin texture for smoother, softer hands\n✓ Enriched with Hyaluronic Acid for long-lasting hydration\n✓ Fast-absorbing, non-greasy formula\n✓ Suitable for everyday hand and nail care\nBest For\nDry hands, rough skin, brittle nails, dry cuticles and everyday moisturizing.\nHow to Use\nApply a small amount to clean hands and nails. Massage gently into the hands, cuticles and around the nails until fully absorbed. Reapply throughout the day whenever needed, especially after washing your hands.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608271458582-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608271458582-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608271458582-0.png",
+      "source_url": "https://allurecarein.com/products/hand-nail-repair-balm",
+      "source_details": {
+        "source_product_id": "10608271458582",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531350802710,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1700.00",
+            "position": 1,
+            "product_id": 10608271458582,
+            "created_at": "2026-07-11T14:44:12+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608270442774",
+      "name": "Hydra Boost Gel",
+      "description": "Quench your skin's thirst with Allure Hydra Boost Gel, an ultra-lightweight hydrating gel designed to deliver an instant surge of moisture without leaving a greasy residue. Enriched with Hyaluronic Acid, this refreshing formula absorbs quickly to replenish hydration, lock in moisture and leave your skin feeling soft, smooth and revitalized.\nIts cooling gel texture instantly refreshes tired, dehydrated skin while helping strengthen the skin's natural moisture barrier. Regular use helps improve skin texture, maintain optimal moisture levels and reveal a plumper, healthier-looking complexion with a natural dewy glow.\nPerfect for daily use, Allure Hydra Boost Gel is suitable for all skin types, especially oily, combination and dehydrated skin that needs lightweight yet long-lasting hydration.\nKey Benefits\n✓ Provides instant, long-lasting hydration\n✓ Delivers a refreshing cooling sensation\n✓ Helps lock in moisture throughout the day\n✓ Lightweight, non-greasy gel formula\n✓ Improves skin texture and smoothness\n✓ Helps strengthen the skin's moisture barrier\n✓ Leaves skin plump, soft and naturally radiant\n✓ Suitable for everyday use and all skin types\nBest For\nDehydrated, oily, combination and normal skin needing lightweight hydration and a refreshing boost.\nHow to Use\nApply a small amount to clean face and neck after cleansing or serum. Gently massage until fully absorbed. Use morning and evening or whenever your skin needs an extra hydration boost. Follow with sunscreen during daytime use.",
+      "category": "Skincare",
+      "price_pkr": "2350.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270442774-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270442774-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270442774-0.png",
+      "source_url": "https://allurecarein.com/products/hydra-boost-gel",
+      "source_details": {
+        "source_product_id": "10608270442774",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531243913494,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "2350.00",
+            "grams": 0,
+            "compare_at_price": "2500.00",
+            "position": 1,
+            "product_id": 10608270442774,
+            "created_at": "2026-07-11T14:41:39+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608270311702",
+      "name": "Anti-Acne Clear Gel",
+      "description": "Say goodbye to stubborn breakouts with Allure Anti-Acne Clear Gel, a lightweight, fast-absorbing formula specially developed to target pimples, redness and excess oil without leaving your skin feeling greasy. This advanced gel works deep within the skin to help reduce blemishes, calm irritation and support a clearer, healthier-looking complexion.\nIts refreshing, non-greasy texture absorbs quickly, helping control excess sebum while soothing inflamed skin and minimizing the appearance of acne marks. Regular use helps keep pores clear, improves overall skin texture and promotes balanced, smoother skin without over-drying.\nGentle enough for everyday use, Allure Anti-Acne Clear Gel is the perfect solution for oily, combination and acne-prone skin seeking effective blemish control and long-lasting comfort.\nKey Benefits\n✓ Helps control acne and active breakouts\n✓ Reduces redness and skin irritation\n✓ Soothes inflamed and sensitive acne-prone skin\n✓ Controls excess oil without over-drying\n✓ Helps minimize blemishes and post-acne marks\n✓ Lightweight, non-greasy and fast-absorbing gel formula\n✓ Improves overall skin clarity and texture\n✓ Suitable for daily use\nBest For\nOily, combination and acne-prone skin with pimples, blemishes, redness and excess oil.\nHow to Use\nCleanse your face thoroughly and apply a thin layer of gel directly to acne-prone areas or affected spots. Allow it to absorb completely before applying moisturizer. Use once or twice daily. During daytime use, follow with Allure Sun Block SPF 50.",
+      "category": "Skincare",
+      "price_pkr": "1895.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270311702-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270311702-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270311702-0.png",
+      "source_url": "https://allurecarein.com/products/anti-acne-clear-gel",
+      "source_details": {
+        "source_product_id": "10608270311702",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531243061526,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1895.00",
+            "grams": 0,
+            "compare_at_price": "2000.00",
+            "position": 1,
+            "product_id": 10608270311702,
+            "created_at": "2026-07-11T14:39:50+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608270115094",
+      "name": "Cocoa Butter Lotion",
+      "description": "Treat your skin to rich, all-day nourishment with Allure Shea Butter Nourishing Lotion. Infused with the natural goodness of Shea Butter, this luxurious body lotion deeply moisturizes dry skin while helping restore its natural softness and smooth texture.\nIts lightweight yet intensely nourishing formula absorbs quickly to provide long-lasting hydration without leaving a greasy residue. Rich in vitamins and essential fatty acids, it helps repair rough, dry skin, strengthen the skin's natural moisture barrier and improve overall skin texture for a healthy, radiant appearance.\nPerfect for daily use, this lotion keeps your skin feeling silky soft, comfortable and beautifully hydrated from morning to night.\nKey Benefits\n✓ Deeply moisturizes dry and dehydrated skin\n✓ Softens rough, flaky and dry skin\n✓ Helps repair and restore the skin's moisture barrier\n✓ Provides long-lasting hydration throughout the day\n✓ Rich in nourishing Shea Butter and skin-loving nutrients\n✓ Improves skin texture and smoothness\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Leaves skin soft, supple and healthy-looking\n✓ Suitable for everyday use\nBest For\nDry, rough and dehydrated skin that needs daily nourishment and long-lasting moisture.\nHow to Use\nApply generously to clean, dry skin after bathing or whenever your skin feels dry. Massage gently until fully absorbed, paying extra attention to elbows, knees and other rough areas. Use daily for best results.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270115094-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270115094-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608270115094-0.png",
+      "source_url": "https://allurecarein.com/products/shea-butter-nourishing-lotion",
+      "source_details": {
+        "source_product_id": "10608270115094",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531242602774,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1700.00",
+            "position": 1,
+            "product_id": 10608270115094,
+            "created_at": "2026-07-11T14:38:18+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608269787414",
+      "name": "Vitamin C Brightening Moisturiser",
+      "description": "Reveal softer, brighter and healthier-looking skin with Allure Vitamin C Brightening Moisturiser. Infused with the antioxidant power of Vitamin C, this lightweight daily moisturizer deeply hydrates while helping improve skin tone, reduce dullness and restore your skin's natural radiance.\nIts fast-absorbing, non-greasy formula delivers long-lasting moisture without feeling heavy, leaving your skin smooth, supple and refreshed throughout the day. With regular use, it helps improve overall skin texture, supports a more even-looking complexion and protects against environmental stressors that contribute to premature skin aging.\nPerfect for everyday use, this moisturizer provides the ideal balance of hydration and brightening care for naturally glowing, healthy-looking skin.\nKey Benefits\n✓ Deeply hydrates and nourishes the skin\n✓ Helps brighten dull and uneven-looking skin\n✓ Promotes a naturally radiant complexion\n✓ Improves skin texture and smoothness\n✓ Rich in antioxidant Vitamin C for daily skin protection\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Leaves skin soft, fresh and healthy-looking\n✓ Suitable for everyday use and all skin types\nBest For\nDull, dehydrated, normal, dry and combination skin seeking daily hydration and a brighter complexion.\nHow to Use\nAfter cleansing and applying serum, dispense an appropriate amount and gently massage onto the face and neck until fully absorbed. Use every morning and evening. For daytime use, follow with Allure Sun Block SPF 50 for enhanced protection.",
+      "category": "Skincare",
+      "price_pkr": "1950.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608269787414-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608269787414-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608269787414-0.png",
+      "source_url": "https://allurecarein.com/products/vitamin-c-brightening-moisturiser",
+      "source_details": {
+        "source_product_id": "10608269787414",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531224547606,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1950.00",
+            "grams": 0,
+            "compare_at_price": "2200.00",
+            "position": 1,
+            "product_id": 10608269787414,
+            "created_at": "2026-07-11T14:36:22+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608268837142",
+      "name": "Sun Block SPF 50",
+      "description": "Protect your skin every day with Allure Sun Block SPF 50, an advanced broad-spectrum sunscreen designed to shield your skin from harmful UVA and UVB rays while helping prevent sunburn, tanning and premature signs of aging. Its lightweight, non-greasy formula spreads effortlessly across the skin, providing comfortable all-day protection without leaving a heavy or sticky feel.\nFormulated for everyday wear, this sunscreen helps maintain your skin's natural moisture balance while protecting it from environmental damage and sun-induced pigmentation. The water-resistant formula keeps your skin protected during daily outdoor activities, making it an essential final step in your skincare routine.\nSuitable for all skin types, Allure Sun Block SPF 50 delivers reliable sun protection while leaving your skin soft, fresh and naturally healthy-looking.\nKey Benefits\n✓ Broad-spectrum SPF 50 protection against UVA & UVB rays\n✓ Helps prevent sunburn, tanning and sun damage\n✓ Reduces the appearance of sun-induced pigmentation and dark spots\n✓ Helps protect against premature skin aging caused by UV exposure\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Water-resistant for long-lasting protection\n✓ Leaves skin soft, smooth and comfortable without a white cast\n✓ Suitable for everyday use and all skin types\nBest For\nDaily sun protection, outdoor activities, normal, oily, combination, dry and sensitive skin.\nHow to Use\nApply a generous amount evenly to the face, neck and other exposed areas 15–20 minutes before sun exposure. Reapply every 2 hours, or after swimming, sweating or towel drying, to maintain effective",
+      "category": "Skincare",
+      "price_pkr": "1695.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608268837142-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608268837142-1.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608268837142-2.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608268837142-3.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608268837142-0.png",
+      "source_url": "https://allurecarein.com/products/sun-block-spf-50",
+      "source_details": {
+        "source_product_id": "10608268837142",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51531110973718,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1695.00",
+            "grams": 0,
+            "compare_at_price": "1800.00",
+            "position": 1,
+            "product_id": 10608268837142,
+            "created_at": "2026-07-11T14:34:19+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608266969366",
+      "name": "Hyaluronic Acid  Serum",
+      "description": "Restore lasting hydration and youthful radiance with Allure Hyaluronic Acid Anti-Aging Serum. Powered by the moisture-binding benefits of Hyaluronic Acid, this advanced serum delivers intense hydration deep into the skin while helping reduce the appearance of fine lines, dryness and early signs of aging.\nIts lightweight, fast-absorbing formula replenishes moisture, strengthens the skin's natural barrier and visibly improves skin texture for a smoother, softer and healthier-looking complexion. Regular use helps plump the skin, enhance elasticity and lock in long-lasting hydration, leaving your face fresh, radiant and revitalized throughout the day.\nGentle enough for everyday use, this serum is suitable for all skin types and fits seamlessly into both morning and evening skincare routines.\nKey Benefits\n✓ Delivers deep, long-lasting hydration\n✓ Helps reduce the appearance of fine lines and wrinkles\n✓ Plumps and smooths the skin for a youthful look\n✓ Improves skin texture and elasticity\n✓ Locks in moisture to prevent dehydration\n✓ Strengthens the skin's natural moisture barrier\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Suitable for all skin types\nBest For\nDry, dehydrated, dull, normal and mature skin seeking intense hydration and anti-aging care.\nHow to Use\nAfter cleansing, apply 2–3 drops to the face and neck. Gently massage until fully absorbed before applying moisturizer. Use morning and evening for best results. Finish with sunscreen during daytime use.",
+      "category": "Skincare",
+      "price_pkr": "2450.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608266969366-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608266969366-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608266969366-0.png",
+      "source_url": "https://allurecarein.com/products/hyaluronic-acid-anti-aging-serum",
+      "source_details": {
+        "source_product_id": "10608266969366",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51530892607766,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "2450.00",
+            "grams": 0,
+            "compare_at_price": "2600.00",
+            "position": 1,
+            "product_id": 10608266969366,
+            "created_at": "2026-07-11T14:30:09+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608266084630",
+      "name": "Rose Water Face Mist",
+      "description": "Refresh, hydrate and revive your skin anytime with Allure Rose Water Face Mist. Infused with the soothing goodness of pure Rose Water, this lightweight facial mist instantly replenishes moisture while calming the skin and restoring its natural freshness.\nIts ultra-fine mist helps tone the skin, maintain the skin's natural pH balance and minimize the appearance of pores for a smoother, healthier-looking complexion. Whether used after cleansing, before makeup or throughout the day, it delivers an instant burst of hydration while leaving your skin soft, radiant and beautifully refreshed.\nSuitable for all skin types, this alcohol-free facial mist is perfect for everyday skincare and on-the-go hydration, helping your skin look naturally glowing and revitalized.\nKey Benefits\n✓ Instantly refreshes and revitalizes the skin\n✓ Provides lightweight, long-lasting hydration\n✓ Helps soothe irritation and calm the skin\n✓ Maintains the skin's natural pH balance\n✓ Helps minimize the appearance of pores\n✓ Boosts the skin's natural glow and radiance\n✓ Can be used as a toner, makeup refresher or hydration mist\n✓ Suitable for all skin types\nBest For\nDry, dehydrated, sensitive, dull and tired-looking skin that needs instant hydration and freshness.\nHow to Use\nHold the bottle 15–20 cm away from your face and spray evenly onto clean skin with your eyes closed. Use after cleansing, before or after makeup, or anytime during the day for an instant hydration boost. Allow it to air dry naturally.",
+      "category": "Skincare",
+      "price_pkr": "1195.00",
+      "image_urls": [],
+      "image_url": null,
+      "source_url": "https://allurecarein.com/products/rose-water-face-mist",
+      "source_details": {
+        "source_product_id": "10608266084630",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51530832412950,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1195.00",
+            "grams": 0,
+            "compare_at_price": "1400.00",
+            "position": 1,
+            "product_id": 10608266084630,
+            "created_at": "2026-07-11T14:28:54+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval. No source photo: upload a genuine product photo."
+    },
+    {
+      "sku": "ALLURE-10608259825942",
+      "name": "Anti-Acne Clarifying Serum",
+      "description": "Take control of breakouts with Allure Anti-Acne Clarifying Serum, an advanced lightweight formula specially developed to target acne, blemishes and excess oil. Powered by effective skin-clearing ingredients, this fast-absorbing serum helps reduce active breakouts, soothe irritated skin and promote a visibly clearer, healthier-looking complexion.\nIts non-greasy formula penetrates quickly into the skin to help minimize blemishes, reduce the appearance of post-acne dark spots and regulate excess sebum without over-drying. With consistent use, it improves skin texture, calms redness and supports a smoother, more balanced complexion.\nPerfect for daily use, this serum is suitable for oily, combination and acne-prone skin, delivering effective blemish care while keeping the skin hydrated and comfortable.\nKey Benefits\n✓ Helps reduce acne and active breakouts\n✓ Minimizes the appearance of dark spots and acne marks\n✓ Controls excess oil and shine\n✓ Helps reduce blemishes and clogged pores\n✓ Soothes redness and irritated skin\n✓ Improves overall skin texture and clarity\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Helps prevent future breakouts with regular use\nBest For\nOily, combination and acne-prone skin with pimples, blemishes, excess oil and post-acne marks.\nHow to Use\nAfter cleansing, apply 2–3 drops to the face or affected areas. Gently massage until fully absorbed. Follow with a moisturizer. Use once daily initially, then increase to morning and evening if tolerated. Always apply sunscreen during the day.",
+      "category": "Skincare",
+      "price_pkr": "1895.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608259825942-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608259825942-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608259825942-0.png",
+      "source_url": "https://allurecarein.com/products/anti-acne-clarifying-serum",
+      "source_details": {
+        "source_product_id": "10608259825942",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51530292068630,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1895.00",
+            "grams": 0,
+            "compare_at_price": "2100.00",
+            "position": 1,
+            "product_id": 10608259825942,
+            "created_at": "2026-07-11T14:19:12+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608258744598",
+      "name": "Vitamin E Nourishing Oil",
+      "description": "Replenish and protect your skin with Allure Vitamin E Nourishing Oil, a lightweight yet intensely moisturizing formula enriched with the antioxidant power of Vitamin E. Designed to deeply nourish dry and damaged skin, this multi-purpose beauty oil helps restore the skin's natural moisture barrier while leaving it soft, smooth and radiant.\nIts fast-absorbing formula delivers long-lasting hydration, helping improve skin texture, reduce the appearance of dryness and protect against environmental stress. With regular use, it promotes healthier-looking skin, enhances elasticity and supports a naturally youthful glow without leaving a greasy residue.\nSuitable for both face and body, this nourishing oil is an excellent daily treatment for anyone looking to maintain hydrated, healthy and beautifully radiant skin.\nKey Benefits\n✓ Deeply nourishes and hydrates the skin\n✓ Helps repair dry and damaged skin\n✓ Improves skin texture and softness\n✓ Boosts long-lasting hydration\n✓ Rich in antioxidant Vitamin E for skin protection\n✓ Helps improve skin elasticity and smoothness\n✓ Leaves skin soft, healthy and naturally radiant\n✓ Lightweight, non-greasy and fast-absorbing formula\nBest For\nDry, dehydrated, rough and dull skin that needs daily nourishment and antioxidant protection.\nHow to Use\nApply 2–3 drops to clean skin and gently massage until fully absorbed. Use on the face, neck or body as part of your morning or evening skincare routine. For best results, use daily.",
+      "category": "Skincare",
+      "price_pkr": "1800.00",
+      "image_urls": [],
+      "image_url": null,
+      "source_url": "https://allurecarein.com/products/vitamin-e-nourishing-oil",
+      "source_details": {
+        "source_product_id": "10608258744598",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51530247602454,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1800.00",
+            "grams": 0,
+            "compare_at_price": "2100.00",
+            "position": 1,
+            "product_id": 10608258744598,
+            "created_at": "2026-07-11T14:17:45+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval. No source photo: upload a genuine product photo."
+    },
+    {
+      "sku": "ALLURE-10608254714134",
+      "name": "100% Pure Moroccan Argan Oil",
+      "description": "Restore the natural beauty of your hair and skin with Allure 100% Pure Moroccan Argan Oil. Enriched with the goodness of premium Moroccan Argan Oil, this luxurious multi-purpose formula is naturally rich in Vitamin E, antioxidants and essential fatty acids that deeply nourish, repair and protect.\nDesigned for both hair and skin, it helps repair damaged hair, tame frizz and restore softness while adding a healthy, natural shine. On the skin, it delivers deep hydration, improves elasticity and leaves the complexion feeling smooth, supple and radiant without a greasy finish.\nIts lightweight, fast-absorbing formula makes it perfect for daily use, providing long-lasting nourishment for healthier-looking hair, softer skin and stronger nails.\nKey Benefits\n✓ Helps repair dry and damaged hair\n✓ Controls frizz and flyaways for smoother hair\n✓ Adds natural shine and silky softness\n✓ Deeply nourishes and hydrates the skin\n✓ Rich in Vitamin E and essential fatty acids\n✓ Helps improve skin elasticity and smoothness\n✓ Strengthens brittle nails and softens cuticles\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Multi-purpose oil for face, body and hair\nBest For\nDry, damaged or frizzy hair, dehydrated skin, rough cuticles and everyday nourishment.\nHow to Use\nFor hair, apply a few drops to damp or dry hair, focusing on the mid-lengths and ends. For skin, massage a small amount onto clean skin until fully absorbed. It can also be applied to nails and cuticles to keep them hydrated and healthy. Use daily or as needed.",
+      "category": "Skincare",
+      "price_pkr": "2375.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608254714134-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608254714134-1.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608254714134-2.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608254714134-0.png",
+      "source_url": "https://allurecarein.com/products/100-pure-moroccan-argan-oil",
+      "source_details": {
+        "source_product_id": "10608254714134",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51530040017174,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "2375.00",
+            "grams": 0,
+            "compare_at_price": "2500.00",
+            "position": 1,
+            "product_id": 10608254714134,
+            "created_at": "2026-07-11T14:13:55+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608095559958",
+      "name": "100% Natural Tea Tree Oil",
+      "description": "Purify and refresh your skin with Allure 100% Natural Tea Tree Oil, a powerful multi-purpose essential oil known for its natural antibacterial and purifying properties. Specially formulated to help care for acne-prone skin, this lightweight oil works to reduce excess oil, calm irritation and promote a clearer, healthier-looking complexion.\nIts fast-absorbing formula helps target blemishes, soothe inflamed skin and minimize the appearance of redness without leaving a greasy residue. In addition to skincare, Tea Tree Oil can also be used as part of your scalp care routine to help maintain a clean, healthy scalp and reduce buildup.\nSuitable for daily use when properly diluted, this versatile essential oil is an excellent addition to your skincare and haircare routine for naturally refreshed and balanced skin.\nKey Benefits\n✓ Natural antibacterial and purifying properties\n✓ Helps reduce acne and blemishes\n✓ Controls excess oil and shine\n✓ Soothes irritated and inflamed skin\n✓ Helps reduce redness caused by breakouts\n✓ Promotes a cleaner, healthier-looking complexion\n✓ Supports a healthy scalp by reducing buildup\n✓ Lightweight, fast-absorbing and non-greasy formula\nBest For\nAcne-prone, oily and combination skin, blemishes, occasional breakouts and scalp care.\nHow to Use\nMix 2–3 drops with a carrier oil before applying to the skin or scalp. Gently massage onto the desired area or use as a spot treatment after dilution. Avoid direct application to sensitive skin and avoid contact with the eyes.",
+      "category": "Skincare",
+      "price_pkr": "1375.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608095559958-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608095559958-1.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608095559958-2.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608095559958-0.png",
+      "source_url": "https://allurecarein.com/products/100-natural-tea-tree-oil",
+      "source_details": {
+        "source_product_id": "10608095559958",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525963120918,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1375.00",
+            "grams": 0,
+            "compare_at_price": "1500.00",
+            "position": 1,
+            "product_id": 10608095559958,
+            "created_at": "2026-07-11T12:40:04+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608094839062",
+      "name": "Premium Beard Growth Oil",
+      "description": "Achieve a fuller, healthier and better-looking beard with Allure Premium Beard Growth Oil. Crafted with a blend of nourishing natural oils, this lightweight formula deeply conditions both your beard and the skin beneath, helping reduce dryness, itchiness and beard flakes while promoting a softer, healthier appearance.\nRegular use helps strengthen beard hair, improve manageability and support healthy beard growth by keeping hair follicles nourished and hydrated. The non-sticky, fast-absorbing formula adds a natural shine without leaving behind a greasy residue, making it perfect for everyday grooming.\nWhether you're growing a new beard or maintaining a full one, this premium beard oil keeps your facial hair smooth, soft and well-groomed throughout the day.\nKey Benefits\n✓ Softens and conditions beard hair\n✓ Helps promote healthier beard growth\n✓ Reduces dryness, itchiness and beard flakes\n✓ Nourishes the skin beneath the beard\n✓ Adds a healthy, natural shine\n✓ Improves beard texture and manageability\n✓ Lightweight, non-sticky and fast-absorbing formula\n✓ Suitable for daily grooming and beard care\nBest For\nShort, medium and full beards requiring daily nourishment, hydration and healthy growth support.\nHow to Use\nDispense 2–5 drops into your palm, rub your hands together and massage evenly through your beard, working down to the skin beneath. Comb or brush through for even distribution. Use daily for best results.",
+      "category": "Hair & beard care",
+      "price_pkr": "1275.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608094839062-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608094839062-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608094839062-0.png",
+      "source_url": "https://allurecarein.com/products/premium-beard-growth-oil",
+      "source_details": {
+        "source_product_id": "10608094839062",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525961777430,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1275.00",
+            "grams": 0,
+            "compare_at_price": "1500.00",
+            "position": 1,
+            "product_id": 10608094839062,
+            "created_at": "2026-07-11T12:37:37+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608094740758",
+      "name": "Allure 100% Natural Jojoba Oil",
+      "description": "Experience lightweight yet powerful nourishment with Allure 100% Natural Jojoba Oil, a multi-purpose beauty oil designed to care for both your skin and hair. Closely resembling the skin's natural sebum, Jojoba Oil absorbs quickly to provide deep hydration without leaving a greasy residue, making it ideal for daily use.\nIts vitamin-rich formula helps balance excess oil production, improve skin elasticity and soothe dryness while keeping the skin soft, smooth and healthy-looking. For hair, it nourishes the scalp, reduces dryness and adds natural shine, leaving hair stronger, softer and easier to manage.\nSuitable for all skin and hair types, this versatile oil delivers long-lasting moisture and everyday nourishment for a naturally healthy appearance.\nKey Benefits\n✓ Balances the skin's natural oil production\n✓ Provides deep, long-lasting hydration\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Helps improve skin elasticity and softness\n✓ Soothes dry, rough and irritated skin\n✓ Nourishes the scalp and helps reduce dryness\n✓ Adds natural shine and smoothness to hair\n✓ Multi-purpose oil for face, body and hair\n✓ Suitable for all skin and hair types\nBest For\nDry, oily, combination and sensitive skin, along with dry scalp, dull hair and everyday moisturizing.\nHow to Use\nFor skin, apply 2–3 drops to clean face or body and gently massage until fully absorbed. For hair, massage a small amount into the scalp or apply through the hair lengths as a nourishing treatment. Use daily or as needed.",
+      "category": "Hair & beard care",
+      "price_pkr": "1495.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608094740758-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608094740758-1.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608094740758-2.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608094740758-0.png",
+      "source_url": "https://allurecarein.com/products/allure-100-natural-jojoba-oil",
+      "source_details": {
+        "source_product_id": "10608094740758",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525961482518,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1495.00",
+            "grams": 0,
+            "compare_at_price": "1700.00",
+            "position": 1,
+            "product_id": 10608094740758,
+            "created_at": "2026-07-11T12:36:21+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608090284310",
+      "name": "Allure 100% Natural Castor Oil",
+      "description": "Unlock the natural power of Allure 100% Natural Castor Oil, a multi-purpose beauty oil specially formulated to nourish your hair, scalp and skin. Rich in essential fatty acids and natural nutrients, this deeply conditioning oil helps strengthen hair roots, reduce breakage and support healthier, thicker-looking hair.\nIts rich moisturizing formula penetrates deep into the scalp to combat dryness while improving overall hair texture and shine. Beyond hair care, Castor Oil also provides intense hydration for dry skin, making it an excellent all-in-one solution for your daily beauty routine.\nSuitable for all hair and skin types, this versatile oil promotes stronger, softer and healthier hair while leaving your skin feeling smooth, nourished and refreshed.\nKey Benefits\n✓ Helps promote healthier hair growth\n✓ Strengthens hair roots and reduces breakage\n✓ Nourishes and hydrates the scalp\n✓ Helps improve hair thickness and texture\n✓ Adds natural softness and shine\n✓ Deeply moisturizes dry skin\n✓ Multi-purpose oil for hair, scalp and body care\n✓ 100% natural formula suitable for regular use\nBest For\nHair fall due to breakage, dry scalp, weak hair, rough skin and everyday nourishment.\nHow to Use\nFor hair, apply a small amount directly to the scalp and massage gently for 5–10 minutes. Leave it on for at least 2 hours or overnight before washing with shampoo. For skin, apply a few drops to dry areas and massage until fully absorbed. Use 2–3 times a week or as needed.",
+      "category": "Hair & beard care",
+      "price_pkr": "999.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608090284310-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608090284310-1.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608090284310-2.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608090284310-0.png",
+      "source_url": "https://allurecarein.com/products/allure-100-natural-castor-oil",
+      "source_details": {
+        "source_product_id": "10608090284310",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525956894998,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "999.00",
+            "grams": 0,
+            "compare_at_price": "1400.00",
+            "position": 1,
+            "product_id": 10608090284310,
+            "created_at": "2026-07-11T12:33:31+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608082518294",
+      "name": "Allure Rosemary Hair & Scalp Oil",
+      "description": "Nourish your hair from root to tip with Allure Rosemary Hair & Scalp Oil. Enriched with the natural goodness of Rosemary Oil, this lightweight yet powerful formula helps strengthen hair roots, improve scalp health and support healthier-looking hair growth.\nRich in natural antioxidants and essential nutrients, it helps reduce hair fall caused by breakage, nourishes the scalp and improves circulation to promote thicker, fuller-looking hair. With regular use, your hair feels softer, looks shinier and becomes easier to manage while maintaining a healthy scalp environment.\nSuitable for all hair types, this multipurpose oil is perfect for regular scalp massages and deep-conditioning treatments, leaving your hair naturally strong, smooth and revitalized.\nKey Benefits\n✓ Helps strengthen hair roots\n✓ Supports healthy hair growth\n✓ Helps reduce hair fall due to breakage\n✓ Nourishes and revitalizes the scalp\n✓ Improves scalp circulation for healthier hair\n✓ Adds natural softness and shine\n✓ Helps reduce dryness and scalp discomfort\n✓ Lightweight, non-sticky formula suitable for regular use\nBest For\nWeak hair, thinning hair, hair fall, dry scalp and dull, lifeless hair.\nHow to Use\nApply a few drops directly to the scalp and massage gently for 3–5 minutes using your fingertips. Leave on for at least 1–2 hours or overnight before washing with a mild shampoo. Use 2–3 times a week for best results.",
+      "category": "Hair & beard care",
+      "price_pkr": "1375.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608082518294-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608082518294-1.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608082518294-2.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608082518294-0.png",
+      "source_url": "https://allurecarein.com/products/allure-rosemary-hair-scalp-oil",
+      "source_details": {
+        "source_product_id": "10608082518294",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525949161750,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1375.00",
+            "grams": 0,
+            "compare_at_price": "1600.00",
+            "position": 1,
+            "product_id": 10608082518294,
+            "created_at": "2026-07-11T12:31:50+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608080191766",
+      "name": "Acid & Retinol Hydrating Cream",
+      "description": "Transform your daily skincare routine with Allure Hyaluronic Acid & Retinol Hydrating Cream. Expertly formulated with the moisture-locking power of Hyaluronic Acid and the skin-renewing benefits of Retinol, this advanced cream delivers deep hydration while helping improve skin texture, elasticity and overall radiance.\nIts lightweight, fast-absorbing formula replenishes moisture, visibly plumps the skin and helps reduce the appearance of fine lines, dryness and early signs of aging. Regular use leaves the complexion feeling smoother, firmer and healthier with a naturally youthful glow.\nDesigned for daily nourishment and long-lasting hydration, this cream provides intense moisture without feeling heavy, making it suitable for anyone looking to achieve soft, refreshed and revitalized skin.\nKey Benefits\n✓ Delivers intense, long-lasting hydration\n✓ Helps visibly plump and smooth the skin\n✓ Improves skin elasticity and firmness\n✓ Helps reduce dryness and dehydration\n✓ Minimizes the appearance of fine lines and early aging signs\n✓ Supports smoother, healthier-looking skin texture\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Leaves skin soft, radiant and refreshed\nBest For\nDry, dehydrated, normal and mature skin looking for deep hydration, improved elasticity and anti-aging care.\nHow to Use\nApply a small amount to clean face and neck after cleansing. Massage gently until fully absorbed. Use in the evening for best results. If used during the day, follow with a broad-spectrum sunscreen (SPF 30 or higher).",
+      "category": "Skincare",
+      "price_pkr": "2450.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608080191766-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608080191766-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608080191766-0.png",
+      "source_url": "https://allurecarein.com/products/acid-retinol-hydrating-cream",
+      "source_details": {
+        "source_product_id": "10608080191766",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525867307286,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "2450.00",
+            "grams": 0,
+            "compare_at_price": "2800.00",
+            "position": 1,
+            "product_id": 10608080191766,
+            "created_at": "2026-07-11T12:28:13+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608079962390",
+      "name": "Rapid Dark Circles Illuminating Eye Cream",
+      "description": "Refresh and revive tired-looking eyes with Allure Rapid Dark Circles Illuminating Eye Cream. Specially formulated for the delicate under-eye area, this nourishing eye cream helps reduce the appearance of dark circles, puffiness and fine lines while providing long-lasting hydration.\nIts lightweight, fast-absorbing formula deeply moisturizes the skin, improves texture and restores a brighter, smoother and more refreshed appearance. With regular use, the under-eye area looks healthier, firmer and more radiant, helping you achieve a naturally youthful look.\nGentle enough for everyday use, this eye cream is suitable for all skin types and can be used as part of both your morning and evening skincare routine.\nKey Benefits\n✓ Helps visibly reduce dark circles\n✓ Deeply hydrates the delicate under-eye area\n✓ Helps reduce the appearance of puffiness\n✓ Smooths the look of fine lines and wrinkles\n✓ Improves under-eye skin texture and elasticity\n✓ Brightens tired-looking eyes for a refreshed appearance\n✓ Lightweight, non-greasy and fast-absorbing formula\n✓ Suitable for everyday use\nBest For\nDark circles, puffiness, dryness, fine lines and tired-looking eyes.\nHow to Use\nTake a small amount of cream and gently dab around the under-eye area using your ring finger. Pat lightly until fully absorbed. Avoid direct contact with the eyes. Use morning and evening for best results.",
+      "category": "Skincare",
+      "price_pkr": "1750.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079962390-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079962390-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079962390-0.png",
+      "source_url": "https://allurecarein.com/products/rapid-dark-circles-illuminating-eye-cream",
+      "source_details": {
+        "source_product_id": "10608079962390",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525867241750,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1750.00",
+            "grams": 0,
+            "compare_at_price": "2100.00",
+            "position": 1,
+            "product_id": 10608079962390,
+            "created_at": "2026-07-11T12:26:49+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608079896854",
+      "name": "Vitamin C Brightening Cream",
+      "description": "Reveal brighter, healthier-looking skin with Allure Vitamin C Brightening Cream. Infused with the antioxidant power of Vitamin C, this lightweight daily moisturizer helps reduce the appearance of dullness, improve uneven skin tone and restore your skin's natural radiance.\nIts nourishing formula deeply hydrates while helping to fade the appearance of dark spots and pigmentation caused by environmental stress. With continued use, the skin feels smoother, softer and more refreshed, revealing a visibly brighter and more youthful-looking complexion.\nSuitable for everyday use, this cream absorbs comfortably into the skin without feeling heavy, making it an excellent addition to both your morning and evening skincare routine.\nKey Benefits\n✓ Helps brighten dull and tired-looking skin\n✓ Promotes a more even-looking skin tone\n✓ Helps reduce the appearance of dark spots\n✓ Boosts the skin's natural glow and radiance\n✓ Provides lightweight daily hydration\n✓ Rich in antioxidant protection against environmental stressors\n✓ Leaves skin feeling soft, smooth and refreshed\n✓ Suitable for daily use\nBest For\nDull, uneven, normal, combination and dry skin looking for brighter, healthier-looking skin.\nHow to Use\nApply a small amount to clean face and neck after cleansing. Massage gently until fully absorbed. Use morning and evening. For daytime use, apply sunscreen as the final step of your skincare routine.",
+      "category": "Skincare",
+      "price_pkr": "2350.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079896854-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079896854-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079896854-0.png",
+      "source_url": "https://allurecarein.com/products/vitamin-c-brightening-cream",
+      "source_details": {
+        "source_product_id": "10608079896854",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525867110678,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "2350.00",
+            "grams": 0,
+            "compare_at_price": "2600.00",
+            "position": 1,
+            "product_id": 10608079896854,
+            "created_at": "2026-07-11T12:25:18+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608079634710",
+      "name": "Vitamin E Intensive Moisturizing Cream",
+      "description": "Give dry, tired and rough-looking skin the nourishment it needs with Allure Vitamin E Intensive Moisturizing Cream. Enriched with antioxidant-rich Vitamin E, this moisturizing cream helps deeply hydrate the skin, support the natural skin barrier and protect against everyday dryness.\nIts rich yet comfortable texture absorbs smoothly and leaves the skin feeling soft, supple and well cared for without an excessively greasy finish. With regular use, it helps improve the appearance of uneven texture, dryness and fine lines while promoting a healthier, smoother and more radiant-looking complexion.\nIdeal for daily use, this cream can be used as part of both morning and evening skincare routines, especially when the skin feels dry, dehydrated or in need of extra nourishment.\nKey Benefits\n✓ Provides deep and lasting moisturization\n✓ Helps repair and strengthen the skin barrier\n✓ Softens dry, rough and tired-looking skin\n✓ Improves the appearance of skin texture\n✓ Helps reduce the look of fine lines\n✓ Supports smoother and more elastic-looking skin\n✓ Leaves the complexion soft, nourished and protected\n✓ Suitable for everyday use\nBest For\nDry, normal, dehydrated and mature-looking skin needing extra moisture, comfort and daily nourishment.\nHow to Use\nApply a small amount to clean skin and gently massage until fully absorbed. Use on the face and neck in the morning and evening. For daytime use, follow with sunscreen.",
+      "category": "Skincare",
+      "price_pkr": "2150.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079634710-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079634710-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079634710-0.png",
+      "source_url": "https://allurecarein.com/products/vitamin-e-intensive-moisturizing-cream",
+      "source_details": {
+        "source_product_id": "10608079634710",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525866979606,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "2150.00",
+            "grams": 0,
+            "compare_at_price": "2600.00",
+            "position": 1,
+            "product_id": 10608079634710,
+            "created_at": "2026-07-11T12:22:06+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608079372566",
+      "name": "Neem Luxe Purifying Face Wash",
+      "description": "Keep your skin fresh, clear and healthy with Allure Neem Luxe Face Wash. Infused with the natural antibacterial properties of Neem, this gentle daily cleanser helps remove dirt, excess oil and impurities while supporting a clearer-looking complexion.\nSpecially formulated for oily and acne-prone skin, it helps fight acne-causing bacteria, reduce the appearance of pimples and control excess sebum without disturbing the skin's natural moisture barrier. The refreshing formula leaves your skin feeling deeply cleansed, balanced and revitalized after every wash.\nKey Benefits\n✓ Helps fight acne-causing bacteria\n✓ Reduces the appearance of pimples and blemishes\n✓ Controls excess oil for a shine-free look\n✓ Deeply cleanses dirt and everyday impurities\n✓ Maintains the skin's natural moisture balance\n✓ Leaves skin feeling fresh, clean and refreshed\n✓ Gentle enough for everyday use\nBest For\nOily, combination and acne-prone skin looking for a gentle daily cleanser that helps control oil and maintain a healthy-looking complexion.\nHow to Use\nApply a small amount to damp skin and gently massage in circular motions, focusing on oily and congested areas. Rinse thoroughly with water and pat dry. Use twice daily for best results.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079372566-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079372566-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079372566-0.png",
+      "source_url": "https://allurecarein.com/products/neem-luxe-purifying-face-wash",
+      "source_details": {
+        "source_product_id": "10608079372566",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525866750230,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1900.00",
+            "position": 1,
+            "product_id": 10608079372566,
+            "created_at": "2026-07-11T12:19:20+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608079143190",
+      "name": "Aloe Vera Hydrating Face Wash",
+      "description": "Experience calm, clean and healthy-looking skin with Allure Aloe Vera Face Wash. Enriched with the natural goodness of Aloe Vera, this gentle cleanser effectively removes dirt, excess oil and daily impurities while helping to maintain your skin's natural moisture balance.\nIts lightweight, skin-loving formula helps soothe irritation, reduce the appearance of redness and leave your skin feeling soft, refreshed and comfortably hydrated after every wash. Suitable for everyday use, it cleanses without over-drying, making it an excellent choice for all skin types, including sensitive skin.\nKey Benefits\n✓ Gently removes dirt, oil and everyday impurities\n✓ Helps soothe irritation and reduce redness\n✓ Maintains the skin's natural moisture balance\n✓ Hydrates and refreshes tired-looking skin\n✓ Leaves skin feeling soft, smooth and comfortable\n✓ Non-drying formula for daily use\n✓ Suitable for all skin types, including sensitive skin\nBest For\nDry, sensitive, normal and combination skin that needs gentle cleansing, soothing care and long-lasting hydration.\nHow to Use\nApply a small amount to damp skin and gently massage in circular motions. Rinse thoroughly with clean water and pat dry. Use morning and evening for fresh, hydrated and healthy-looking skin.",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079143190-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079143190-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608079143190-0.png",
+      "source_url": "https://allurecarein.com/products/aloe-vera-hydrating-face-wash",
+      "source_details": {
+        "source_product_id": "10608079143190",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525866651926,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "1900.00",
+            "position": 1,
+            "product_id": 10608079143190,
+            "created_at": "2026-07-11T12:17:53+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10608078127382",
+      "name": "Vitamin C Brightening Face Wash",
+      "description": "Reveal a cleaner, fresher and naturally radiant complexion with Allure Vitamin C Face Wash. This antioxidant-rich facial cleanser gently lifts away dirt, excess oil and everyday impurities while helping improve the appearance of dull and uneven-looking skin.\nIts refreshing cleansing action leaves the face feeling clean, energised and comfortable without stripping away essential moisture. With regular use, it helps support a brighter, smoother and more balanced-looking complexion, making it an ideal addition to both morning and evening skincare routines.\nKey Benefits\n✓ Gently removes dirt, oil and impurities\n✓ Helps brighten dull and tired-looking skin\n✓ Supports a more even-looking skin tone\n✓ Refreshes and energises the complexion\n✓ Leaves skin feeling clean, soft and smooth\n✓ Suitable for everyday use\n✓ Suitable for all skin types\nBest For\nDullness, uneven-looking skin tone, excess oil and everyday facial cleansing.\nHow to Use\nWet your face with water and apply a small amount of face wash. Gently massage over the skin in circular motions, avoiding the eye area. Rinse thoroughly and pat dry. Use morning and evening for best results.",
+      "category": "Skincare",
+      "price_pkr": "1895.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608078127382-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608078127382-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10608078127382-0.png",
+      "source_url": "https://allurecarein.com/products/vitamin-c-brightening-face-wash",
+      "source_details": {
+        "source_product_id": "10608078127382",
+        "source_currency": "PKR",
+        "source_vendor": "Allura.",
+        "source_variants": [
+          {
+            "id": 51525865570582,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1895.00",
+            "grams": 0,
+            "compare_at_price": "2300.00",
+            "position": 1,
+            "product_id": 10608078127382,
+            "created_at": "2026-07-11T12:10:48+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    },
+    {
+      "sku": "ALLURE-10607997387030",
+      "name": "Charcoal Face Wash",
+      "description": "Allure Charcoal Face Wash is a deep cleansing face wash made to remove dirt, excess oil, pollution, and daily impurities from the skin. Its charcoal-based formula helps clean clogged pores, reduce blackheads, and control extra oil without making the skin feel heavy. It is ideal for oily and acne-prone skin, leaving your face feeling fresh, clean, smooth, and refreshed after every wash.\nKey Benefits:\n✓ Deeply cleanses pores\n✓ Removes dirt, oil & pollution\n✓ Helps control excess oil\n✓ Reduces blackheads\n✓ Helps unclog pore buildup\n✓ Suitable for oily skin\n✓ Ideal for acne-prone skin\n✓ Leaves skin fresh and clean\n✓ Supports a smoother-looking complexion\n✓ Perfect for daily skincare routine",
+      "category": "Skincare",
+      "price_pkr": "1595.00",
+      "image_urls": [
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10607997387030-0.png",
+        "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10607997387030-1.png"
+      ],
+      "image_url": "https://mlm-phase1-portal.saifullahnisar5.chatgpt.site/allure-care/10607997387030-0.png",
+      "source_url": "https://allurecarein.com/products/charcoal-face-wash",
+      "source_details": {
+        "source_product_id": "10607997387030",
+        "source_currency": "PKR",
+        "source_vendor": "Allura",
+        "source_variants": [
+          {
+            "id": 51524768760086,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "price": "1595.00",
+            "grams": 0,
+            "compare_at_price": "2000.00",
+            "position": 1,
+            "product_id": 10607997387030,
+            "created_at": "2026-07-11T11:15:40+05:00",
+            "updated_at": "2026-10-02T16:10:59+05:00"
+          }
+        ],
+        "imported_on": "2026-10-02"
+      },
+      "review_note": "Imported from Allure Care. Enter actual stock and set PPV before approval."
+    }
+  ],
+  "download_errors": []
+}

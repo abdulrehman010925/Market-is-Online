@@ -1,0 +1,27 @@
+I am handing over my complete “Market is Online” project. It is a hybrid multivendor e-commerce + MLM platform.
+
+First extract this ZIP and read these files completely before making changes:
+1. handover/MIGRATION_GUIDE.md
+2. NETWORK_RULES.md
+3. QA_REVIEW.md
+4. SETUP_GUIDE.md
+
+Project structure:
+- dist/ is the production-ready static website.
+- schema/ contains all ordered Supabase/PostgreSQL migrations and current functions.
+- tests/ contains database and interface regression tests.
+- imports/ contains catalogue seed/import material.
+
+Important rules:
+- Preserve every implemented MLM/e-commerce formula and existing RLS/security rule.
+- Never expose a service-role key, database password, S3 secret or private user data in frontend code.
+- The frontend may contain only the Supabase URL and publishable key.
+- Use the existing Supabase project if it was transferred to my new Supabase organization. If I created a genuinely new project, follow MIGRATION_GUIDE.md and update the frontend only after database, Auth and Storage migration is complete.
+- Run `npm install`, `node --check dist/app.js`, and `npm test` before deployment.
+- For Namecheap, upload the contents of dist/ to public_html and then update Supabase Auth Site URL/redirect URLs to the final HTTPS domain.
+- Do not remove or simplify existing working features unless I explicitly request it.
+
+Before starting, tell me which of these states applies:
+A. Same Supabase project transferred to my new account/organization.
+B. New Supabase project that needs database + Auth + Storage migration.
+C. Migration is complete and only Namecheap deployment remains.

@@ -1,0 +1,1 @@
+do $$declare f text;begin f:=pg_get_functiondef('public.set_featured_products(uuid[])'::regprocedure);f:=replace(f,'delete from public.featured_products;','delete from public.featured_products where position between 1 and 6;');execute f;end $$;

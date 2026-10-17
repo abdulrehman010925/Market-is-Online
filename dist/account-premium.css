@@ -1,0 +1,461 @@
+/* Account-only visual layer. Storefront/header/product styles are not targeted. */
+:where(.page:not(#page-shop):not(#page-product),.member-account-shell,.history-record-dialog){
+  --g:#165c46;
+  --gd:#104936;
+  --mint:#edf5f0;
+  --ink:#192f26;
+  --muted:#61726a;
+  --line:#e0e8e3;
+  --paper:#fff;
+  --shadow:0 4px 20px #173f2b06;
+  --orange:#287659;
+  --radius:14px;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+.page:not(#page-shop):not(#page-product){font-size:14px;line-height:1.55}
+.page:not(#page-shop):not(#page-product) .heading{gap:16px;margin:5px 0 22px;align-items:center}
+.page:not(#page-shop):not(#page-product) .heading h1{font-size:28px;font-weight:650;line-height:1.2;letter-spacing:-.035em;margin:4px 0 8px}
+.page:not(#page-shop):not(#page-product) .heading p{font-size:13px;line-height:1.6;max-width:660px;color:var(--muted)}
+.page:not(#page-shop):not(#page-product) .eyebrow{font-size:10px;letter-spacing:.13em;font-weight:650;color:#547364}
+.page:not(#page-shop):not(#page-product) :is(.card,.empty-card){border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);background:#fff}
+.page:not(#page-shop):not(#page-product) .card-head{padding:17px 20px;border-bottom:1px solid #eaf0ec;align-items:center}
+.page:not(#page-shop):not(#page-product) .card-head h2{font-size:15px;font-weight:650;letter-spacing:-.015em}
+.page:not(#page-shop):not(#page-product) .card-head p{font-size:12px;line-height:1.6;color:var(--muted);margin-top:5px}
+.page:not(#page-shop):not(#page-product) .card-body{padding:20px}
+.page:not(#page-shop):not(#page-product) .section{margin-top:20px}
+.page:not(#page-shop):not(#page-product) .layout{gap:14px}
+.page:not(#page-shop):not(#page-product) .btn{min-height:40px;padding:9px 14px;border-radius:9px;font-size:12px;font-weight:600;letter-spacing:.005em;box-shadow:none;transition:background .16s ease,border-color .16s ease,box-shadow .16s ease}
+.page:not(#page-shop):not(#page-product) .btn:hover{transform:none;border-color:#a9c8b6;background:#f4f8f5;box-shadow:none}
+.page:not(#page-shop):not(#page-product) .btn.primary{color:#fff;background:#165c46;border-color:#165c46;box-shadow:0 3px 8px #154c3212}
+.page:not(#page-shop):not(#page-product) .btn.primary:hover{background:#104936;border-color:#104936}
+.page:not(#page-shop):not(#page-product) .btn.soft{background:#edf5f0;color:#215e42;border-color:#d9e7de}
+.page:not(#page-shop):not(#page-product) .btn.orange{background:#f1f5f3;border-color:#d9e3dc;color:#425c4d}
+.page:not(#page-shop):not(#page-product) .btn.small{min-height:34px;padding:6px 11px;font-size:11px;border-radius:7px}
+.page:not(#page-shop):not(#page-product) :is(button,a,input,select,textarea,summary):focus-visible{outline:2px solid #38846a;outline-offset:3px}
+.page:not(#page-shop):not(#page-product) .btn:disabled{opacity:.48;box-shadow:none}
+.page:not(#page-shop):not(#page-product) .form{gap:16px;max-width:680px}
+.page:not(#page-shop):not(#page-product) :is(.form label,.field label,.plan-picker,.tree-controls label){font-size:12px;line-height:1.5;font-weight:600;color:#364f42;gap:7px}
+.page:not(#page-shop):not(#page-product) :is(.form input:not([type=checkbox]):not([type=radio]):not([type=file]),.form select,.form textarea,.field input:not([type=checkbox]):not([type=radio]),.field select,.field textarea){min-height:42px;padding:10px 12px;border:1px solid #ccdcd1;border-radius:8px;background:#fff;color:#1e3b2c;font-size:14px;box-shadow:none}
+.page:not(#page-shop):not(#page-product) :is(input,select,textarea)::placeholder{color:#8a9890;font-weight:400}
+.page:not(#page-shop):not(#page-product) :is(.form input,.form select,.form textarea):focus{border-color:#65a183;outline:0;box-shadow:0 0 0 3px #e7f2eb}
+.page:not(#page-shop):not(#page-product) .form input[readonly]{background:#f5f8f6;color:#556d5f}
+.page:not(#page-shop):not(#page-product) input:is([type=checkbox],[type=radio]){accent-color:#165c46}
+.page:not(#page-shop):not(#page-product) .helper{font-size:11px;line-height:1.6;color:#697c70}
+.page:not(#page-shop):not(#page-product) :is(.note,.status,.account-advisory){border:0;border-radius:0;background:transparent;color:#62776a;padding:0;margin:12px 0;font-size:12px;line-height:1.6;box-shadow:none}
+.page:not(#page-shop):not(#page-product) .account-advisory{display:flex;gap:9px;align-items:start;border-top:1px solid #e7ede8;padding-top:12px}
+.page:not(#page-shop):not(#page-product) :is(.note.warn,.status.warn){border:0;border-left:0;background:transparent;color:#62776a}
+.page:not(#page-shop):not(#page-product) :is(.pill,.status-pill,.account-state){border:0;background:#eff5f1;color:#416650;border-radius:6px;font-size:10px;font-weight:600;padding:4px 8px;letter-spacing:.01em;box-shadow:none}
+.page:not(#page-shop):not(#page-product) :is(.account-state.waiting,.history-status.hold,.held-value){background:#f0f3f1;color:#53675b;border-color:#dfe7e1}
+.page:not(#page-shop):not(#page-product) :is(.history-status.credited,.account-state.active){background:#eaf5ed;color:#276440}
+.page:not(#page-shop):not(#page-product) :is(.rank-badge,.tree-rank-label){background:#eff4f1;color:#385f49;border-color:#dce7df}
+.page:not(#page-shop):not(#page-product) :is(.is-error,[role=alert],.form-error){color:#a13432}
+.page:not(#page-shop):not(#page-product) .plan-save-summary.is-error{padding:12px 14px;background:#fdf0ef;border:1px solid #efd0cd;border-radius:9px;color:#8c302b}
+.page:not(#page-shop):not(#page-product) .list{gap:0}
+.page:not(#page-shop):not(#page-product) :is(.list-row,.history-row,.earning-history-row){padding:13px 0;border:0;border-bottom:1px solid #e6ede7;border-radius:0;background:transparent;box-shadow:none;gap:14px}
+.page:not(#page-shop):not(#page-product) :is(.list-row,.history-row,.earning-history-row):last-child{border-bottom:0}
+.page:not(#page-shop):not(#page-product) :is(.list-row,.history-row,.earning-history-row):hover{box-shadow:none;transform:none;background:transparent}
+.page:not(#page-shop):not(#page-product) .list-row strong{font-size:13px;font-weight:600}
+.page:not(#page-shop):not(#page-product) .list-row small{font-size:11px;line-height:1.5;color:#687e6f}
+.page:not(#page-shop):not(#page-product) :is(.code,code){font-size:11px;line-height:1.5;color:#526b5b;letter-spacing:.01em}
+.page:not(#page-shop):not(#page-product) .empty{padding:32px 20px;background:#fbfcfb;border-radius:12px}
+.page:not(#page-shop):not(#page-product) .empty h3{font-size:16px;font-weight:600;color:#2b4536}
+.page:not(#page-shop):not(#page-product) .empty p{font-size:12px;max-width:420px;color:#6a7c70}
+.page:not(#page-shop):not(#page-product) .empty-icon{width:40px;height:40px;border-radius:11px;background:#eef5f0;color:#416e52;font-size:19px}
+.page:not(#page-shop):not(#page-product) .metric{padding:19px 20px}
+.page:not(#page-shop):not(#page-product) .metric span{font-size:12px;color:#61796a}
+.page:not(#page-shop):not(#page-product) .metric b{font-size:27px;font-weight:650;color:#17432e;letter-spacing:-.035em;margin:8px 0 6px;font-variant-numeric:tabular-nums}
+.page:not(#page-shop):not(#page-product) .metric small{font-size:11px;line-height:1.5;color:#6b7e70}
+.page:not(#page-shop):not(#page-product) :is(.table-wrap,.history-table-scroll){max-width:100%;border-radius:9px;scrollbar-width:thin;scrollbar-color:#bdd0c2 transparent}
+.page:not(#page-shop):not(#page-product) table{font-size:12px}
+.page:not(#page-shop):not(#page-product) th{padding:12px 14px;font-size:11px;letter-spacing:.015em;font-weight:600;background:#f2f6f3;color:#526c5d;border-bottom:1px solid #dee8e0;text-transform:none}
+.page:not(#page-shop):not(#page-product) td{padding:13px 14px;font-size:12px;line-height:1.55;color:#354e3e;border-color:#eaf0eb}
+.page:not(#page-shop):not(#page-product) tbody tr:hover{background:#f6f9f7}
+.page:not(#page-shop):not(#page-product) .compact-history tbody tr:nth-child(even){background:#fcfdfc}
+.page:not(#page-shop):not(#page-product) .compact-history td small{font-size:11px;color:#6c7f71}
+.page:not(#page-shop):not(#page-product) .compact-history tfoot :is(th,td){border-top:1px solid #cbded0;background:#f0f6f2;color:#2c573e;font-size:12px}
+.page:not(#page-shop):not(#page-product) .history-status{border-radius:5px;padding:4px 7px;font-size:10px}
+.page:not(#page-shop):not(#page-product) .history-date-form{padding:14px;background:#f6f9f7;border:1px solid #e3ebe5;border-radius:10px;gap:10px}
+.page:not(#page-shop):not(#page-product) .history-date-form label{font-size:11px;color:#566f5f;font-weight:500}
+.page:not(#page-shop):not(#page-product) .history-date-form input{min-height:37px;font-size:13px;background:#fff;border-color:#d1dfd5;border-radius:7px;padding:8px 10px}
+.page:not(#page-shop):not(#page-product) .history-date-form>small{font-size:10px;color:#64796a}
+.page:not(#page-shop):not(#page-product) .history-period-summary{padding:13px 2px;border:0;background:transparent;font-size:11px;color:#627b6a;gap:15px}
+.page:not(#page-shop):not(#page-product) .history-period-summary strong{font-size:11px;font-weight:500;background:transparent}
+.page:not(#page-shop):not(#page-product) .history-period-summary b{font-weight:650;color:#2d6041}
+.page:not(#page-shop):not(#page-product) .history-pagination{font-size:11px;border-top:1px solid #e3ebe5;padding-top:13px}
+.page:not(#page-shop):not(#page-product) .earning-source-tabs{margin:20px 0 9px;gap:8px;scrollbar-width:thin}
+.page:not(#page-shop):not(#page-product) .earning-source-tabs button{padding:12px 15px;min-height:50px;border-radius:10px;border-color:#dce7de;font-size:12px;flex-direction:column;gap:5px;align-items:start;text-align:left;box-shadow:none}
+.page:not(#page-shop):not(#page-product) .earning-source-tabs button b{font-size:11px;color:#6d8173;font-weight:500}
+.page:not(#page-shop):not(#page-product) .earning-source-tabs button.active{background:#165c46;border-color:#165c46;color:#fff}
+.page:not(#page-shop):not(#page-product) .earning-source-tabs button.active b{color:#d8e8dd}
+.page:not(#page-shop):not(#page-product) .earning-level-tabs{padding:10px 0;gap:7px}
+.page:not(#page-shop):not(#page-product) .earning-level-tabs button{font-size:11px;min-height:32px;padding:7px 10px;border-radius:7px}
+.page:not(#page-shop):not(#page-product) .earning-level-tabs>span{font-size:11px;color:#647a6b;font-weight:500}
+.page:not(#page-shop):not(#page-product) .earning-summary{gap:14px;margin-bottom:18px}
+.page:not(#page-shop):not(#page-product) .earning-summary-card{padding:22px;border:1px solid #dbe7de;border-radius:13px;background:#123d2d;color:#fff;box-shadow:0 7px 20px #173f2910}
+.page:not(#page-shop):not(#page-product) .earning-summary-card>span{font-size:12px;color:#dce9df}
+.page:not(#page-shop):not(#page-product) .earning-summary-card b{font-size:32px;letter-spacing:-.045em;font-weight:650;margin-top:8px}
+.page:not(#page-shop):not(#page-product) .earning-summary-card b small{font-size:12px;font-weight:500}
+.page:not(#page-shop):not(#page-product) .earning-summary-card p{font-size:11px;color:#b7d0bf;margin-top:9px}
+.page:not(#page-shop):not(#page-product) .earning-summary-card.held-summary{background:#fff;color:#263f30;border-color:#dbe5de;box-shadow:var(--shadow)}
+.page:not(#page-shop):not(#page-product) .held-summary>span{color:#62786a}
+.page:not(#page-shop):not(#page-product) .held-summary p{color:#728475}
+.page:not(#page-shop):not(#page-product) .ecommerce-metric.active{border-color:#69a083;box-shadow:0 0 0 2px #edf5ef}
+.page:not(#page-shop):not(#page-product) .member-summary{padding:20px;border-left:1px solid #dce6df}
+.page:not(#page-shop):not(#page-product) .member-welcome h2{font-size:21px;letter-spacing:-.025em;font-weight:650}
+.page:not(#page-shop):not(#page-product) .member-welcome :is(p,small){font-size:12px}
+.page:not(#page-shop):not(#page-product) .quick-actions{margin-top:16px;gap:8px}
+.page:not(#page-shop):not(#page-product) .point-activity-row{padding:13px 0}
+.page:not(#page-shop):not(#page-product) .point-activity-row small{font-size:11px;line-height:1.55}
+.page:not(#page-shop):not(#page-product) .referral-tile{border-radius:11px;border-color:#dce7df;background:#f8fbf9;padding:18px}
+.page:not(#page-shop):not(#page-product) .referral-tile h3{font-size:14px;margin-bottom:10px}
+.page:not(#page-shop):not(#page-product) .referral-tile .code{border-color:#dfE8e1;background:#fff;font-size:11px;border-radius:6px}
+.page:not(#page-shop):not(#page-product) .referral-tile small{font-size:11px;line-height:1.6}
+.page:not(#page-shop):not(#page-product) :is(.network-profile-heading,.selling-links){color:#2a4936}
+.page:not(#page-shop):not(#page-product) .selling-links h3{font-size:15px}
+.page:not(#page-shop):not(#page-product) .selling-links p{font-size:12px;color:#677d6c}
+.page:not(#page-shop):not(#page-product) .generation-level-progress{box-shadow:none;background:#fff;border-color:#dce6df;border-radius:11px;padding:13px 15px}
+.page:not(#page-shop):not(#page-product) .generation-level-toggle{padding:0;background:transparent;box-shadow:none}
+.page:not(#page-shop):not(#page-product) .generation-level-toggle b{font-size:13px}
+.page:not(#page-shop):not(#page-product) .generation-level-toggle small{font-size:11px}
+/* Plans: one clear comparison, quieter metadata, no gold warning treatment. */
+#page-packages .package-grid{align-items:stretch;gap:14px}
+#page-packages .package{border:1px solid #dce6df;border-radius:13px;box-shadow:0 5px 20px #173b2406;padding:21px 17px;transition:border-color .16s ease,box-shadow .16s ease;background:#fff}
+#page-packages .package:hover{transform:none;border-color:#a9cbb7;box-shadow:0 8px 24px #173b240d}
+#page-packages .package:before,#page-packages .package:nth-child(even):before{height:3px;background:#477e61}
+#page-packages .package:last-child{border-color:#89b49b;background:linear-gradient(180deg,#f6fbf8,#fff 140px)}
+#page-packages .package:last-child:before{background:#165c46}
+#page-packages .package-top h3{font-size:19px;letter-spacing:-.025em;margin:13px 0 0}
+#page-packages .package .pill{font-size:10px;color:#5d7666;background:#f0f6f2;padding:4px 7px;border-radius:5px}
+#page-packages .package .pay{font-size:32px;font-weight:650;letter-spacing:-.055em;line-height:1.25;margin:15px 0 0;color:#204c35}
+#page-packages .package .pay small{font-size:11px;letter-spacing:0;font-weight:400;color:#667e6d}
+#page-packages .package-cost{font-size:11px;margin:7px 0 15px;color:#667b69}
+#page-packages .package dl{font-size:12px;gap:9px 10px;padding:14px 0;border-color:#e9efea}
+#page-packages .package dt{color:#667e6c;line-height:1.45}
+#page-packages .package dd{color:#294b35;font-weight:600}
+#page-packages .package .btn{min-height:40px;font-size:12px;margin-top:15px}
+#page-packages .package .helper{font-size:10px;line-height:1.6;margin:9px 0 0}
+#page-packages .plain-details{padding-top:10px;margin:12px 0 0;border-color:#e9efea}
+#page-packages .plain-details summary{font-size:11px;font-weight:500;color:#53745e}
+#page-packages .plain-details dl{border:0;margin-bottom:0}
+#page-packages .card-body:empty{display:none}
+/* Dashboard chrome and metrics: matte emerald, balanced contrast, quiet depth. */
+.member-account-shell{--account-green:#165c46;--account-dark:#102f25;--account-gold:#83b59a;border-color:#e0e8e2;background:#f3f7f4;border-radius:15px;box-shadow:0 8px 30px #133b2305}
+.member-topbar{padding:14px 20px;border-color:#e3ebe5;background:#fff}
+.member-topbar strong{font-size:16px;font-weight:600;letter-spacing:-.025em}
+.member-topbar>button{border:1px solid #e1eae3;border-radius:9px;background:#fafcfb;box-shadow:none}
+.member-header-date{font-size:11px;color:#637669}
+.member-sidebar{background:linear-gradient(180deg,#102f25,#173c2d);padding:18px 12px;gap:5px}
+.member-sidebar nav{gap:5px}
+.member-sidebar nav button{padding:11px 12px;font-size:12px;font-weight:500;min-height:42px;border-radius:8px;color:#c2d5c8;box-shadow:none}
+.member-sidebar nav button svg{width:17px;height:17px;opacity:.8;stroke-width:1.7}
+.member-sidebar nav button.active{background:#ffffff12;color:#f7fbf8;box-shadow:inset 2px 0 #82b69a}
+.member-sidebar nav button.active svg{color:#b0d5bd;opacity:1}
+.member-sidebar nav button:hover{background:#ffffff0c;color:#fff}
+.sidebar-signout{font-size:11px;color:#a8c2b0;min-height:40px;border-color:#ffffff12}
+.member-page-content{padding:22px}
+.dashboard-offer-row{gap:13px;margin-bottom:16px}
+.dashboard-offer{border-color:#2f6249;border-radius:12px;background:linear-gradient(115deg,#133d2e,#21513b);padding:18px;box-shadow:0 4px 15px #163b2209;align-items:flex-start}
+.dashboard-offer h2{font-size:14px;letter-spacing:-.015em;font-weight:600}
+.dashboard-offer p{font-size:11px;line-height:1.5;margin-top:5px;color:#c6dfcd}
+.dashboard-offer strong{font-size:24px;font-weight:600;letter-spacing:.015em}
+.dashboard-offer small{font-size:11px;color:#b4ceb9}
+.offer-visual{border-color:#ffffff1c;background:#ffffff0b;width:36px;height:36px;border-radius:10px}
+.offer-visual svg{width:20px;height:20px}
+.dashboard-future{border-color:#e0e7e1;border-radius:11px;background:#f6f8f6;padding:17px;gap:12px}
+.dashboard-future h3{font-size:12px;font-weight:500;color:#63796a;line-height:1.5;margin-bottom:7px}
+.dashboard-future>div>span{font-size:11px;color:#647767}
+.dashboard-future-icon{display:grid;place-items:center;width:33px;height:33px;background:#eaf0eb;border-radius:9px;flex-shrink:0}
+.dashboard-future-icon svg{width:18px;height:18px;color:#78927e;opacity:1}
+.dashboard-identity{padding:20px;border-color:#dfe8e1;border-radius:13px;gap:18px;margin-bottom:15px;box-shadow:0 3px 16px #183e2504}
+.dashboard-person h1{font-size:20px;font-weight:650;letter-spacing:-.03em;line-height:1.25}
+.dashboard-person>img,.dashboard-avatar{width:56px;height:56px;border-color:#d6e6da;border-width:2px}
+.dashboard-person small{font-size:11px;color:#627866}
+.dashboard-person .code{font-size:10px;letter-spacing:.02em;color:#6a7b6d}
+.dashboard-person .text-button{font-size:11px;font-weight:500;color:#4c7659}
+.dashboard-package{padding-left:18px;border-color:#e4ece5;gap:11px}
+.dashboard-package strong{font-size:18px;font-weight:650;letter-spacing:-.025em}
+.dashboard-package small{font-size:11px;color:#647b69}
+.dashboard-package>img{width:37px;height:37px}
+.dashboard-status{font-size:10px;font-weight:500;border-radius:5px;padding:4px 7px;background:#f0f4f1;color:#6a7b6d}
+.dashboard-status.active{background:#eaf4ee;color:#3c7050}
+.dashboard-total-earned{border-color:#214f36;border-radius:10px;padding:16px;background:#163e2c;box-shadow:none}
+.dashboard-total-earned>span{font-size:11px;color:#c7dece}
+.dashboard-total-earned strong{font-size:29px;font-weight:600;letter-spacing:-.035em;margin:6px 0}
+.dashboard-total-earned>small{font-size:11px;color:#b1d4bd}
+.dashboard-balance-row{gap:13px;margin-bottom:15px}
+.dashboard-balance,.dashboard-personal-points{border-color:#dee8e0;border-radius:11px;background:#fff;padding:16px;box-shadow:none}
+.dashboard-balance>svg{width:24px;height:24px;color:#588465;stroke-width:1.5}
+.dashboard-balance span,.dashboard-personal-points>span{font-size:11px;color:#6a7d6c}
+.dashboard-balance strong{font-size:24px;font-weight:600;letter-spacing:-.03em;line-height:1.35;margin:5px 0;color:#244f34}
+.dashboard-balance strong small{font-size:11px;color:#617969}
+.dashboard-balance small{font-size:11px;color:#67816c}
+.dashboard-personal-points b{font-size:24px;font-weight:600;letter-spacing:-.03em;color:#244f34}
+.dashboard-stat-row{gap:13px;margin-bottom:15px}
+.dashboard-metric{padding:17px;border-color:#dee8e0;border-radius:11px;align-items:start;gap:12px;box-shadow:none}
+.dashboard-metric-icon{width:34px;height:34px;background:#f0f6f1;color:#568363;border-radius:9px}
+.dashboard-metric-icon svg{width:19px;height:19px;stroke-width:1.6}
+.dashboard-metric span:not(.dashboard-metric-icon){font-size:11px;color:#667f6a}
+.dashboard-metric strong{font-size:28px;font-weight:600;letter-spacing:-.03em;margin:5px 0;color:#244f34}
+.dashboard-metric small{font-size:11px;color:#677c68;line-height:1.5}
+.dashboard-panel{padding:19px;border-color:#dfe8e1;border-radius:12px;box-shadow:none}
+.dashboard-panel-title h2{font-size:14px;font-weight:600;letter-spacing:-.01em}
+.dashboard-panel-title>strong{font-size:13px;font-weight:600}
+.dashboard-panel-title>button:not(.btn){font-size:11px;font-weight:500;color:#578365}
+.dashboard-binary-sides strong{font-size:27px;font-weight:600;letter-spacing:-.035em;color:#254e35}
+.dashboard-binary-sides span{font-size:11px;color:#627866}
+.dashboard-binary-sides small{font-size:11px;color:#687b69}
+.dashboard-muted{font-size:11px;color:#637866;line-height:1.6}
+.dashboard-levels{gap:6px;padding:10px 0}
+.dashboard-level{min-width:29px;height:40px;border-radius:7px;font-weight:600;background:#f1f4f1;color:#819083}
+.dashboard-level.open{background:#2c6b4b;color:#fff}
+.dashboard-level.locked{background:#f4f6f4;color:#9ca69b}
+.dashboard-graphical{border-color:#e6ece6;font-size:11px;padding-top:14px;margin-top:14px;color:#6b806e}
+.dashboard-binary-pending{padding-top:14px;margin-top:14px;border-color:#e6ece6;font-size:11px;line-height:1.6;color:#6b836f}
+.dashboard-binary-pending b{font-weight:600;color:#3d6949}
+.dashboard-member-row{padding:13px 0;border-color:#e6ede7}
+.dashboard-member-row strong{font-size:12px;font-weight:600}
+.dashboard-member-row small{font-size:11px;color:#798c7b;line-height:1.5}
+.dashboard-generation-row{font-size:12px;padding:13px 0;border-color:#e6ede7;color:#486e52}
+.dashboard-future-wallets{gap:12px}
+.dashboard-future-wallets .dashboard-future{padding:15px}
+.member-account-shell :is(button,input,a,summary):focus-visible{outline:2px solid #4a8a67;outline-offset:3px}
+/* Admin: the same calm dashboard language as the member area, with every finance source kept separate. */
+#page-admin>.heading{padding:22px 24px;margin:0 0 18px;border:1px solid #285c43;border-radius:13px;background:linear-gradient(120deg,#12382a,#1b5038);color:#fff;box-shadow:0 8px 24px #153b2612}
+#page-admin>.heading .eyebrow{color:#a9d1b7;font-size:10px;letter-spacing:.12em}
+#page-admin>.heading h1{color:#fff;font-size:27px;font-weight:650;letter-spacing:-.035em;margin:5px 0 7px}
+#page-admin>.heading p{color:#c9ddd0;font-size:12px;line-height:1.6;max-width:720px}
+#page-admin .control-shell{grid-template-columns:185px minmax(0,1fr);gap:20px}
+#page-admin .control-nav{position:static;top:auto;padding:10px;border:1px solid #234c39;border-radius:12px;background:linear-gradient(180deg,#113326,#183e2e);box-shadow:0 8px 24px #143a2510;max-height:none;align-self:start}
+#page-admin .control-nav-group{margin-bottom:8px;gap:3px}
+#page-admin .control-nav-group>p{font-size:9px;font-weight:600;letter-spacing:.11em;color:#8fb3a0;margin:14px 9px 6px}
+#page-admin .control-nav .btn{font-size:11px;font-weight:500;min-height:36px;padding:9px 10px;border:0;border-radius:7px;color:#bfd3c5;background:transparent;box-shadow:none;text-align:left;justify-content:flex-start}
+#page-admin .control-nav .btn.active{background:#ffffff12;color:#fff;font-weight:600;box-shadow:inset 2px 0 #85b99c}
+#page-admin .control-nav .btn:hover{background:#ffffff0c;color:#fff}
+#page-admin .control-body{min-width:0}
+#page-admin .control-panel{min-width:0}
+#page-admin .control-panel>h2{font-size:22px;font-weight:650;letter-spacing:-.03em;margin-bottom:7px}
+#page-admin .control-help{font-size:12px;line-height:1.6;color:#667967;margin-bottom:20px;max-width:660px}
+#page-admin .control-panel .card{border-radius:12px;box-shadow:none}
+#page-admin .control-panel .card-body{padding:19px}
+#page-admin #control-home>.card{border:0;background:transparent}
+#page-admin #control-home>.card>.card-body{padding:0}
+#page-admin #masterAccounting>.section-head{padding:18px 20px;border:1px solid #dbe7de;border-radius:12px;background:#fff;margin-bottom:13px}
+#page-admin #masterAccounting>.section-head h3{font-size:17px;font-weight:650;color:#234c34;letter-spacing:-.02em}
+#page-admin #masterAccounting>.section-head p{font-size:11px;color:#657a6a;line-height:1.55;margin-top:4px}
+#page-admin .accounting-primary{gap:12px;margin-bottom:18px}
+#page-admin .accounting-secondary{gap:11px}
+#page-admin .accounting-metric{border:1px solid #dfe8e1;border-radius:11px!important;background:#fff;box-shadow:none!important;padding:17px}
+#page-admin .accounting-metric span{font-size:11px;color:#6a826d}
+#page-admin .accounting-metric b{font-size:24px;font-weight:650;letter-spacing:-.03em;color:#2d593b}
+#page-admin .accounting-metric small{font-size:11px;line-height:1.6;color:#6b7c6a}
+#page-admin .accounting-primary .company-total{background:#183f2b;border-color:#183f2b}
+#page-admin .accounting-primary .company-total :is(b,span,small){color:#e1eee4}
+#page-admin .company-wallets{padding:19px;border:1px solid #dfe8e1;border-radius:12px;background:#fff;margin:0 0 14px}
+#page-admin .company-wallets h4{font-size:15px;font-weight:650;color:#284e36;margin:0 0 4px}
+#page-admin .company-wallet-button{min-height:116px;text-align:left;align-items:flex-start;justify-content:flex-start;display:flex;flex-direction:column}
+#page-admin .company-wallet-button b{margin:7px 0 4px}
+#page-admin .accounting-details{border:1px solid #dfe8e1;border-radius:11px;background:#fff;margin:10px 0;overflow:hidden}
+#page-admin .accounting-details>summary{padding:15px 17px;font-size:12px;font-weight:600;color:#294f37;background:#f8fbf9;list-style:none;cursor:pointer}
+#page-admin .accounting-details>summary::-webkit-details-marker{display:none}
+#page-admin .accounting-details>summary:after{content:'+';float:right;color:#63806c;font-size:17px;line-height:1}
+#page-admin .accounting-details[open]>summary:after{content:'−'}
+#page-admin .accounting-details[open]>:not(summary){margin-left:17px;margin-right:17px}
+#page-admin .accounting-details[open]>:last-child{margin-bottom:17px}
+#page-admin :is(.company-detail-panel,.budget-breakdown,.featured-admin-panel,.featured-category-slot){border-color:#e0e9e2;border-radius:11px;background:#fbfdfb;padding:16px;box-shadow:none}
+#page-admin .company-source-button{border:1px solid #e0e9e2;padding:12px 14px;border-radius:8px;background:#fff;font-size:12px;box-shadow:none}
+#page-admin .company-source-button:hover{background:#f5faf6;border-color:#aac9b5;box-shadow:none}
+#page-admin #control-system>.accounting-primary,#page-admin #control-system>.accounting-secondary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+#page-admin #control-system>.performers{padding:19px;border:1px solid #dfe8e1;border-radius:12px;background:#fff;margin-top:14px}
+#page-admin .performer-row{padding:12px 0;border-bottom:1px solid #e7eee8}
+#page-admin .performer-row:last-child{border-bottom:0}
+#page-admin :is(.plan-budget-tab,.plan-budget-control){padding:16px;border:1px solid #dfe9e1;border-radius:10px;background:#f8fbf9;box-shadow:none}
+#page-admin .plan-budget-tab.active{background:#edf6ef;border-color:#8fbaa0;box-shadow:0 0 0 1px #edf5ef}
+#page-admin .plan-budget-tab b{font-size:23px;font-weight:650;color:#2f6843}
+#page-admin .plan-budget-tab small{font-size:11px;color:#677c6b}
+#page-admin :is(.admin-product-record,.admin-compact-record,.admin-vendor-review-group){border-color:#e0e8e2;border-radius:9px;box-shadow:none}
+#page-admin :is(.admin-product-summary,.admin-vendor-review-button){padding:12px 13px;border-radius:0;background:#fff}
+#page-admin .editor-step{padding:20px 0;border-color:#e2eae4}
+#page-admin .step-heading h3{font-size:15px;font-weight:600}
+#page-admin .step-heading p{font-size:12px;color:#697d6b}
+/* Tree geometry, placement, scaling and canvas dimensions remain untouched. */
+#page-network.graphical-only #treeCard.card{border:0;border-radius:0;box-shadow:none;margin:0;background:#fff}
+#page-network.graphical-only #treeCard>.card-body{padding:0}
+#page-network .tree-member-details{border-color:#e0e9e2;background:#fff;box-shadow:0 4px 20px #173b2406}
+#page-network .tree-member-card h3{font-size:17px;letter-spacing:-.025em;font-weight:650}
+#page-network .tree-member-tags>span{background:#f0f6f2;color:#55765f;border-color:#e0e9e2;border-radius:6px;font-weight:500}
+#page-network .generation-info-title{background:#214b35;border-radius:10px;box-shadow:none;padding:13px 14px}
+#page-network .generation-info-title h4{font-size:14px;font-weight:600}
+#page-network .generation-info-title>span{background:#ffffff0c;border:1px solid #ffffff1c;border-radius:6px;font-size:10px;font-weight:500}
+#page-network .generation-summary-grid>div,#page-network .generation-summary-grid>button{border-color:#e3eae4;border-radius:9px;background:#fbfdfb;box-shadow:none}
+#page-network .tree-action-rail button{border-color:#e1eae3;box-shadow:none}
+/* Auth, account recovery and security retain every form and control. */
+:is(#page-login,#page-join,#page-reset,#page-support,#page-onboarding,#page-security)>.heading{max-width:640px;margin:12px auto 23px}
+:is(#page-login,#page-join,#page-reset,#page-support,#page-onboarding,#page-security) .card{border-color:#dbe6de;box-shadow:0 10px 36px #153d2606;border-radius:15px}
+:is(#page-login,#page-join,#page-reset,#page-support,#page-onboarding,#page-security) .card-body{padding:27px}
+:is(#page-login,#page-join,#page-reset,#page-support,#page-onboarding,#page-security) .card-body>p{font-size:13px;color:#6b806e;line-height:1.7}
+.history-record-dialog{padding:0;border:1px solid #dde7df;border-radius:16px;box-shadow:0 24px 90px #102c2333;background:#fff}
+.history-record-dialog .record-toolbar{padding:15px 20px;background:#fafcfb;border-bottom:1px solid #e4ece6;margin:0}
+.history-record-dialog .record-toolbar h2{font-size:14px;font-weight:600;color:#365b42}
+.history-record-dialog .record-print-area{padding:22px}
+.history-record-dialog .receipt-brand{background:linear-gradient(125deg,#f7faf7,#edf5ef);border:1px solid #cadfd0;border-left:4px solid #1b6849;border-radius:11px;padding:19px;box-shadow:none}
+.history-record-dialog .receipt-brand img{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+.history-record-dialog .receipt-brand span{font-size:10px;font-weight:700;letter-spacing:.12em;color:#356b4a!important}
+.history-record-dialog .receipt-brand h1{font-size:24px;font-weight:700;letter-spacing:-.035em;color:#123a27!important;line-height:1.18}
+.history-record-dialog .receipt-brand p{font-size:12px;line-height:1.6;color:#3e5d49!important;font-weight:500}
+.history-record-dialog .receipt-grid{gap:0 20px}
+.history-record-dialog .receipt-grid>div{border-bottom:1px solid #e8eee9;padding:13px 0}
+.history-record-dialog .receipt-grid dt{font-size:10px;color:#536b5a;font-weight:650;letter-spacing:.035em}
+.history-record-dialog .receipt-grid dd{font-size:13px;color:#173b29;font-weight:600;margin-top:5px;line-height:1.5}
+.history-record-dialog .receipt-grid dd small{color:#4d6756;font-weight:500}
+.history-record-dialog .receipt-amount{color:#08693f!important;font-size:15px!important;font-weight:750!important}
+.history-record-dialog .receipt-formula{background:#f2f8f4;border-color:#cfe0d4;border-radius:9px;color:#1a3d2b;font-weight:600}
+.history-record-dialog .receipt-formula :is(span,b,strong){color:#173d2a}
+.history-record-dialog .receipt-footnote{font-size:11px;line-height:1.7;color:#455f4e;font-weight:500}
+.history-record-dialog .order-invoice{color:#183a29}
+.history-record-dialog .order-invoice :is(h1,h2,h3,strong,b){color:#123824}
+.history-record-dialog .order-invoice :is(p,span,small,td,th){color:#385443}
+.history-record-dialog :is(.btn,button){border-radius:7px;font-size:11px;min-height:34px;box-shadow:none}
+.history-record-dialog::backdrop{background:#0e2a2180;backdrop-filter:blur(3px)}
+@media(min-width:1400px){#page-packages .package-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:1150px){.dashboard-identity{gap:15px}.dashboard-total-earned strong{font-size:26px}.dashboard-offer-row{gap:11px}.dashboard-future{padding:15px;gap:9px}#page-admin .control-shell{grid-template-columns:160px minmax(0,1fr);gap:15px}}
+@media(max-width:900px){.member-sidebar{padding:12px}.member-sidebar nav{gap:6px}.member-sidebar nav button{min-height:42px}.member-page-content{padding:17px}#page-admin .control-shell{grid-template-columns:minmax(0,1fr)}#page-admin .control-nav{padding:11px;background:#173c2d}#page-admin .control-nav-group{display:none}#page-admin #workspaceJump{display:block;border-color:#d2e1d6;background:#fff;color:#173c2d;font-size:13px;min-height:44px;border-radius:8px}.dashboard-future-wallets .dashboard-future{padding:13px}#page-admin #control-system>.accounting-primary,#page-admin #control-system>.accounting-secondary{grid-template-columns:1fr}}
+
+/* Keep the admin binary pool readable at normal and browser-zoomed widths. */
+#page-admin #binaryPoolAdminToggle{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:14px 17px;flex-wrap:wrap}
+#page-admin #binaryPoolAdminToggle span{font-weight:700;color:#173e2b}
+#page-admin #binaryPoolAdminToggle b{margin:0 0 0 auto;font-size:18px;white-space:nowrap}
+#page-admin #binaryPoolAdminToggle small{flex-basis:100%;margin:0;color:#63786b}
+#page-admin #binaryPoolDetails{padding:16px;margin-top:10px;border:1px solid #dce8df;border-radius:12px;background:#fff}
+#page-admin #binaryPoolDetails .binary-pool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#page-admin #binaryPoolDetails .accounting-metric{display:block;text-align:left;min-width:0;padding:13px}
+#page-admin #binaryPoolDetails .accounting-metric b{font-size:19px;margin:5px 0;white-space:normal}
+#page-admin #binaryPoolDetails .accounting-metric small{font-size:10px;line-height:1.35}
+#page-admin #binaryPoolDetails .binary-pool-form{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:10px;margin-top:15px;padding-top:15px;border-top:1px solid #e2eae3;max-width:none}
+#page-admin #binaryPoolDetails .binary-pool-form>label{max-width:340px}
+#page-admin #binaryPoolDetails .binary-pool-form .row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-column:1/-1;margin:0}
+#page-admin #binaryPoolDetails .binary-pool-form .btn{grid-column:2;min-height:44px;white-space:nowrap}
+#page-admin #binaryPoolDetails .binary-pool-form .helper{grid-column:1/-1;margin:0;font-size:11px}
+#page-admin .binary-settlements{margin-top:12px;padding:12px 15px;border:1px solid #e1e9e2;border-radius:11px;background:#fff;font-size:12px}
+#page-admin .binary-settlements .list{margin-top:6px}
+@media(max-width:1100px){#page-admin #binaryPoolDetails .binary-pool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#page-admin #binaryPoolDetails .binary-pool-grid{grid-template-columns:1fr 1fr}#page-admin #binaryPoolDetails .binary-pool-form{grid-template-columns:1fr}#page-admin #binaryPoolDetails .binary-pool-form .row{grid-template-columns:1fr}#page-admin #binaryPoolDetails .binary-pool-form .btn{grid-column:1;width:100%}#page-admin #binaryPoolAdminToggle b{margin-left:0;white-space:normal}#page-admin #binaryPoolDetails{padding:11px}}
+@media(max-width:620px){
+  .page:not(#page-shop):not(#page-product) .heading{margin:3px 0 18px;gap:11px;align-items:flex-start}
+  .page:not(#page-shop):not(#page-product) .heading h1{font-size:24px;margin:4px 0 7px}
+  .page:not(#page-shop):not(#page-product) .heading p{font-size:12px}
+  .page:not(#page-shop):not(#page-product) .card-head{padding:15px}
+  .page:not(#page-shop):not(#page-product) .card-body{padding:15px}
+  .page:not(#page-shop):not(#page-product) .card-head h2{font-size:14px}
+  .page:not(#page-shop):not(#page-product) .card-head p{font-size:11px}
+  .page:not(#page-shop):not(#page-product) .btn{min-height:42px;font-size:12px}
+  .page:not(#page-shop):not(#page-product) .btn.small{min-height:36px;font-size:11px}
+  .page:not(#page-shop):not(#page-product) :is(.form input,.form select,.form textarea){font-size:16px!important;min-height:44px}
+  .page:not(#page-shop):not(#page-product) .earning-summary{grid-template-columns:1fr 1fr;gap:9px}
+  .page:not(#page-shop):not(#page-product) .earning-summary-card{padding:16px 13px;border-radius:11px}
+  .page:not(#page-shop):not(#page-product) .earning-summary-card b{font-size:25px;overflow-wrap:anywhere}
+  .page:not(#page-shop):not(#page-product) .earning-summary-card b small{font-size:10px}
+  .page:not(#page-shop):not(#page-product) .earning-summary-card :is(p,span){font-size:11px;line-height:1.5}
+  .page:not(#page-shop):not(#page-product) .earning-source-tabs{gap:7px;margin-top:15px}
+  .page:not(#page-shop):not(#page-product) .earning-source-tabs button{min-height:49px;padding:10px 13px;font-size:11px}
+  .page:not(#page-shop):not(#page-product) .history-date-form{padding:11px;gap:9px}
+  .page:not(#page-shop):not(#page-product) .history-date-form input{min-height:40px;font-size:14px}
+  .page:not(#page-shop):not(#page-product) .history-panel{padding:11px}
+  .page:not(#page-shop):not(#page-product) .metric{padding:16px}
+  .page:not(#page-shop):not(#page-product) .metric b{font-size:24px}
+  .member-page-content{padding:12px}
+  .member-topbar{padding:11px 13px;gap:10px}
+  .member-topbar>button{width:37px;height:37px;border-radius:8px}
+  .member-topbar strong{font-size:14px}
+  .dashboard-offer-row{gap:9px;margin-bottom:12px}
+  .dashboard-offer{padding:15px;gap:10px}
+  .dashboard-offer h2{font-size:13px}
+  .dashboard-offer p{font-size:11px}
+  .dashboard-offer strong{font-size:24px}
+  .dashboard-offer small{font-size:10px}
+  .dashboard-future{padding:12px 10px;gap:8px}
+  .dashboard-future h3{font-size:11px;font-weight:500}
+  .dashboard-future>div>span{font-size:10px}
+  .dashboard-future-icon{width:25px;height:25px;border-radius:7px}
+  .dashboard-future-icon svg{width:15px;height:15px}
+  .dashboard-identity{padding:15px;gap:13px;margin-bottom:12px}
+  .dashboard-person h1{font-size:19px}
+  .dashboard-person>img,.dashboard-avatar{width:48px;height:48px}
+  .dashboard-person small{font-size:11px}
+  .dashboard-package{padding-left:0;gap:8px}
+  .dashboard-package strong{font-size:16px}
+  .dashboard-package small{font-size:10px}
+  .dashboard-package>img{width:29px;height:29px}
+  .dashboard-total-earned{padding:12px}
+  .dashboard-total-earned strong{font-size:23px;overflow-wrap:anywhere}
+  .dashboard-total-earned>span{font-size:10px}
+  .dashboard-balance-row{gap:9px;margin-bottom:12px}
+  .dashboard-balance{padding:12px 10px;gap:8px;min-width:0}
+  .dashboard-balance>svg{width:20px;height:20px}
+  .dashboard-balance strong{font-size:21px}
+  .dashboard-balance :is(span,small){font-size:10px;line-height:1.6}
+  .dashboard-personal-points{padding:12px}
+  .dashboard-personal-points b{font-size:21px}
+  .dashboard-stat-row{gap:9px;margin-bottom:12px}
+  .dashboard-metric{padding:13px 11px;gap:9px}
+  .dashboard-metric-icon{width:29px;height:29px;border-radius:8px}
+  .dashboard-metric-icon svg{width:17px;height:17px}
+  .dashboard-metric strong{font-size:25px}
+  .dashboard-metric span:not(.dashboard-metric-icon){font-size:11px}
+  .dashboard-metric small{font-size:10px}
+  .dashboard-panel{padding:15px}
+  .dashboard-panel-title h2{font-size:13px}
+  .dashboard-levels{gap:5px;display:grid;grid-template-columns:repeat(10,minmax(0,1fr))}
+  .dashboard-level{min-width:0;width:100%;min-height:42px;height:42px;border-radius:6px;font-size:11px;padding:0}
+  .dashboard-level small{font-size:9px}
+  .dashboard-binary-sides strong{font-size:26px}
+  .dashboard-binary-pending{font-size:10px;gap:10px}
+  .dashboard-future-wallets{gap:9px}
+  .dashboard-future-wallets .dashboard-future{padding:12px}
+  #page-packages .package-grid{grid-template-columns:minmax(0,1fr);gap:13px}
+  #page-packages .package{padding:21px}
+  #page-packages .package dl{font-size:12px;gap:10px}
+  #page-admin .control-panel .card-body{padding:15px}
+  #page-admin .control-panel>h2{font-size:21px}
+  #page-admin .accounting-metric{padding:15px}
+  #page-admin .accounting-metric b{font-size:23px}
+  :is(#page-login,#page-join,#page-reset,#page-support,#page-onboarding,#page-security) .card-body{padding:20px}
+  .history-record-dialog{max-width:calc(100% - 20px);border-radius:12px}
+  .history-record-dialog .record-print-area{padding:15px}
+  .history-record-dialog .record-toolbar{padding:12px 15px;gap:10px;flex-wrap:wrap}
+  .history-record-dialog .receipt-brand h1{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){.page:not(#page-shop):not(#page-product) *,.member-account-shell *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* The statement follows the active earning filters and prints with strong contrast. */
+.earning-total-action{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 19px;margin:15px 0 2px;border:1px solid #cadbcf;border-radius:10px;background:#f6faf7}
+.earning-total-action>div{display:grid;gap:3px}.earning-total-action small,.earning-total-action span{color:#4d6654;font-size:11px}.earning-total-action strong{font-size:15px;color:#143d2b}
+.admin-mio-price-card .admin-price-form{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin-top:12px}.admin-mio-price-card label{min-width:200px}
+.history-record-dialog .receipt-statement-meta{margin-top:12px}.history-record-dialog .receipt-statement-table{width:100%;border-collapse:collapse;margin-top:22px;font-size:12px;color:#172e23}
+.receipt-statement-table :is(th,td){padding:11px 9px;border-bottom:1px solid #b8c8bd;text-align:right}.receipt-statement-table :is(th,td):first-child{text-align:left}
+.receipt-statement-table thead{background:#e7f0e9;color:#173d2a}.receipt-statement-table tfoot{background:#e7f0e9;font-weight:750}
+.receipt-statement-total{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:16px 0;padding:13px 15px;border:2px solid #245c40;border-radius:8px;color:#163d2a;background:#f5f9f5}
+.receipt-statement-total strong{font-size:18px;color:#123e2b}
+@media(max-width:640px){.earning-total-action{align-items:stretch;flex-direction:column}.earning-total-action .btn{align-self:stretch}.receipt-statement-table{font-size:10px!important}}
+@media print{body.printing-record .record-print-area{color:#111!important;background:#fff!important}body.printing-record .receipt-brand{background:#f0f4f0!important;border:2px solid #264d37!important}body.printing-record .receipt-brand :is(h1,p,span){color:#172d1f!important}body.printing-record .receipt-grid :is(dt,dd),body.printing-record .receipt-footnote,body.printing-record .receipt-statement-table :is(th,td),body.printing-record .receipt-statement-total :is(span,strong){color:#111!important}body.printing-record .receipt-statement-table thead,body.printing-record .receipt-statement-table tfoot{background:#e8ece8!important}body.printing-record .receipt-statement-total{background:#fff!important;border-color:#333!important}body.printing-record .receipt-statement-table tr{break-inside:avoid}}
+
+/* Receipts use ink on paper, including every bonus-specific header. */
+.history-record-dialog .receipt-brand,
+.history-record-dialog .receipt-brand[class*="receipt-theme-"]{
+  background:#f8f6ef!important;
+  border:1px solid #d9dfd6!important;
+  border-left:5px solid #faa519!important;
+  color:#173a2b!important;
+}
+.history-record-dialog .receipt-brand:after{background:#fae4bd;opacity:.35}
+.history-record-dialog .receipt-brand :is(h1,p,span){color:#173a2b!important}
+.history-record-dialog .receipt-brand>div>span{color:#315c43!important}
+.history-record-dialog .receipt-brand h1{color:#142e22!important}
+.history-record-dialog .receipt-brand p{color:#425a4b!important}
+@media print{
+  body.printing-record .history-record-dialog .receipt-brand,
+  body.printing-record .history-record-dialog .receipt-brand[class*="receipt-theme-"]{
+    background:#fff!important;border:2px solid #53675a!important;border-left:5px solid #faa519!important;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  body.printing-record .history-record-dialog .receipt-brand :is(h1,p,span){color:#111!important}
+}

@@ -1,0 +1,33 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+
+const db=new PGlite();
+const q=(sql,args=[])=>db.query(sql,args);
+await db.exec(`
+ create role anon;create role authenticated;create schema auth;create schema private;
+ create table auth.users(id uuid primary key,raw_user_meta_data jsonb);
+ create table public.member_profiles(user_id uuid primary key,sponsor_id uuid);
+ create table public.user_roles(user_id uuid,role text);
+ create table public.package_activations(id uuid primary key,member_id uuid,status text);
+ create table public.binary_placements(member_id uuid primary key,parent_id uuid,side text,placed_by uuid);
+ create table private.network_foundation(singleton boolean primary key,company_id uuid,founder_id uuid);
+ create function private.package_eligible(uuid) returns boolean language sql stable as $$select true$$;
+ create function private.place_outermost(uuid,uuid,text) returns void language plpgsql as $$begin raise exception 'Founder was incorrectly sent to LEFT/RIGHT placement';end$$;
+`);
+await db.exec(await readFile(new URL('../supabase/migrations/20261016204500_founder_activation_binary_root.sql',import.meta.url),'utf8'));
+await db.exec('create trigger ab0_place_binary_after_activation after insert or update of status on public.package_activations for each row execute function private.place_binary_after_activation()');
+const company='10000000-0000-4000-8000-000000000001',founder='10000000-0000-4000-8000-000000000002';
+await q('insert into auth.users values($1,$2),($3,$4)',[company,{},founder,{referral_side:'RIGHT'}]);
+await q('insert into public.member_profiles values($1,null),($2,$1)',[company,founder]);
+await q("insert into public.user_roles values($1,'admin')",[company]);
+await q('insert into private.network_foundation values(true,$1,$2)',[company,founder]);
+await q("insert into public.package_activations values(gen_random_uuid(),$1,'approved')",[founder]);
+const placement=(await q('select parent_id,side,placed_by from public.binary_placements where member_id=$1',[founder])).rows[0];
+assert.equal(placement.parent_id,null);
+assert.equal(placement.side,null);
+assert.equal(placement.placed_by,company);
+await q("insert into public.package_activations values(gen_random_uuid(),$1,'approved')",[company]);
+assert.equal((await q('select count(*)::int count from public.binary_placements where member_id=$1',[company])).rows[0].count,0);
+console.log('PASS Founder activation creates the Binary root without a LEFT/RIGHT placement');
+await db.close();

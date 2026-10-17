@@ -1,0 +1,287 @@
+{
+  "formula": "PPV = truncate4(sale price \u00d7 .25 / 300 \u00d7 .90)",
+  "company_sale_percent": 5,
+  "network_sale_percent": 25,
+  "pkr_per_point": 300,
+  "products": [
+    {
+      "sku": "ALLURE-10627536945430",
+      "sale_price_pkr": "0.00",
+      "company_5_percent_pkr": null,
+      "network_25_percent_pkr": null,
+      "bv": null,
+      "ppv": null,
+      "status": "blocked_source_price_zero"
+    },
+    {
+      "sku": "ALLURE-10627535700246",
+      "sale_price_pkr": "0.00",
+      "company_5_percent_pkr": null,
+      "network_25_percent_pkr": null,
+      "bv": null,
+      "ppv": null,
+      "status": "blocked_source_price_zero"
+    },
+    {
+      "sku": "ALLURE-10627535208726",
+      "sale_price_pkr": "0.00",
+      "company_5_percent_pkr": null,
+      "network_25_percent_pkr": null,
+      "bv": null,
+      "ppv": null,
+      "status": "blocked_source_price_zero"
+    },
+    {
+      "sku": "ALLURE-10608418160918",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608277586198",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608277356822",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608272343318",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608271458582",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608270442774",
+      "sale_price_pkr": "2350.00",
+      "company_5_percent_pkr": "117.50",
+      "network_25_percent_pkr": "587.50",
+      "bv": "1.9583",
+      "ppv": "1.7625",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608270311702",
+      "sale_price_pkr": "1895.00",
+      "company_5_percent_pkr": "94.75",
+      "network_25_percent_pkr": "473.75",
+      "bv": "1.5791",
+      "ppv": "1.4212",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608270115094",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608269787414",
+      "sale_price_pkr": "1950.00",
+      "company_5_percent_pkr": "97.50",
+      "network_25_percent_pkr": "487.50",
+      "bv": "1.6250",
+      "ppv": "1.4625",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608268837142",
+      "sale_price_pkr": "1695.00",
+      "company_5_percent_pkr": "84.75",
+      "network_25_percent_pkr": "423.75",
+      "bv": "1.4125",
+      "ppv": "1.2712",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608266969366",
+      "sale_price_pkr": "2450.00",
+      "company_5_percent_pkr": "122.50",
+      "network_25_percent_pkr": "612.50",
+      "bv": "2.0416",
+      "ppv": "1.8375",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608266084630",
+      "sale_price_pkr": "1195.00",
+      "company_5_percent_pkr": "59.75",
+      "network_25_percent_pkr": "298.75",
+      "bv": "0.9958",
+      "ppv": "0.8962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608259825942",
+      "sale_price_pkr": "1895.00",
+      "company_5_percent_pkr": "94.75",
+      "network_25_percent_pkr": "473.75",
+      "bv": "1.5791",
+      "ppv": "1.4212",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608258744598",
+      "sale_price_pkr": "1800.00",
+      "company_5_percent_pkr": "90.00",
+      "network_25_percent_pkr": "450.00",
+      "bv": "1.5000",
+      "ppv": "1.3500",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608254714134",
+      "sale_price_pkr": "2375.00",
+      "company_5_percent_pkr": "118.75",
+      "network_25_percent_pkr": "593.75",
+      "bv": "1.9791",
+      "ppv": "1.7812",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608095559958",
+      "sale_price_pkr": "1375.00",
+      "company_5_percent_pkr": "68.75",
+      "network_25_percent_pkr": "343.75",
+      "bv": "1.1458",
+      "ppv": "1.0312",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608094839062",
+      "sale_price_pkr": "1275.00",
+      "company_5_percent_pkr": "63.75",
+      "network_25_percent_pkr": "318.75",
+      "bv": "1.0625",
+      "ppv": "0.9562",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608094740758",
+      "sale_price_pkr": "1495.00",
+      "company_5_percent_pkr": "74.75",
+      "network_25_percent_pkr": "373.75",
+      "bv": "1.2458",
+      "ppv": "1.1212",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608090284310",
+      "sale_price_pkr": "999.00",
+      "company_5_percent_pkr": "49.95",
+      "network_25_percent_pkr": "249.75",
+      "bv": "0.8325",
+      "ppv": "0.7492",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608082518294",
+      "sale_price_pkr": "1375.00",
+      "company_5_percent_pkr": "68.75",
+      "network_25_percent_pkr": "343.75",
+      "bv": "1.1458",
+      "ppv": "1.0312",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608080191766",
+      "sale_price_pkr": "2450.00",
+      "company_5_percent_pkr": "122.50",
+      "network_25_percent_pkr": "612.50",
+      "bv": "2.0416",
+      "ppv": "1.8375",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608079962390",
+      "sale_price_pkr": "1750.00",
+      "company_5_percent_pkr": "87.50",
+      "network_25_percent_pkr": "437.50",
+      "bv": "1.4583",
+      "ppv": "1.3125",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608079896854",
+      "sale_price_pkr": "2350.00",
+      "company_5_percent_pkr": "117.50",
+      "network_25_percent_pkr": "587.50",
+      "bv": "1.9583",
+      "ppv": "1.7625",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608079634710",
+      "sale_price_pkr": "2150.00",
+      "company_5_percent_pkr": "107.50",
+      "network_25_percent_pkr": "537.50",
+      "bv": "1.7916",
+      "ppv": "1.6125",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608079372566",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608079143190",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10608078127382",
+      "sale_price_pkr": "1895.00",
+      "company_5_percent_pkr": "94.75",
+      "network_25_percent_pkr": "473.75",
+      "bv": "1.5791",
+      "ppv": "1.4212",
+      "status": "approval_state_preserved"
+    },
+    {
+      "sku": "ALLURE-10607997387030",
+      "sale_price_pkr": "1595.00",
+      "company_5_percent_pkr": "79.75",
+      "network_25_percent_pkr": "398.75",
+      "bv": "1.3291",
+      "ppv": "1.1962",
+      "status": "approval_state_preserved"
+    }
+  ]
+}
