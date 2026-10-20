@@ -349,6 +349,12 @@ begin
     ) on conflict (idempotency_key) do nothing;
   end if;
 
+  if o.reward_mode = 'PPV' and used + ppv >= cap then
+    update public.member_profiles
+    set shopping_reward_mode = 'MIO', updated_at = now()
+    where user_id = o.reward_owner_id;
+  end if;
+
   update public.orders
   set ppv_generated = ppv, rewards_credited_at = now()
   where id = o.id;
