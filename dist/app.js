@@ -473,9 +473,9 @@ const table=rows.length?`<table><thead><tr><th>Order / product</th><th>Reward</t
 window.memberEcommerceRows=history.data||[];el('ecommerceSummary').innerHTML=summary;if(isAdmin){el('ecommerceRows').innerHTML=table;el('adminEcommerce').innerHTML=summary+'<div class="table-wrap section">'+table+'</div>'}else renderEcommerceRows(el('ecommerceRows'),activeEcommerceFilter);renderEarningHistory();
 el('ecommercePPV').innerHTML='<h2>PPV shopping & affiliate orders</h2>'+((report.ppv_orders||[]).map(o=>`<div class="list-row"><div><strong>${esc(o.order_code)}</strong><small>${o.selling_affiliate_id?'Affiliate sale':'Self shopping'} · ${orderStatus(o.status)}</small></div><b>${Number(o.rewards_credited_at?o.ppv_generated:['cancelled','returned'].includes(o.status)?0:o.reward_ppv_total).toFixed(4)} PPV · ${o.rewards_credited_at?'credited':['cancelled','returned'].includes(o.status)?'cancelled':'on hold'}</b></div>`).join('')||'<p>Your PPV-mode purchases and attributed affiliate sales will appear here.</p>');
 el('ecommerceTop').innerHTML=isAdmin?'<h2>Top e-commerce earners</h2>'+((report.top_earners||[]).map(r=>`<div class="list-row"><span>${esc(r.full_name)} · ${esc(r.member_code)}</span><b>${Number(r.income).toFixed(4)} MIO</b></div>`).join('')||'<p>No credited earnings yet.</p>'):'';
-const eligible=report.eligible??hasApprovedPackage;const mode=report.mode||profile?.shopping_reward_mode||'PPV';
-window.MioDashboard?.setRewardPreference({eligible,mode});
-el('shoppingMode').innerHTML=isAdmin?'<h3>Company master account</h3><p>All administration access is enabled. Review customer and affiliate rewards in E-commerce earnings.</p><button class="btn" data-page="ecommerce">Open e-commerce earnings</button>':`<h3>Your shopping & selling reward</h3><p>Choose how future self-shopping and affiliate sales reward you.</p>${eligible?`<div class="reward-toggle" role="group" aria-label="Shopping reward preference"><button class="btn ${mode==='PPV'?'primary':''}" data-reward-mode="PPV" aria-pressed="${mode==='PPV'}">PPV · grow my plan</button><button class="btn ${mode==='MIO'?'primary':''}" data-reward-mode="MIO" aria-pressed="${mode==='MIO'}">MIO · cashback & earnings</button></div>`:'<span class="pill">PPV mode</span><p>Any active plan, starting with Basic, unlocks the MIO option.</p>'}<p class="helper">${mode==='MIO'?'65% to you · 15% to your sponsor · 7.5% to their sponsor · 12.5% to the vendor introducer. PPV network bonuses do not apply.':'Personal PPV and existing network benefits apply. PPV can activate eligible plans.'} Orders keep the preference saved at checkout.</p>`;
+const eligible=report.eligible??hasApprovedPackage,ppvUsed=Number(report.shopping_ppv_used)||0,ppvCap=Number(report.shopping_ppv_cap)||110,ppvLocked=!!report.shopping_ppv_locked||ppvUsed>=ppvCap;const mode=ppvLocked?'MIO':(report.mode||profile?.shopping_reward_mode||'PPV');
+window.MioDashboard?.setRewardPreference({eligible,mode,ppvUsed,ppvCap,locked:ppvLocked});
+el('shoppingMode').innerHTML=isAdmin?'<h3>Company master account</h3><p>All administration access is enabled. Review customer and affiliate rewards in E-commerce earnings.</p><button class="btn" data-page="ecommerce">Open e-commerce earnings</button>':`<h3>Your shopping & selling reward</h3><p>${ppvLocked?`Shopping PPV cap complete (${ppvUsed.toFixed(4)} / ${ppvCap.toFixed(4)}). Future rewards are locked to MIO.`:'Choose how future self-shopping and affiliate sales reward you.'}</p>${eligible?`<div class="reward-toggle" role="group" aria-label="Shopping reward preference"><button class="btn ${mode==='PPV'?'primary':''}" data-reward-mode="PPV" aria-pressed="${mode==='PPV'}" ${ppvLocked?'disabled':''}>PPV${ppvLocked?' · locked':' · grow my plan'}</button><button class="btn ${mode==='MIO'?'primary':''}" data-reward-mode="MIO" aria-pressed="${mode==='MIO'}">MIO · cashback & earnings</button></div>`:'<span class="pill">PPV mode</span><p>Any active plan, starting with Basic, unlocks the MIO option.</p>'}<p class="helper">${mode==='MIO'?'65% to you · 15% to your sponsor · 7.5% to their sponsor · 12.5% to the vendor introducer. PPV network bonuses do not apply.':'Personal PPV and existing network benefits apply. PPV can activate eligible plans.'} Orders keep the preference saved at checkout.</p>`;
 el('clearSellingLink').classList.toggle('hidden',!currentSellingCode());el('checkoutRewardNote').textContent=currentSellingCode()?'Purchased through a selling link. Rewards go to the affiliate; you receive the displayed product discount.':`Your reward mode: ${eligible?mode:'PPV'}. Rewards stay on hold until delivery and confirmed payment.`;
 }
 const adminEcommerce=document.createElement('div');adminEcommerce.id='adminEcommerce';panels.get('ecommerce').append(adminEcommerce);
@@ -494,6 +494,18 @@ function sizeTreePanSurface(){const visual=el('networkVisual'),surface=visual?.q
 function setTreeZoom(next,anchorX=null,anchorY=null){const visual=el('networkVisual'),svg=visual.querySelector('svg.genealogy-canvas'),surface=visual.querySelector('.tree-pan-surface'),old=treeZoom;if(!svg||!surface||!treeBaseSize.width)return;const rect=visual.getBoundingClientRect(),x=anchorX??rect.width/2,y=anchorY??rect.height/2,oldCentreX=surface.offsetWidth/2,oldCentreY=surface.offsetHeight/2,logicalX=(visual.scrollLeft+x-oldCentreX)/old,logicalY=(visual.scrollTop+y-oldCentreY)/old;treeZoom=Math.max(.02,Math.min(10,next));svg.style.width=`${treeBaseSize.width*treeZoom}px`;svg.style.height=`${treeBaseSize.height*treeZoom}px`;sizeTreePanSurface();visual.scrollLeft=Math.max(0,surface.offsetWidth/2+logicalX*treeZoom-x);visual.scrollTop=Math.max(0,surface.offsetHeight/2+logicalY*treeZoom-y)}
 function centerTreeInViewport(){const visual=el('networkVisual'),surface=visual?.querySelector('.tree-pan-surface');if(!surface)return;requestAnimationFrame(()=>{sizeTreePanSurface();const viewWidth=Number(visual.clientWidth)||visual.getBoundingClientRect().width||0,viewHeight=Number(visual.clientHeight)||visual.getBoundingClientRect().height||0,left=Math.max(0,(surface.offsetWidth-viewWidth)/2),top=Math.max(0,(surface.offsetHeight-viewHeight)/2);visual.scrollLeft=Number.isFinite(left)?left:0;visual.scrollTop=Number.isFinite(top)?top:0})}
 function fitTreeToViewport(){const visual=el('networkVisual'),svg=visual?.querySelector('svg.genealogy-canvas');if(!svg||!treeBaseSize.width)return;const pad=36,availableWidth=Math.max(1,(visual.clientWidth||visual.getBoundingClientRect().width||treeBaseSize.width)-pad),availableHeight=Math.max(1,(visual.clientHeight||visual.getBoundingClientRect().height||treeBaseSize.height)-pad),fitted=Math.min(1,availableWidth/treeBaseSize.width,availableHeight/treeBaseSize.height);setTreeZoom(Math.max(.02,fitted));centerTreeInViewport()}
+let treeResponsiveTimer=null;
+function refreshTreeViewport(){
+ if(!document.body.classList.contains('graphical-network-active'))return;
+ clearTimeout(treeResponsiveTimer);
+ treeResponsiveTimer=setTimeout(()=>{
+  const visual=el('networkVisual');
+  if(!visual?.querySelector('svg.genealogy-canvas'))return;
+  fitTreeToViewport();
+ },120);
+}
+window.addEventListener('resize',refreshTreeViewport,{passive:true});
+window.addEventListener('orientationchange',refreshTreeViewport,{passive:true});
 function drawNetwork(nodes,kind,data={}){
  treeNodes=nodes;treeBaseSize={width:0,height:0};
  if(!el('treeMemberDetails').children.length)el('treeMemberDetails').innerHTML='<div class="tree-detail-empty"><span>i</span><strong>Select a member</strong><small>Member and team details will appear here.</small></div>';
@@ -633,10 +645,13 @@ window.MioDashboard?.mount({go,renderNetwork,rpc:(name,args)=>db.rpc(name,args),
     return originalRpc(name,next);
   };
   function installPasswordToggles(){
-    document.querySelectorAll('input[type="password"]:not([data-password-toggle])').forEach(input=>{
+    const root=globalThis.document;
+    if(!root?.querySelectorAll)return;
+    root.querySelectorAll('input[type="password"]:not([data-password-toggle])').forEach(input=>{
+      if(!input.parentNode)return;
       input.dataset.passwordToggle='1';
-      const holder=document.createElement('span');holder.className='password-toggle-wrap';input.parentNode.insertBefore(holder,input);holder.appendChild(input);
-      const button=document.createElement('button');button.type='button';button.className='password-toggle';button.setAttribute('aria-label','Show password');button.textContent='👁';
+      const holder=root.createElement('span');holder.className='password-toggle-wrap';input.parentNode.insertBefore(holder,input);holder.appendChild(input);
+      const button=root.createElement('button');button.type='button';button.className='password-toggle';button.setAttribute('aria-label','Show password');button.textContent='👁';
       button.addEventListener('click',()=>{const visible=input.type==='text';input.type=visible?'password':'text';button.textContent=visible?'👁':'🙈';button.setAttribute('aria-label',visible?'Show password':'Hide password')});holder.appendChild(button);
     });
   }
