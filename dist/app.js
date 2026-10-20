@@ -636,8 +636,8 @@ window.MioDashboard?.mount({go,renderNetwork,rpc:(name,args)=>db.rpc(name,args),
     document.querySelectorAll('input[type="password"]:not([data-password-toggle])').forEach(input=>{
       input.dataset.passwordToggle='1';
       const holder=document.createElement('span');holder.className='password-toggle-wrap';input.parentNode.insertBefore(holder,input);holder.appendChild(input);
-      const button=document.createElement('button');button.type='button';button.className='password-toggle';button.setAttribute('aria-label','Show password');button.textContent='Show';
-      button.addEventListener('click',()=>{const visible=input.type==='text';input.type=visible?'password':'text';button.textContent=visible?'Show':'Hide';button.setAttribute('aria-label',visible?'Show password':'Hide password')});holder.appendChild(button);
+      const button=document.createElement('button');button.type='button';button.className='password-toggle';button.setAttribute('aria-label','Show password');button.textContent='👁';
+      button.addEventListener('click',()=>{const visible=input.type==='text';input.type=visible?'password':'text';button.textContent=visible?'👁':'🙈';button.setAttribute('aria-label',visible?'Show password':'Hide password')});holder.appendChild(button);
     });
   }
   installPasswordToggles();
