@@ -597,3 +597,49 @@ document.addEventListener('click',event=>{const clear=event.target.closest('[dat
 async function fetchHistoryRpc(name){const rows=[];for(let offset=0;;offset+=1000){const {data,error}=await db.rpc(name).range(offset,offset+999);if(error)return {data:null,error};rows.push(...(data||[]));if(!data||data.length<1000)return {data:rows,error:null}}}
 function renderCompactPointActivity(){const render=rows=>rows.length?rows.map(x=>`<div class="point-activity-row"><div><strong>${esc(x.point_type)} · ${esc(String(x.entry_kind||'Activity').replaceAll('_',' '))}</strong><small>${joiningDateLabel(x.created_at)}${x.side?' · '+esc(x.side):''} · ${x.source_order_id?'Shopping order':x.source_activation_id?'Package activation':'Point ledger'}</small></div><b>${Number(x.amount)>0?'+':''}${Number(x.amount).toFixed(4)}</b></div>`).join(''):'<p class="helper">No point activity yet.</p>';el('ppvHistory').innerHTML=render([...(window.memberPpvRows||[]),...(window.memberOtherPointRows||[])].sort((a,b)=>new Date(b.created_at)-new Date(a.created_at)));el('otherPoints').replaceChildren();}
 window.MioDashboard?.mount({go,renderNetwork,rpc:(name,args)=>db.rpc(name,args),signedIn:()=>!!session,error:e=>toast(e.message||'Account overview could not load'),safeImage,planName,tierImage:treeTierImage});
+
+/* Security/UI enhancements: transaction PIN enforcement, password visibility, and PPV cap display. */
+(()=>{
+  const originalRpc=db.rpc.bind(db);
+  db.rpc=async function(name,args={}){
+    let next={...(args||{})};
+    if(name==='mio_transfer_to_member_code'&&!next.p_transaction_pin){
+      const pin=document.getElementById('transferPin')?.value||window.prompt('Transaction PIN enter karein');
+      if(!pin) return {data:null,error:{message:'Transaction PIN required'}};
+      next.p_transaction_pin=pin;
+    }
+    if(name==='activate_package_with_mio'&&!next.p_transaction_pin){
+      const pin=window.prompt('Package activate karne ke liye transaction PIN enter karein');
+      if(!pin) return {data:null,error:{message:'Transaction PIN required'}};
+      next.p_transaction_pin=pin;
+    }
+    if(name==='set_shopping_reward_mode'&&next.p_mode==='PPV'&&document.getElementById('dashboardRewardSwitch')?.dataset.ppvLocked==='true'){
+      return {data:null,error:{message:'Shopping PPV cap of 110 complete hai. Ab MIO mode required hai.'}};
+    }
+    if(name==='ecommerce_dashboard'){
+      const result=await originalRpc(name,next);
+      if(result?.data&&typeof result.data==='object'){
+        window.__mioPpvCap={ppvUsed:Number(result.data.shopping_ppv_used)||0,ppvCap:Number(result.data.shopping_ppv_cap)||110,locked:!!result.data.shopping_ppv_locked};
+        const current=window.MioDashboard?.setRewardPreference;
+        if(current&&!current.__mioCapWrapped){
+          const base=current;
+          const wrapped=value=>base({...value,...(window.__mioPpvCap||{})});
+          wrapped.__mioCapWrapped=true;
+          window.MioDashboard.setRewardPreference=wrapped;
+        }
+      }
+      return result;
+    }
+    return originalRpc(name,next);
+  };
+  function installPasswordToggles(){
+    document.querySelectorAll('input[type="password"]:not([data-password-toggle])').forEach(input=>{
+      input.dataset.passwordToggle='1';
+      const holder=document.createElement('span');holder.className='password-toggle-wrap';input.parentNode.insertBefore(holder,input);holder.appendChild(input);
+      const button=document.createElement('button');button.type='button';button.className='password-toggle';button.setAttribute('aria-label','Show password');button.textContent='Show';
+      button.addEventListener('click',()=>{const visible=input.type==='text';input.type=visible?'password':'text';button.textContent=visible?'Show':'Hide';button.setAttribute('aria-label',visible?'Show password':'Hide password')});holder.appendChild(button);
+    });
+  }
+  installPasswordToggles();
+  new MutationObserver(installPasswordToggles).observe(document.body,{childList:true,subtree:true});
+})();
