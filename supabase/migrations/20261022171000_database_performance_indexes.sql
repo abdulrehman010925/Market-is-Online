@@ -1,0 +1,20 @@
+drop index if exists public.member_profiles_transaction_pin_hash_guard;
+
+create index if not exists commission_allocations_reviewed_by_idx on public.commission_allocations(reviewed_by);
+create index if not exists company_treasury_ledger_company_id_idx on public.company_treasury_ledger(company_id);
+create index if not exists ecommerce_rewards_order_id_idx on public.ecommerce_rewards(order_id);
+create index if not exists order_items_affiliate_snapshot_idx on public.order_items(affiliate_id_snapshot);
+create index if not exists order_items_introducer_snapshot_idx on public.order_items(introducer_id_snapshot);
+create index if not exists order_items_second_upline_snapshot_idx on public.order_items(second_upline_id_snapshot);
+create index if not exists order_items_sponsor_snapshot_idx on public.order_items(sponsor_id_snapshot);
+create index if not exists orders_reward_owner_idx on public.orders(reward_owner_id);
+create index if not exists orders_reward_second_sponsor_idx on public.orders(reward_second_sponsor_id);
+create index if not exists orders_reward_sponsor_idx on public.orders(reward_sponsor_id);
+create index if not exists orders_selling_affiliate_idx on public.orders(selling_affiliate_id);
+create index if not exists premium_purchase_activation_idx on public.premium_purchase_requests(activation_id);
+create index if not exists premium_purchase_member_idx on public.premium_purchase_requests(member_id);
+create index if not exists premium_purchase_reviewer_idx on public.premium_purchase_requests(reviewed_by);
+create index if not exists support_tickets_answered_by_idx on public.support_tickets(answered_by);
+create index if not exists vendor_applications_introduced_by_idx on public.vendor_applications(introduced_by);
+create index if not exists vendor_withdrawals_reviewed_by_idx on public.vendor_withdrawals(reviewed_by);
+create index if not exists vendors_introduced_by_idx on public.vendors(introduced_by);

@@ -6080,7 +6080,10 @@ declare
  new_fragment text;
 begin
  f:=pg_get_functiondef('public.my_network_before_vendor_root(text,text,integer)'::regprocedure);
- old_fragment:='''total_right_bp'',coalesce((select sum(amount) from public.point_ledger where member_id=t.id and point_type=''BP'' and side=''RIGHT'' and created_at>cutoff),0)';
+ -- TNBP is a lifetime total.  Match the fragment introduced by the
+ -- preceding lifetime-total migration; carry-forward calculations are the
+ -- only binary values scoped by completed distributions/reset boundaries.
+ old_fragment:='''total_right_bp'',coalesce((select sum(amount) from public.point_ledger where member_id=t.id and point_type=''BP'' and side=''RIGHT''),0)';
  new_fragment:=old_fragment||
   ',''left_team_count'',coalesce((private.binary_team_counts(t.id)->>''left'')::integer,0)'||
   ',''right_team_count'',coalesce((private.binary_team_counts(t.id)->>''right'')::integer,0)';
@@ -6231,6 +6234,28 @@ $$;
 revoke all on function public.my_generation_level_status() from public,anon;
 grant execute on function public.my_generation_level_status() to authenticated;
 notify pgrst,'reload schema';
+
+
+-- ===== schema/20261014180000_financial_reset_boundary.sql =====
+-- Shared financial reset boundary used by points, pool and dashboard reports.
+-- No reset is applied until FINANCIAL_RESET is explicitly configured.
+create or replace function private.financial_reset_at()
+returns timestamptz
+language sql
+stable
+security definer
+set search_path=''
+as $$
+ select coalesce(
+  (select (config_value->>'reset_at')::timestamptz
+   from public.system_config
+   where config_key='FINANCIAL_RESET' and effective_to is null
+   order by version desc limit 1),
+  '-infinity'::timestamptz
+ );
+$$;
+
+revoke all on function private.financial_reset_at() from public,anon,authenticated;
 
 
 -- ===== schema/20261014190000_realtime_binary_shares.sql =====
@@ -8075,3 +8100,91 @@ grant execute on function public.admin_set_mio_reference_price(numeric) to authe
 notify pgrst,'reload schema';
 
 
+-- ===== schema/20261020130000_binary_live_shares.sql =====
+-- Package-weighted realtime binary shares used by the pool dashboard and settlement.
+create or replace function private.binary_live_shares(p_end timestamptz default clock_timestamp())
+returns table(
+ member_id uuid,
+ package_code text,
+ package_version integer,
+ binary_entitlement numeric,
+ left_available numeric,
+ right_available numeric,
+ completed_shares numeric,
+ consumed_each numeric
+)
+language sql
+stable
+security definer
+set search_path=''
+as $function$
+with cfg as (
+ select private.current_mlm_rules() j,private.financial_reset_at() cutoff
+),ap as (
+ select distinct on(a.member_id)
+  a.member_id,a.package_code,a.package_version,
+  coalesce((cfg.j->'plans'->a.package_code->>'binary_entitlement')::numeric,a.binary_entitlement) entitlement
+ from public.package_activations a
+ cross join cfg
+ join public.member_profiles mp on mp.user_id=a.member_id and mp.status='active'
+ where a.status='approved' and coalesce(a.activated_at,a.requested_at)<=p_end
+ order by a.member_id,a.base_value desc,a.activated_at desc,a.requested_at desc
+),v as (
+ select pl.member_id,
+  coalesce(sum(pl.amount) filter(where pl.side='LEFT'),0) l,
+  coalesce(sum(pl.amount) filter(where pl.side='RIGHT'),0) r
+ from public.point_ledger pl cross join cfg
+ where pl.point_type='BP' and pl.created_at>cfg.cutoff and pl.created_at<=p_end
+ group by pl.member_id
+),c as (
+ select r.member_id,coalesce(sum(r.consumed_left),0) l,coalesce(sum(r.consumed_right),0) r
+ from public.binary_member_results r
+ join public.binary_cycles bc on bc.id=r.cycle_id
+ cross join cfg
+ where bc.status in('posted','unallocated') and bc.created_at>cfg.cutoff
+ group by r.member_id
+),x as (
+ select ap.*,greatest(coalesce(v.l,0)-coalesce(c.l,0),0) la,
+  greatest(coalesce(v.r,0)-coalesce(c.r,0),0) ra,
+  coalesce((cfg.j->>'binary_share_points_each_side')::numeric,50) sp
+ from ap cross join cfg
+ left join v on v.member_id=ap.member_id
+ left join c on c.member_id=ap.member_id
+)
+select member_id,package_code,package_version,entitlement,la,ra,
+ trunc(trunc(least(la,ra)/sp,1)*entitlement,4),
+ trunc(least(la,ra)/sp,1)*sp
+from x where sp>0
+$function$;
+
+revoke all on function private.binary_live_shares(timestamptz) from public,anon,authenticated;
+
+
+
+-- 20261022180000: tree package-weighted binary shares
+create or replace function public.my_network(
+  p_kind text default 'generation',
+  p_root_code text default null,
+  p_depth integer default 4
+)
+returns jsonb language plpgsql stable security definer set search_path to ''
+as $function$
+declare result jsonb; root uuid; parent jsonb; weighted_nodes jsonb; share_points numeric;
+begin
+ result:=public.my_network_before_vendor_root(p_kind,p_root_code,p_depth);
+ if p_kind='vendor' then
+  root:=auth.uid();
+  if nullif(trim(p_root_code),'') is not null then select user_id into root from public.member_profiles where member_code='MIO-'||regexp_replace(upper(trim(p_root_code)),'^MIO-',''); end if;
+  select jsonb_build_object('id',user_id,'parent_id',null,'full_name',full_name,'member_code',member_code,'depth',0,'package',private.current_package_code(user_id),'rank',achieved_rank,'status',status) into parent from public.member_profiles where user_id=root;
+  result:=jsonb_set(result,'{nodes}',jsonb_build_array(parent)||coalesce(result->'nodes','[]'::jsonb));
+ end if;
+ share_points:=coalesce((private.current_mlm_rules()->>'binary_share_points_each_side')::numeric,50);
+ select coalesce(jsonb_agg(n.node||jsonb_build_object('binary_share_points_each_side',share_points,'binary_entitlement',coalesce(s.binary_entitlement,0),'binary_entitlement_percent',coalesce(s.binary_entitlement,0)*100,'raw_binary_shares',case when share_points>0 then trunc(least(coalesce(s.left_available,0),coalesce(s.right_available,0))/share_points,1) else 0 end,'available_binary_shares',coalesce(s.completed_shares,0)) order by n.ordinality),'[]'::jsonb) into weighted_nodes
+ from jsonb_array_elements(coalesce(result->'nodes','[]'::jsonb)) with ordinality as n(node,ordinality)
+ left join private.binary_live_shares(clock_timestamp()) s on s.member_id=nullif(n.node->>'id','')::uuid;
+ return jsonb_set(result,'{nodes}',weighted_nodes);
+end
+$function$;
+revoke all on function public.my_network(text,text,integer) from public,anon;
+grant execute on function public.my_network(text,text,integer) to authenticated;
+notify pgrst,'reload schema';

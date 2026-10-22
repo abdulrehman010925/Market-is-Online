@@ -32,7 +32,10 @@ declare
  new_fragment text;
 begin
  f:=pg_get_functiondef('public.my_network_before_vendor_root(text,text,integer)'::regprocedure);
- old_fragment:='''total_right_bp'',coalesce((select sum(amount) from public.point_ledger where member_id=t.id and point_type=''BP'' and side=''RIGHT'' and created_at>cutoff),0)';
+ -- TNBP is a lifetime total.  Match the fragment introduced by the
+ -- preceding lifetime-total migration; carry-forward calculations are the
+ -- only binary values scoped by completed distributions/reset boundaries.
+ old_fragment:='''total_right_bp'',coalesce((select sum(amount) from public.point_ledger where member_id=t.id and point_type=''BP'' and side=''RIGHT''),0)';
  new_fragment:=old_fragment||
   ',''left_team_count'',coalesce((private.binary_team_counts(t.id)->>''left'')::integer,0)'||
   ',''right_team_count'',coalesce((private.binary_team_counts(t.id)->>''right'')::integer,0)';

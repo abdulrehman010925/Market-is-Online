@@ -28,12 +28,12 @@ assert.equal(adminPage.querySelector('.control-nav').getAttribute('aria-label'),
 assert.equal(adminPage.querySelector('[data-page="dashboard"]'),null);
 q.go('workspace');
 assert.equal(adminPage.querySelector('#control-home').classList.contains('hidden'),false);
-assert.equal(adminPage.querySelector('#featuredContentToggle').closest('.control-panel').id,'control-home');
-assert.equal(adminPage.querySelector('#binaryPoolSummary').closest('.control-panel').id,'control-home');
+assert.equal(adminPage.querySelector('#featuredContentToggle').closest('.control-panel').id,'control-storefront');
+assert.equal(adminPage.querySelector('#binaryPoolSummary').closest('.control-panel').id,'control-binary-pool');
 adminPage.querySelector('.control-nav [data-workspace="storefront"]').click();
 assert.equal(adminPage.querySelector('#featuredContentToggle').closest('.control-panel').id,'control-storefront');
-adminPage.querySelector('.control-nav [data-workspace="network"]').click();
-assert.equal(adminPage.querySelector('#binaryPoolSummary').closest('.control-panel').id,'control-network');
+adminPage.querySelector('.control-nav [data-workspace="binary-pool"]').click();
+assert.equal(adminPage.querySelector('#binaryPoolSummary').closest('.control-panel').id,'control-binary-pool');
 assert.equal(adminPage.querySelector('#rateForm').closest('.control-panel').id,'control-settings');
 assert.equal(adminPage.querySelector('#adminMintForm').closest('.control-panel').id,'control-wallet');
 adminPage.querySelector('.control-nav [data-workspace="plans"]').click();
@@ -73,6 +73,11 @@ ww.MioDashboard.setRewardPreference({eligible:true,mode:'PPV',ppvUsed:110,ppvCap
 assert.equal(dd.querySelector('#dashboardRewardSwitch').classList.contains('ppv-limit-locked'),true);
 assert.equal(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').disabled,true);
 assert.equal(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').classList.contains('is-locked'),true);
+assert.match(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').textContent,/PPV locked/);
+ww.MioDashboard.setRewardPreference({eligible:true,mode:'MIO',ppvUsed:0,ppvCap:110,locked:false});
+ww.MioDashboard.setFinancial({balance:12,ppv:500,earned:40,held:2});
+assert.equal(dd.querySelector('#dashboardRewardSwitch').classList.contains('ppv-limit-locked'),true);
+assert.equal(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').disabled,true);
 assert.match(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').textContent,/PPV locked/);
 assert.equal(typeof ww.MioDashboard.requestTransactionPin,'function');
 assert.equal(ww.MioDashboard.hasTransactionPin(),false);

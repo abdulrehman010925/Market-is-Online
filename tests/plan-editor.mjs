@@ -56,7 +56,9 @@ const register=async(n,sponsor)=>{const id=uid(n),ref=await scalar('select refer
 const autoLeft1=await register(700,root),autoLeft2=await register(701,root),autoLeft3=await register(702,root);assert.equal(Number(await scalar('select count(*) from public.binary_placements where member_id=any($1::uuid[])',[[autoLeft1,autoLeft2,autoLeft3]])),0);for(const [i,id] of [autoLeft1,autoLeft2,autoLeft3].entries()){await q('update public.mio_wallet_accounts set balance=11 where member_id=$1',[id]);await as(id);await q("select public.activate_package_with_mio('BASIC_1',$1)",['deferred-left-'+i])}assert.equal(await scalar('select parent_id from public.binary_placements where member_id=$1',[autoLeft1]),root);assert.equal(await scalar('select parent_id from public.binary_placements where member_id=$1',[autoLeft2]),autoLeft1);assert.equal(await scalar('select parent_id from public.binary_placements where member_id=$1',[autoLeft3]),autoLeft2);console.log('PASS free signups stay outside Binary; activation places LEFT referrals down the outermost line');
 const balance=id=>num('select balance from public.mio_wallet_accounts where member_id=$1',[id]);
 const basic=await register(2,root);await assert.rejects(()=>register(799,basic),/activate a plan/i);assert.equal(Number(await scalar('select count(*) from public.binary_placements where member_id=$1',[basic])),0);await q('update public.mio_wallet_accounts set balance=11 where member_id=$1',[basic]);await as(basic);await q("select public.activate_package_with_mio('BASIC_1','basic-team-unlock')");const child=await register(3,basic);await q('update public.mio_wallet_accounts set balance=11 where member_id=$1',[child]);await as(child);await q("select public.activate_package_with_mio('BASIC_1','child-team-unlock')");const grand=await register(4,child);
-assert.equal(Number(await scalar('select private.generation_levels_by_dp($1,private.current_mlm_rules())',[root])),0);
+// Root already has four active Starter directs (40 working DP), so the
+// progressive qualification opens four generations before the Gold direct.
+assert.equal(Number(await scalar('select private.generation_levels_by_dp($1,private.current_mlm_rules())',[root])),4);
 const rootQualifier=await register(703,root);await q('update public.mio_wallet_accounts set balance=110 where member_id=$1',[rootQualifier]);await as(rootQualifier);await q("select public.activate_package_with_mio('ADVANCED_2','root-generation-qualification')");
 assert.equal(Number(await scalar('select private.generation_levels_by_dp($1,private.current_mlm_rules())',[root])),10);
 assert.equal(await scalar('select status from public.member_profiles where user_id=$1',[basic]),'active');
@@ -113,15 +115,15 @@ await q("update public.package_activations set activated_at='2026-09-28T12:00:00
 await q('update public.mio_wallet_accounts set balance=550 where member_id=$1',[company]);const companyActivation=await scalar("select public.activate_package_with_mio('PREMIUM','test-company-package')");await q("update public.package_activations set activated_at='2026-09-28T12:00:00Z' where id=$1",[companyActivation]);
 // Source-linked temporary volumes isolate a full 50/50 share and unmatched carry.
 await q("insert into public.point_ledger(member_id,point_type,amount,side,source_activation_id,entry_kind,idempotency_key) values($1,'BP',65,'LEFT',$2,'credit','test-binary-left'),($1,'BP',50,'RIGHT',$3,'credit','test-binary-right')",[basic,rootActivation,companyActivation]);
-let poolDashboard=await scalar('select public.admin_binary_pool_dashboard()');assert.equal(Number(poolDashboard.total_shares),1);assert.equal(poolDashboard.can_distribute,true);
-const manualResult=await scalar('select public.admin_distribute_binary_pool($1)',[poolDashboard.default_share_value]);
+let poolDashboard=await scalar('select public.admin_binary_pool_dashboard()');assert.equal(Number(poolDashboard.total_shares),.6);assert.equal(poolDashboard.can_distribute,true);
+const manualSharePrice=1;const manualResult=await scalar('select public.admin_distribute_binary_pool($1)',[manualSharePrice]);
 const cycle=manualResult.cycle_id;
 assert.equal(await num('select entitlement from public.binary_member_results where cycle_id=$1 and member_id=$2',[cycle,basic]),.60);
-assert.equal(await num('select completed_shares from public.binary_member_results where cycle_id=$1 and member_id=$2',[cycle,basic]),1);
+assert.equal(await num('select completed_shares from public.binary_member_results where cycle_id=$1 and member_id=$2',[cycle,basic]),.6);
 assert.ok(await num('select carry_left from public.binary_member_results where cycle_id=$1 and member_id=$2',[cycle,basic])>=15);
-const funded=await num("select sum(binary_reserve_mio) from public.package_activations where source<>'SHOPPING_PPV'")+await num('select sum(binary_reserve_mio) from public.shopping_reward_events');assert.equal(await num('select pool_amount from public.binary_cycles where id=$1',[cycle]),funded);
-assert.equal(await num('select sum(member_amount+company_retention) from public.binary_member_results where cycle_id=$1',[cycle]),funded);
-await reject("select public.admin_distribute_binary_pool($1)",[poolDashboard.default_share_value],/not ready|overlaps/);
+const funded=await num("select sum(binary_reserve_mio) from public.package_activations where source<>'SHOPPING_PPV'")+await num('select sum(binary_reserve_mio) from public.shopping_reward_events');assert.equal(await num('select pool_amount from public.binary_cycles where id=$1',[cycle]),manualSharePrice*.6);
+assert.equal(await num('select sum(member_amount+company_retention) from public.binary_member_results where cycle_id=$1',[cycle]),manualSharePrice*.6);assert.ok(funded>=manualSharePrice*.6);
+await reject("select public.admin_distribute_binary_pool($1)",[manualSharePrice],/not ready|overlaps|No payable/);
 assert.equal(await scalar('select private.run_automatic_binary_pool()'),0);
 console.log('PASS manual weekly binary: admin dashboard, 7-day distribution, entitlement edits, full50/50 shares, carry, pool conservation and automatic scheduler disabled');
 // Reconcile an old approved activation whose network distributions were never posted.
