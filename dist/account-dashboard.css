@@ -27,6 +27,9 @@
 .dashboard-reward-toggle button svg{width:13px;height:13px;flex:0 0 auto}
 .dashboard-reward-toggle button.is-locked:disabled{background:#f5e8da;color:#8a4d22;box-shadow:inset 0 0 0 1px #e7c59f;opacity:1}
 .transaction-pin-card.pin-is-set{border-left:4px solid #1a6647;padding-left:14px}
+.transaction-pin-change-verification{display:grid;gap:10px;padding:13px;border:1px solid #d7e5dc;border-radius:10px;background:#f7faf8}
+.transaction-pin-change-verification[hidden],.transaction-pin-change-verification label[hidden]{display:none!important}
+.transaction-pin-change-verification select{width:100%;min-height:42px;border:1px solid #bfd1c5;border-radius:9px;background:#fff;padding:8px 11px}
 .transfer-pin-field.pin-not-configured input{border-color:#d6aa74;background:#fffaf3}
 .transaction-pin-dialog{width:min(430px,calc(100vw - 28px));padding:0;border:0;border-radius:16px;box-shadow:0 24px 80px #071b1466;color:#173a2a}
 .transaction-pin-dialog::backdrop{background:#071b1499;backdrop-filter:blur(3px)}
