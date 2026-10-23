@@ -585,3 +585,28 @@
   #page-admin .control-nav,
   .member-sidebar{background:linear-gradient(135deg,var(--mio-emerald),var(--mio-emerald-deep))!important}
 }
+
+/* Keep the full-colour brand readable against the emerald account sidebar. */
+.member-sidebar>.sidebar-brand{
+  display:grid;
+  place-items:center;
+  width:100%;
+  min-height:66px;
+  margin:0 0 11px;
+  padding:8px 10px;
+  border:1px solid rgba(255,255,255,.72);
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 8px 20px rgba(5,67,43,.16);
+}
+.member-sidebar>.sidebar-brand img{
+  display:block;
+  width:100%;
+  max-width:158px;
+  height:46px;
+  object-fit:contain;
+  filter:url(#mio-logo-green);
+}
+@media(max-width:900px){
+  .member-sidebar>.sidebar-brand{display:none}
+}
