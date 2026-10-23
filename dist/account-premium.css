@@ -459,3 +459,129 @@
   }
   body.printing-record .history-record-dialog .receipt-brand :is(h1,p,span){color:#111!important}
 }
+
+/* Unified brand palette: match the lighter emerald used by Marketplace actions. */
+:root{
+  --g:#12865c;
+  --gd:#0f6f4a;
+  --mio-emerald:#12865c;
+  --mio-emerald-deep:#0f6f4a;
+  --mio-emerald-soft:#e7f4ee;
+}
+
+.btn.primary,
+.page:not(#page-shop):not(#page-product) .btn.primary,
+.top>.nav button.active,
+.shop-market-nav button.active{
+  background:linear-gradient(135deg,var(--mio-emerald),var(--mio-emerald-deep))!important;
+  border-color:var(--mio-emerald-deep)!important;
+  color:#fff!important;
+}
+.btn.primary:hover,
+.page:not(#page-shop):not(#page-product) .btn.primary:hover{
+  background:linear-gradient(135deg,#0f7953,#0d6845)!important;
+}
+
+.member-account-shell{
+  --account-green:var(--mio-emerald);
+  --account-dark:var(--mio-emerald-deep);
+}
+.member-sidebar,
+#page-admin .control-nav{
+  background:linear-gradient(180deg,var(--mio-emerald),var(--mio-emerald-deep))!important;
+  border-color:var(--mio-emerald-deep)!important;
+  box-shadow:0 16px 38px rgba(15,111,74,.18)!important;
+}
+.member-sidebar nav button.active,
+#page-admin .control-nav .btn.active{
+  background:#fff!important;
+  color:var(--mio-emerald-deep)!important;
+  box-shadow:0 7px 18px rgba(5,67,43,.16)!important;
+}
+.member-sidebar nav button:hover,
+#page-admin .control-nav .btn:hover{
+  background:rgba(255,255,255,.13)!important;
+  color:#fff!important;
+}
+#page-admin .control-nav-group>p,
+#page-admin .admin-sidebar-brand small{color:#d9f0e5!important}
+
+.dashboard-offer,
+.dashboard-total-earned,
+.earning-summary-card,
+#page-admin>.heading,
+#page-admin .accounting-primary .company-total{
+  background:linear-gradient(135deg,var(--mio-emerald),var(--mio-emerald-deep))!important;
+  border-color:var(--mio-emerald-deep)!important;
+}
+.dashboard-reward-toggle button.active,
+.earning-source-tabs button.active,
+.dashboard-level.open,
+.network-tree-tab.active{
+  background:var(--mio-emerald)!important;
+  border-color:var(--mio-emerald)!important;
+  color:#fff!important;
+}
+#page-packages .package:last-child:before{background:var(--mio-emerald)!important}
+.network-tree-tab.active small{color:#e5f7ef!important}
+.tree-action-rail button:hover,
+.tree-action-rail button:focus-visible,
+.tree-details-close:hover,
+.tree-details-close:focus-visible{
+  background:var(--mio-emerald)!important;
+  border-color:var(--mio-emerald)!important;
+  color:#fff!important;
+}
+
+.enrollment-report-head{
+  background:linear-gradient(135deg,var(--mio-emerald),var(--mio-emerald-deep))!important;
+}
+.package-report-table th{
+  background:var(--mio-emerald-deep)!important;
+}
+.package-report-total th{
+  background:#dcecdf!important;
+  color:var(--mio-emerald-deep)!important;
+}
+.accounting-details,
+.company-wallet-button,
+.admin-report-button{
+  border-top-color:var(--mio-emerald)!important;
+}
+.accounting-details>summary{color:var(--mio-emerald-deep)!important}
+.accounting-details>summary::after,
+.admin-report-tag{
+  background:var(--mio-emerald)!important;
+  color:#fff!important;
+}
+.company-wallet-button small,
+.company-source-button strong,
+.admin-report-button b,
+.finance-source-row strong{color:var(--mio-emerald-deep)!important}
+.company-source-button:hover,
+.company-source-button:focus-visible{border-left-color:var(--mio-emerald)!important}
+.finance-source-row{border-left-color:var(--mio-emerald)!important}
+.admin-report-button:hover,
+.admin-report-button:focus-visible,
+.admin-report-button.active{border-top-color:var(--mio-emerald)!important}
+
+#page-network .generation-info-title,
+.generation-info-title,
+.receipt-statement-total{
+  border-color:var(--mio-emerald)!important;
+}
+
+@media(min-width:851px){
+  #page-admin .control-nav{
+    scrollbar-color:#9fd7bd var(--mio-emerald-deep)!important;
+  }
+  #page-admin .control-nav::-webkit-scrollbar-track{background:var(--mio-emerald-deep)!important}
+  #page-admin .control-nav::-webkit-scrollbar-thumb{
+    background:#9fd7bd!important;
+    border-color:var(--mio-emerald-deep)!important;
+  }
+}
+@media(max-width:900px){
+  #page-admin .control-nav,
+  .member-sidebar{background:linear-gradient(135deg,var(--mio-emerald),var(--mio-emerald-deep))!important}
+}
