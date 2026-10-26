@@ -1,13 +1,13 @@
 # Market is Online — Complete Handover and Migration Guide
 
-Prepared: 10 October 2026
+Updated: 26 October 2026
 
 This package contains the production website code, database migrations, tests, marketplace assets, and the business rules used by the current Market is Online system.
 
 ## What is included
 
 - `dist/` — ready-to-upload production website, including marketplace images and icons.
-- `schema/` — the complete ordered PostgreSQL/Supabase schema and all 52 migrations.
+- `schema/` — the complete ordered PostgreSQL/Supabase schema and all current migrations.
 - `tests/` — database-rule and interface regression tests.
 - `imports/` — product catalogue import data used during development.
 - `public/` — shared public branding asset.
