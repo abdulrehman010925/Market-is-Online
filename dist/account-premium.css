@@ -610,3 +610,22 @@
 @media(max-width:900px){
   .member-sidebar>.sidebar-brand{display:none}
 }
+
+/* MIO mobile earnings/history readability refinements — 2026-10-26 */
+@media (max-width:620px){
+  #page-earnings .history-table-scroll,
+  #page-ecommerce .history-table-scroll{width:100%;max-width:100%;overflow-x:hidden!important}
+  #page-earnings table.responsive-report-table tbody,
+  #page-ecommerce table.responsive-report-table tbody{padding:7px 0!important;gap:9px!important}
+  #page-earnings table.responsive-report-table tbody tr,
+  #page-ecommerce table.responsive-report-table tbody tr{min-width:0!important;padding:10px 12px!important;border-radius:12px!important}
+  #page-earnings table.responsive-report-table tbody td,
+  #page-ecommerce table.responsive-report-table tbody td{grid-template-columns:minmax(0,42%) minmax(0,1fr)!important;gap:8px!important;font-variant-numeric:tabular-nums;overflow-wrap:anywhere!important}
+  #page-earnings table.responsive-report-table tbody td::before,
+  #page-ecommerce table.responsive-report-table tbody td::before{font-size:10px!important;line-height:1.45}
+  #page-earnings .earning-source-tabs,
+  #page-ecommerce .earning-source-tabs{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+  #page-earnings .history-period-summary,
+  #page-ecommerce .history-period-summary{flex-wrap:wrap;gap:7px 12px;overflow-wrap:anywhere}
+  #page-earnings .history-day-detail{margin:12px 0;max-width:100%}
+}
