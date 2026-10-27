@@ -2599,3 +2599,28 @@ body.graphical-network-active main{padding-top:0!important;padding-bottom:0!impo
     font-size:17px!important;
   }
 }
+
+
+/* Mobile graphical tree: pin member-card close control to the top-right. */
+@media(max-width:720px){
+  #page-network.graphical-only .tree-member-card{
+    position:relative!important;
+    padding-top:0!important;
+  }
+  #page-network.graphical-only .tree-member-header .tree-details-close,
+  #page-network.graphical-only .tree-details-close{
+    position:absolute!important;
+    top:0!important;
+    right:0!important;
+    left:auto!important;
+    inset-inline-start:auto!important;
+    inset-inline-end:0!important;
+    float:none!important;
+    margin:0!important;
+    transform:none!important;
+  }
+  #page-network.graphical-only .tree-profile-top{
+    padding-top:0!important;
+    padding-right:46px!important;
+  }
+}
