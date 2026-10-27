@@ -43,11 +43,8 @@ window.MioDashboard=(()=>{
  function navigate(page,signedIn){currentPage=page;for(const id of ['orders','order']){const target=$('page-'+id);if(target)(signedIn?$('memberPageContent'):$('main-content')).append(target)}const active=signedIn&&pages.includes(page)&&page!=='workspace'&&page!=='admin';$('memberAccountShell')?.classList.toggle('hidden',!active);document.body.classList.toggle('member-dashboard-active',active);$('memberAccountShell')?.classList.remove('sidebar-open');$('dashboardMenu')?.setAttribute('aria-expanded','false');$('accountPageTitle').textContent=page==='network-graphical'?'Graphical':({dashboard:'Dashboard',profile:'My profile',transactions:'Transaction history',transfer:'Transfer MIO'})[page]||page.replaceAll('-',' ').replace(/^./,s=>s.toUpperCase());renderAccountNav();if(active&&page==='dashboard')refresh().catch(api.error)}
  function setFinancial(value){
   financial=value;
-  const cap=Number(rewardPreference.ppvCap)||110;
-  const totalPpv=Math.max(0,Number(value?.ppv)||0);
-  if(totalPpv>=cap){
-    rewardPreference={...rewardPreference,eligible:true,mode:'MIO',ppvUsed:totalPpv,ppvCap:cap,locked:true};
-  }
+  // The shopping/affiliate PPV cap is calculated by the server. Package PPV
+  // and other point-ledger entries must never lock this preference locally.
   if(summary)render();
   setRewardPreference(rewardPreference);
  }
