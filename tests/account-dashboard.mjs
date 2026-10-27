@@ -76,9 +76,10 @@ assert.equal(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]')
 assert.match(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').textContent,/PPV locked/);
 ww.MioDashboard.setRewardPreference({eligible:true,mode:'MIO',ppvUsed:0,ppvCap:110,locked:false});
 ww.MioDashboard.setFinancial({balance:12,ppv:500,earned:40,held:2});
-assert.equal(dd.querySelector('#dashboardRewardSwitch').classList.contains('ppv-limit-locked'),true);
-assert.equal(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').disabled,true);
-assert.match(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').textContent,/PPV locked/);
+assert.equal(dd.querySelector('#dashboardRewardSwitch').classList.contains('ppv-limit-locked'),false);
+assert.equal(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').disabled,false);
+assert.doesNotMatch(dd.querySelector('#dashboardRewardSwitch [data-reward-mode="PPV"]').textContent,/PPV locked/);
+console.log('PASS package/ledger PPV cannot falsely lock the shopping reward preference');
 assert.equal(typeof ww.MioDashboard.requestTransactionPin,'function');
 assert.equal(ww.MioDashboard.hasTransactionPin(),false);
 ww.MioDashboard.setTransactionPinConfigured(true);
