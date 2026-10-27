@@ -2508,3 +2508,94 @@ body.graphical-network-active main{padding-top:0!important;padding-bottom:0!impo
   .enrollment-report-summary{grid-template-columns:1fr 1fr}
   .enrollment-report-summary>div:first-child{grid-column:1/-1}
 }
+
+
+/* Graphical tree compact member-details header (2026-10-27) */
+#page-network.graphical-only .tree-member-details{
+  padding:14px;
+}
+#page-network.graphical-only .tree-member-card{
+  gap:11px;
+}
+#page-network.graphical-only .tree-member-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+  min-width:0;
+  padding:0 0 9px;
+  border-bottom:1px solid #e4eee8;
+}
+#page-network.graphical-only .tree-member-header .tree-profile-top{
+  flex:1 1 auto;
+  align-items:center;
+  min-width:0;
+  gap:10px;
+}
+#page-network.graphical-only .tree-member-header .tree-profile-top>div{
+  min-width:0;
+}
+#page-network.graphical-only .tree-member-header .tree-profile-picture{
+  width:50px;
+  height:50px;
+  flex:0 0 50px;
+}
+#page-network.graphical-only .tree-member-header .tree-profile-top h3{
+  margin:2px 0 1px;
+  padding:0;
+  font-size:15px;
+  line-height:1.2;
+}
+#page-network.graphical-only .tree-member-header .tree-profile-top p{
+  margin:0;
+  font-size:11px;
+  line-height:1.25;
+}
+#page-network.graphical-only .tree-member-header .tree-enrolled{
+  margin-top:3px;
+  font-size:9px;
+  line-height:1.25;
+}
+#page-network.graphical-only .tree-member-header .tree-details-close{
+  position:static!important;
+  inset:auto!important;
+  float:none!important;
+  flex:0 0 30px;
+  width:30px!important;
+  height:30px!important;
+  margin:0!important;
+  border-color:#cfe0d5!important;
+  background:#f4f9f6!important;
+  color:#176d4b!important;
+  box-shadow:none!important;
+}
+#page-network.graphical-only .tree-member-header .tree-details-close:hover,
+#page-network.graphical-only .tree-member-header .tree-details-close:focus-visible{
+  background:#137658!important;
+  border-color:#137658!important;
+  color:#fff!important;
+  box-shadow:0 5px 14px rgba(19,118,88,.18)!important;
+}
+@media(max-width:720px){
+  #page-network.graphical-only .tree-member-details{
+    padding:12px!important;
+  }
+  #page-network.graphical-only .tree-member-header{
+    gap:8px;
+    padding-bottom:8px;
+  }
+  #page-network.graphical-only .tree-member-header .tree-profile-picture{
+    width:44px!important;
+    height:44px!important;
+    flex-basis:44px!important;
+  }
+  #page-network.graphical-only .tree-member-header .tree-profile-top h3{
+    font-size:14px;
+  }
+  #page-network.graphical-only .tree-member-header .tree-details-close{
+    flex-basis:28px;
+    width:28px!important;
+    height:28px!important;
+    font-size:17px!important;
+  }
+}
