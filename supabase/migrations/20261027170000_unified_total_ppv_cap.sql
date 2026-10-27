@@ -1,3 +1,42 @@
+-- Package PPV is gross paid value; BV/DP and GP/BP remain funded base points.
+alter table public.shopping_reward_events add column if not exists brp numeric(18,4) not null default 0;
+create or replace function private.normalize_package_version_values()
+returns trigger language plpgsql set search_path=''
+as $function$
+begin
+ if new.base_value<=0 then raise exception 'Package base value must be positive';end if;
+ if new.company_fee<0 then raise exception 'Package company fee cannot be negative';end if;
+ new.company_fee:=round(new.company_fee,4);new.ppv:=round(new.base_value+new.company_fee,4);return new;
+end
+$function$;
+update public.package_versions set ppv=payable_price,
+ binary_entitlement=case package_code when 'BASIC_1' then .50 when 'BASIC_2' then .60 when 'ADVANCED_1' then .70 when 'ADVANCED_2' then .80 when 'PREMIUM' then 1 else binary_entitlement end
+where is_active;
+do $plans$
+declare cfg jsonb;v integer;code text;plan jsonb;actor uuid;
+begin
+ select config_value into cfg from public.system_config where config_key='MLM_PLANS' and effective_to is null order by version desc limit 1 for update;
+ if cfg is not null and coalesce((cfg->'plans'->'BASIC_1'->>'ppv')::numeric,0)<>11 then
+  v:=coalesce((cfg->>'version')::integer,0)+1;
+  for code in select jsonb_object_keys(cfg->'plans') loop
+   plan:=cfg->'plans'->code;
+   plan:=jsonb_set(plan,'{ppv}',to_jsonb((plan->>'payable_price')::numeric),true);
+   plan:=jsonb_set(plan,'{company_fee_rate}',to_jsonb(round((plan->>'company_fee')::numeric/nullif((plan->>'base_value')::numeric,0),8)),true);
+   plan:=jsonb_set(plan,'{binary_entitlement}',to_jsonb(case code when 'BASIC_1' then .50 when 'BASIC_2' then .60 when 'ADVANCED_1' then .70 when 'ADVANCED_2' then .80 else 1 end::numeric),true);
+   plan:=jsonb_set(plan,'{single_line_levels}',to_jsonb(case code when 'BASIC_1' then 10 when 'BASIC_2' then 15 when 'ADVANCED_1' then 20 when 'ADVANCED_2' then 25 else 30 end),true);
+   cfg:=jsonb_set(cfg,array['plans',code],plan,true);
+  end loop;
+  cfg:=jsonb_set(jsonb_set(cfg,'{shopping_admin_fee_rate}','0.10'::jsonb,true),'{version}',to_jsonb(v),true);
+  select user_id into actor from public.user_roles where role='admin' order by created_at limit 1;
+  update public.system_config set effective_to=clock_timestamp() where config_key='MLM_PLANS' and effective_to is null;
+  insert into public.system_config(config_key,version,config_value,effective_from,created_by) values('MLM_PLANS',v,cfg,clock_timestamp(),actor);
+ end if;
+end
+$plans$;
+update public.point_ledger pl set amount=a.payable_price from public.package_activations a
+where pl.source_activation_id=a.id and pl.point_type='PPV' and a.status='approved' and a.source<>'SHOPPING_PPV' and pl.amount is distinct from a.payable_price;
+update public.package_activations set ppv=payable_price where status='approved' and ppv is distinct from payable_price;
+
 -- One cumulative PPV cap across package activation and delivered shopping.
 do $config$
 declare cfg public.system_config%rowtype;next_version integer;
