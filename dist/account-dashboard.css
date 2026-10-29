@@ -58,6 +58,47 @@
 .mio-price-banner{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;padding:15px 18px;margin-bottom:16px;border:1px solid #cfded3;border-radius:12px;background:#f7faf8;color:#2b5e44}
 .mio-price-banner span{font-size:12px}.mio-price-banner strong{font-size:16px;color:#1f5c3f}.mio-price-banner strong span{font-size:inherit}.mio-price-banner small{flex-basis:100%;color:#4c6f5b}
 .member-account-shell :is(button,input,a,summary):focus-visible{outline-color:#faa519}
+
+/* Persistent dashboard controls and compact order centre. */
+.member-dashboard-active .member-account-shell{overflow:visible}
+.member-dashboard-active .member-workspace{overflow:visible;position:relative}
+.member-dashboard-active .member-topbar{
+ position:sticky;
+ top:var(--account-header-offset,0px);
+ z-index:120;
+ box-shadow:0 8px 20px rgba(24,73,50,.08);
+}
+.member-dashboard-active #dashboardMenu{position:relative;z-index:2;flex:0 0 35px}
+#dashboardNotifications{position:relative;flex:0 0 35px}
+#dashboardNotifications.has-order-updates{background:#e8f5ed;border-color:#9fc9ae;color:#17613f}
+.dashboard-notification-badge{position:absolute;top:-6px;right:-6px;display:grid;place-items:center;min-width:19px;height:19px;padding:0 5px;border:2px solid #fff;border-radius:999px;background:#f59e0b;color:#fff;font-size:9px;font-weight:800;line-height:1;box-shadow:0 3px 8px rgba(93,59,4,.24)}
+.dashboard-notifications{position:fixed;top:calc(var(--account-header-offset,0px) + 58px);right:max(18px,calc((100vw - 1530px)/2 + 18px));z-index:140;width:min(390px,calc(100vw - 28px));max-height:min(520px,calc(100dvh - var(--account-header-offset,0px) - 78px));overflow:auto;padding:0;border:1px solid #cfded4;border-radius:14px;background:#fff;box-shadow:0 20px 50px rgba(19,64,43,.2)}
+.dashboard-notification-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 17px 13px;border-bottom:1px solid #e2ebe5;background:#f7faf8}
+.dashboard-notification-head small{display:block;margin-bottom:3px;color:#718679;font-size:9px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+.dashboard-notification-head h3{margin:0;color:#1f4f39;font-size:15px}
+.dashboard-notification-head>span{padding:5px 9px;border-radius:999px;background:#e5f3e9;color:#216143;font-size:10px;font-weight:750}
+.dashboard-order-updates{display:grid}
+.dashboard-order-update{display:grid;grid-template-columns:35px minmax(0,1fr) auto;align-items:center;gap:10px;width:100%;padding:12px 15px;border:0;border-bottom:1px solid #e8eee9;background:#fff;color:#234b37;text-align:left}
+.dashboard-order-update:hover{background:#f4f8f5}
+.dashboard-order-update-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#eaf4ed;color:#23714d}
+.dashboard-order-update-icon svg{width:18px;height:18px}
+.dashboard-order-update strong{display:block;overflow:hidden;text-overflow:ellipsis;font-size:11px;white-space:nowrap}
+.dashboard-order-update small{display:block;margin-top:3px;color:#718579;font-size:9px}
+.dashboard-order-update b{padding:4px 7px;border-radius:999px;background:#eef2ef;color:#4e6959;font-size:9px;font-weight:750;white-space:nowrap}
+.dashboard-order-update b.order-status-delivered{background:#e4f4e8;color:#19623d}
+.dashboard-order-update b.order-status-cancelled,.dashboard-order-update b.order-status-returned{background:#f9e9e8;color:#9a3a34}
+.dashboard-order-all{width:100%;padding:12px 16px;border:0;background:#f7faf8;color:#1f6545;font-size:11px;font-weight:750;text-align:center}
+.dashboard-notification-empty{display:grid;justify-items:center;gap:5px;padding:28px 18px;color:#577465;text-align:center}
+.dashboard-notification-empty svg{width:28px;height:28px;margin-bottom:3px;color:#3c8060}
+.dashboard-notification-empty strong{font-size:12px}.dashboard-notification-empty small{font-size:10px}
+@media(min-width:901px){
+ .member-dashboard-active .member-sidebar{top:calc(var(--account-header-offset,0px) + 12px);height:calc(100dvh - var(--account-header-offset,0px) - 26px);max-height:calc(100dvh - var(--account-header-offset,0px) - 26px)}
+}
+@media(max-width:900px){
+ .member-dashboard-active .member-topbar{top:var(--account-header-offset,0px)}
+ .member-dashboard-active .member-account-shell.sidebar-open .member-sidebar{position:sticky;top:calc(var(--account-header-offset,0px) + 56px);z-index:115;max-height:calc(100dvh - var(--account-header-offset,0px) - 68px);box-shadow:0 18px 34px rgba(15,55,37,.22)}
+ .dashboard-notifications{top:calc(var(--account-header-offset,0px) + 54px);right:10px;width:calc(100vw - 20px);max-height:calc(100dvh - var(--account-header-offset,0px) - 66px)}
+}
 .dashboard-reward-switch.ppv-limit-locked{border-color:#e7ba83;background:linear-gradient(120deg,#fffaf3,#fff)}
 .dashboard-reward-switch.ppv-limit-locked>div:first-child span{color:#7a3c12}
 .ppv-cap-complete{display:flex!important;align-items:center;gap:11px;width:100%;min-width:0}
