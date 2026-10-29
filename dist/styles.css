@@ -416,6 +416,7 @@ body{font-size:1rem}h1,h2,h3{line-height:1.25}p{line-height:1.6}.heading{margin:
   #page-network.graphical-only .tree-member-details{grid-column:1/-1;min-height:0;padding:12px;border-radius:11px}
 }
 
+
 /* Product photography stays inside the existing responsive card frame. */
 #catalog .product-image,
 .featured-strip .product-image,
@@ -576,6 +577,9 @@ body.graphical-network-active .account-footer{display:none!important}
 @media(max-width:640px){.generation-info-title{align-items:flex-start;padding:11px}.generation-info-title h4{font-size:12px}.generation-summary-grid{gap:6px}.generation-summary-grid>div,.generation-summary-grid>button{padding:9px}.generation-summary-grid strong{font-size:14px}.generation-network-total{padding:9px 10px}.generation-member-row{grid-template-columns:28px minmax(0,1fr) auto}.generation-member-row img{width:28px;height:28px}}
 .tree-details-close{position:absolute;top:-7px;right:-7px;z-index:2;display:grid;place-items:center;width:30px;height:30px;padding:0;border:1px solid #d5e3da;border-radius:50%;background:#fff;color:#416955;font-size:20px;line-height:1;box-shadow:0 5px 16px #2258391b}
 .tree-details-close:hover,.tree-details-close:focus-visible{background:#107940;color:#fff;border-color:#107940;outline:none}
+
+.binary-qualification{display:grid;gap:10px;padding:12px;border:1px solid #d8e6dd;border-radius:14px;background:#f7faf8}.binary-qualification.is-qualified{border-color:#9bc9ad;background:#edf8f1}.binary-qualification.is-pending{border-color:#e6d7b3;background:#fffaf0}.binary-qualification-head{display:grid;grid-template-columns:32px minmax(0,1fr) auto;align-items:center;gap:9px}.binary-status-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#dcebe2;color:#176d43;font-size:16px;font-weight:900}.is-pending .binary-status-mark{background:#f4e5bf;color:#7d5a17}.binary-qualification-head small{color:#6a7e72;font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.binary-qualification-head h4{margin:1px 0 0;font-size:13px}.binary-qualification-head time{color:#52705f;font-size:8px;font-weight:750}.binary-qualification-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.binary-qualification-grid>div{display:flex;align-items:center;justify-content:space-between;gap:7px;padding:8px;border:1px solid #e1e8e4;border-radius:9px;background:#fff}.binary-qualification-grid>div.complete{border-color:#b8dbc5;background:#f1faf4}.binary-qualification-grid small{font-size:8px;color:#6d7e74}.binary-qualification-grid strong{font-size:10px;color:#6b5340}.binary-qualification-grid .complete strong{color:#167344}.binary-qualification p{margin:0;color:#66766d;font-size:9px;line-height:1.4}
+.placement-information{display:grid;gap:10px}.placement-info-title{display:flex;align-items:center;justify-content:space-between;gap:9px;padding:12px 13px;border-radius:13px;background:linear-gradient(135deg,#1d6b49,#26855d);color:#fff}.placement-info-title small{font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#cbe9d7}.placement-info-title h4{margin:2px 0 0;color:#fff;font-size:13px}.placement-info-title>span{padding:5px 8px;border:1px solid #ffffff38;border-radius:999px;font-size:9px;font-weight:800;white-space:nowrap}.placement-team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.placement-team-grid>div{display:grid;gap:3px;padding:9px;border:1px solid #dce7e0;border-radius:10px;background:#fff}.placement-team-grid small{font-size:8px;color:#6e7e75}.placement-team-grid strong{font-size:14px;color:#1c7049}.placement-levels{display:grid;gap:5px;max-height:320px;padding:7px;border:1px solid #dce7e0;border-radius:12px;background:#f7faf8;overflow:auto}.placement-levels[hidden]{display:none}.placement-level-row{display:grid;grid-template-columns:minmax(0,1fr) auto 22px;align-items:center;gap:8px;padding:8px 9px;border:1px solid #e0e8e3;border-radius:9px;background:#fff}.placement-level-row span{display:grid}.placement-level-row b{font-size:10px}.placement-level-row small{font-size:8px;color:#7b8780}.placement-level-row strong{font-size:9px;color:#52705f}.placement-level-row i{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#eaf6ee;color:#177247;font-size:10px;font-style:normal}.placement-level-row.locked{background:#f4f5f4;color:#7b847f}.placement-level-row.locked i{background:#e7e9e8;color:#68716c}.placement-note{margin:0;color:#66766d;font-size:9px;line-height:1.45}
 
 @media(max-width:720px){
   #page-network.graphical-only .tree-workspace,
@@ -2509,97 +2513,215 @@ body.graphical-network-active main{padding-top:0!important;padding-bottom:0!impo
   .enrollment-report-summary>div:first-child{grid-column:1/-1}
 }
 
+/* Premium mobile earnings history. Desktop tables remain unchanged. */
+@media(max-width:760px){
+  #page-earnings .earning-source-tabs{
+    display:flex!important;
+    gap:8px!important;
+    margin:14px -12px 10px!important;
+    padding:2px 12px 9px!important;
+    overflow-x:auto!important;
+    scroll-snap-type:x proximity;
+    scrollbar-width:none;
+  }
+  #page-earnings .earning-source-tabs::-webkit-scrollbar{display:none}
+  #page-earnings .earning-source-tabs::-webkit-scrollbar,
+  #page-earnings .earning-level-tabs::-webkit-scrollbar{width:0!important;height:0!important}
+  #page-earnings .earning-source-tabs button{
+    flex:0 0 132px!important;
+    min-height:58px!important;
+    padding:10px 12px!important;
+    border:1px solid #dce8e0!important;
+    border-radius:13px!important;
+    background:#fff!important;
+    color:#254535!important;
+    box-shadow:0 4px 14px rgba(24,73,49,.055)!important;
+    scroll-snap-align:start;
+  }
+  #page-earnings .earning-source-tabs button.active{
+    border-color:#247c58!important;
+    background:linear-gradient(145deg,#247c58,#176443)!important;
+    color:#fff!important;
+    box-shadow:0 9px 22px rgba(23,100,67,.2)!important;
+  }
+  #page-earnings .earning-source-tabs button b{font-size:10px!important}
 
-/* Graphical tree compact member-details header (2026-10-27) */
-#page-network.graphical-only .tree-member-details{
-  padding:14px;
-}
-#page-network.graphical-only .tree-member-card{
-  gap:11px;
-}
-#page-network.graphical-only .tree-member-header{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:10px;
-  min-width:0;
-  padding:0 0 9px;
-  border-bottom:1px solid #e4eee8;
-}
-#page-network.graphical-only .tree-member-header .tree-profile-top{
-  flex:1 1 auto;
-  align-items:center;
-  min-width:0;
-  gap:10px;
-}
-#page-network.graphical-only .tree-member-header .tree-profile-top>div{
-  min-width:0;
-}
-#page-network.graphical-only .tree-member-header .tree-profile-picture{
-  width:50px;
-  height:50px;
-  flex:0 0 50px;
-}
-#page-network.graphical-only .tree-member-header .tree-profile-top h3{
-  margin:2px 0 1px;
-  padding:0;
-  font-size:15px;
-  line-height:1.2;
-}
-#page-network.graphical-only .tree-member-header .tree-profile-top p{
-  margin:0;
-  font-size:11px;
-  line-height:1.25;
-}
-#page-network.graphical-only .tree-member-header .tree-enrolled{
-  margin-top:3px;
-  font-size:9px;
-  line-height:1.25;
-}
-#page-network.graphical-only .tree-member-header .tree-details-close{
-  position:static!important;
-  inset:auto!important;
-  float:none!important;
-  flex:0 0 30px;
-  width:30px!important;
-  height:30px!important;
-  margin:0!important;
-  border-color:#cfe0d5!important;
-  background:#f4f9f6!important;
-  color:#176d4b!important;
-  box-shadow:none!important;
-}
-#page-network.graphical-only .tree-member-header .tree-details-close:hover,
-#page-network.graphical-only .tree-member-header .tree-details-close:focus-visible{
-  background:#137658!important;
-  border-color:#137658!important;
-  color:#fff!important;
-  box-shadow:0 5px 14px rgba(19,118,88,.18)!important;
-}
-@media(max-width:720px){
-  #page-network.graphical-only .tree-member-details{
+  #page-earnings .earning-level-tabs{
+    margin:0 -12px 8px!important;
+    padding:6px 12px 10px!important;
+    overflow-x:auto!important;
+    flex-wrap:nowrap!important;
+    scrollbar-width:none;
+  }
+  #page-earnings .earning-level-tabs::-webkit-scrollbar{display:none}
+  #page-earnings .earning-level-tabs>span,
+  #page-earnings .earning-level-tabs button{flex:0 0 auto!important}
+
+  #page-earnings>.card.section{
+    margin-top:12px!important;
+    border-radius:16px!important;
+    border-color:#dfe9e2!important;
+    overflow:hidden!important;
+    box-shadow:0 10px 28px rgba(20,61,42,.075)!important;
+  }
+  #page-earnings .earning-summary-card.held-summary{
+    background:#fff!important;
+    color:#294437!important;
+    border-color:#dce7df!important;
+    box-shadow:0 7px 18px rgba(21,68,44,.06)!important;
+  }
+  #page-earnings .earning-summary-card.held-summary>span,
+  #page-earnings .earning-summary-card.held-summary p{color:#6c7e73!important}
+  #page-earnings>.card.section>.card-head{
+    padding:15px 15px 12px!important;
+    background:linear-gradient(180deg,#fbfdfb,#f6faf7)!important;
+    border-bottom:1px solid #e4ece6!important;
+  }
+  #page-earnings #earningsTable.history-panel{padding:12px!important;background:#f5f8f6!important}
+
+  #earningsTable .history-date-form{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:9px!important;
     padding:12px!important;
+    margin:0 0 11px!important;
+    border:1px solid #dde8e0!important;
+    border-radius:14px!important;
+    background:#fff!important;
+    box-shadow:0 4px 13px rgba(28,73,49,.045)!important;
   }
-  #page-network.graphical-only .tree-member-header{
-    gap:8px;
-    padding-bottom:8px;
-  }
-  #page-network.graphical-only .tree-member-header .tree-profile-picture{
-    width:44px!important;
-    height:44px!important;
-    flex-basis:44px!important;
-  }
-  #page-network.graphical-only .tree-member-header .tree-profile-top h3{
-    font-size:14px;
-  }
-  #page-network.graphical-only .tree-member-header .tree-details-close{
-    flex-basis:28px;
-    width:28px!important;
-    height:28px!important;
-    font-size:17px!important;
-  }
-}
+  #earningsTable .history-date-form label{min-width:0!important;font-size:10px!important;font-weight:700!important;color:#4b6757!important}
+  #earningsTable .history-date-form input{width:100%!important;min-width:0!important;margin-top:5px!important;border-radius:9px!important}
+  #earningsTable .history-date-form .btn{width:100%!important;min-height:39px!important}
+  #earningsTable .history-date-form>small{grid-column:1/-1!important;text-align:center!important;font-size:9px!important}
 
+  #earningsTable .history-period-summary{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    padding:0 0 11px!important;
+    margin:0!important;
+  }
+  #earningsTable .history-period-summary>span{
+    grid-column:1/-1!important;
+    padding:8px 10px!important;
+    border:1px solid #e1eae4!important;
+    border-radius:10px!important;
+    background:#fff!important;
+    text-align:center!important;
+  }
+  #earningsTable .history-period-summary>strong{
+    display:grid!important;
+    gap:3px!important;
+    padding:10px!important;
+    border:1px solid #dfe9e2!important;
+    border-radius:11px!important;
+    background:#fff!important;
+    color:#587062!important;
+  }
+  #earningsTable .history-period-summary>strong b{display:block!important;font-size:14px!important;color:#176443!important}
+  #earningsTable .history-period-summary>strong.held-value b{color:#9a641d!important}
+  #earningsTable .history-table-note{margin:0 2px 9px!important;font-size:10px!important;line-height:1.45!important;color:#637a6c!important}
+
+  #earningsTable .history-table-scroll{overflow:visible!important;border:0!important;background:transparent!important}
+  #earningsTable table.responsive-report-table tbody{
+    display:grid!important;
+    gap:11px!important;
+    padding:0!important;
+  }
+  #earningsTable table.responsive-report-table tbody tr{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:0 9px!important;
+    padding:11px 12px 12px!important;
+    border:1px solid #dce7e0!important;
+    border-top:3px solid #247c58!important;
+    border-left:1px solid #dce7e0!important;
+    border-radius:15px!important;
+    background:#fff!important;
+    box-shadow:0 7px 20px rgba(21,70,45,.07)!important;
+  }
+  #earningsTable table.responsive-report-table tbody td{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    gap:3px!important;
+    min-width:0!important;
+    padding:8px 6px!important;
+    border:0!important;
+    border-bottom:1px solid #edf2ee!important;
+    background:transparent!important;
+    text-align:left!important;
+    font-size:11px!important;
+    line-height:1.38!important;
+  }
+  #earningsTable table.responsive-report-table tbody td::before{
+    display:block!important;
+    margin:0!important;
+    color:#7a8d81!important;
+    font-size:8px!important;
+    font-weight:800!important;
+    letter-spacing:.07em!important;
+    line-height:1.2!important;
+    text-align:left!important;
+  }
+  #earningsTable table.responsive-report-table tbody td[data-label="Date"]{
+    grid-column:1/-1!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    padding:2px 2px 9px!important;
+    color:#183d2b!important;
+    font-size:13px!important;
+    font-weight:800!important;
+    border-bottom:1px solid #dce8e0!important;
+  }
+  #earningsTable table.responsive-report-table tbody td[data-label="Date"]::before{font-size:9px!important;color:#247c58!important}
+  #earningsTable table.responsive-report-table tbody td[data-label="Source"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Direct member"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Generation member"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Placement member"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Order / product"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Customer / source"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Distribution"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Reference"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Details"],
+  #earningsTable table.responsive-report-table tbody td[data-label="Status"]{grid-column:1/-1!important}
+  #earningsTable table.responsive-report-table tbody td.numeric,
+  #earningsTable table.responsive-report-table tbody td.total-cell{
+    padding:9px!important;
+    margin-top:7px!important;
+    border:1px solid #e2ebe5!important;
+    border-radius:10px!important;
+    background:#f7faf8!important;
+  }
+  #earningsTable table.responsive-report-table tbody td.amount-positive,
+  #earningsTable table.responsive-report-table tbody td.total-cell{
+    color:#176443!important;
+    font-size:14px!important;
+    font-weight:800!important;
+  }
+  #earningsTable table.responsive-report-table tbody td.held-value{color:#94601b!important;background:#fffaf2!important}
+  #earningsTable table.responsive-report-table tbody td[data-label="Status"]{padding-top:10px!important;border-bottom:0!important}
+  #earningsTable table.responsive-report-table .history-status{align-self:flex-start!important;padding:5px 9px!important;border-radius:999px!important}
+  #earningsTable table.responsive-report-table .btn{justify-self:stretch!important;width:100%!important;min-height:38px!important}
+  #earningsTable .history-pagination{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:8px!important;
+    margin-top:12px!important;
+    padding-top:12px!important;
+  }
+  #earningsTable .history-pagination span{grid-column:1/-1!important;text-align:center!important}
+  #earningsTable .earning-total-action{
+    margin-top:12px!important;
+    padding:14px!important;
+    border-radius:14px!important;
+    background:linear-gradient(145deg,#f8fbf9,#eef6f1)!important;
+  }
+  #earningsTable .history-day-detail{margin-top:14px!important;padding:12px!important;border-radius:14px!important;background:#eef5f0!important}
+  #earningsTable .history-detail-heading{align-items:flex-start!important;gap:8px!important}
+}
 
 /* Mobile graphical tree: pin member-card close control to the top-right. */
 @media(max-width:720px){
@@ -2607,7 +2729,6 @@ body.graphical-network-active main{padding-top:0!important;padding-bottom:0!impo
     position:relative!important;
     padding-top:0!important;
   }
-  #page-network.graphical-only .tree-member-header .tree-details-close,
   #page-network.graphical-only .tree-details-close{
     position:absolute!important;
     top:0!important;
@@ -2623,4 +2744,19 @@ body.graphical-network-active main{padding-top:0!important;padding-bottom:0!impo
     padding-top:0!important;
     padding-right:46px!important;
   }
+}
+
+/* Prominent responsive brand mark in the primary website header. */
+.top-main>.logo img{
+  width:210px;
+  height:56px;
+  object-fit:contain;
+  object-position:left center;
+}
+@media(max-width:850px){
+  .top-main>.logo img{width:180px;height:48px}
+}
+@media(max-width:680px){
+  .top-main>.logo{max-width:46vw}
+  .top-main>.logo img{width:164px;height:44px;max-width:100%}
 }
