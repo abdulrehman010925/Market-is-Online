@@ -181,6 +181,9 @@ begin
  return new;
 end
 $function$;
+create trigger zy_release_affiliate_guest_hold
+after update of status, payment_status on public.orders
+for each row execute function private.release_affiliate_guest_hold();
 
 create or replace function public.guest_order_status(p_order_code text,p_access_token text) returns jsonb
 language plpgsql stable security definer set search_path='' as $function$
