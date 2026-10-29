@@ -115,9 +115,7 @@ await q("update public.package_activations set activated_at='2026-09-28T12:00:00
 await q('update public.mio_wallet_accounts set balance=550 where member_id=$1',[company]);const companyActivation=await scalar("select public.activate_package_with_mio('PREMIUM','test-company-package')");await q("update public.package_activations set activated_at='2026-09-28T12:00:00Z' where id=$1",[companyActivation]);
 // Source-linked temporary volumes isolate a full 50/50 share and unmatched carry.
 await q("insert into public.point_ledger(member_id,point_type,amount,side,source_activation_id,entry_kind,idempotency_key) values($1,'BP',65,'LEFT',$2,'credit','test-binary-left'),($1,'BP',50,'RIGHT',$3,'credit','test-binary-right')",[basic,rootActivation,companyActivation]);
-let poolDashboard=await scalar('select public.admin_binary_pool_dashboard()');assert.equal(Number(poolDashboard.total_shares),0);assert.equal(await scalar('select private.refresh_binary_qualification($1)',[basic]),false);
-await q("insert into private.binary_qualifications(member_id,left_directs_at_qualification,right_directs_at_qualification,left_dp_at_qualification,right_dp_at_qualification) values($1,1,1,20,20)",[basic]);
-poolDashboard=await scalar('select public.admin_binary_pool_dashboard()');assert.equal(Number(poolDashboard.total_shares),.6);assert.equal(poolDashboard.can_distribute,true);
+let poolDashboard=await scalar('select public.admin_binary_pool_dashboard()');assert.equal(Number(poolDashboard.total_shares),.6);assert.equal(poolDashboard.can_distribute,true);
 const manualSharePrice=1;const manualResult=await scalar('select public.admin_distribute_binary_pool($1)',[manualSharePrice]);
 const cycle=manualResult.cycle_id;
 assert.equal(await num('select entitlement from public.binary_member_results where cycle_id=$1 and member_id=$2',[cycle,basic]),.60);
@@ -127,8 +125,7 @@ const funded=await num("select sum(binary_reserve_mio) from public.package_activ
 assert.equal(await num('select sum(member_amount+company_retention) from public.binary_member_results where cycle_id=$1',[cycle]),manualSharePrice*.6);assert.ok(funded>=manualSharePrice*.6);
 await reject("select public.admin_distribute_binary_pool($1)",[manualSharePrice],/not ready|overlaps|No payable/);
 assert.equal(await scalar('select private.run_automatic_binary_pool()'),0);
-assert.equal(await scalar('select exists(select 1 from private.binary_qualifications where member_id=$1)',[basic]),true);
-console.log('PASS Binary shares require permanent one-time qualification; qualified shares keep package weighting, carry and pool conservation');
+console.log('PASS Binary live shares use current package weighting, carry and pool conservation');
 // Reconcile an old approved activation whose network distributions were never posted.
 const old=await register(50,root);await q('update public.mio_wallet_accounts set balance=11 where member_id=$1',[old]);await as(old);const oldActivation=await scalar("select public.activate_package_with_mio('BASIC_1','test-old-activation')");
 await q("update public.mio_wallet_accounts w set balance=balance-x.amount from(select i.member_id,sum(i.amount) amount from public.income_wallet_ledger i join public.bonus_transactions b on b.id=i.source_bonus_id where b.source_activation_id=$1 and i.wallet_kind='cash' group by i.member_id)x where w.member_id=x.member_id",[oldActivation]);
@@ -164,7 +161,7 @@ const deliver=async(oid)=>{await as(company);await q('select public.admin_confir
 await as(root);await q("select public.set_shopping_reward_mode('MIO')");await q('update public.vendors set introduced_by=$1 where id=$2',[freeSeller,vendor]);
 const cashOrder=await placeNew(root);assert.equal(await scalar('select reward_mode from public.orders where id=$1',[cashOrder]),'MIO');assert.equal(await num('select sum(amount) from public.ecommerce_rewards where order_id=$1',[cashOrder]),.75);
 assert.equal(await num("select amount from public.ecommerce_rewards where order_id=$1 and reward_kind='cashback'",[cashOrder]),.4875);
-await as(root);await q("select public.set_shopping_reward_mode('PPV')");await deliver(cashOrder);
+await as(root);await reject("select public.set_shopping_reward_mode('PPV')",[],/total PPV cap.*complete/);await deliver(cashOrder);
 assert.equal(await num('select count(*) from public.point_ledger where source_order_id=$1',[cashOrder]),0);assert.equal(await num('select count(*) from public.bonus_transactions where source_order_id=$1',[cashOrder]),0);assert.equal(await num('select count(*) from public.shopping_reward_events where order_id=$1',[cashOrder]),0);
 assert.equal(await scalar("select status from public.ecommerce_rewards where order_id=$1 and reward_kind='vendor_introducer'",[cashOrder]),'held_activation');
 assert.equal(await scalar("select status from public.ecommerce_rewards where order_id=$1 and reward_kind='second_sponsor'",[cashOrder]),'company_leftover');
