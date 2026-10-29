@@ -2762,3 +2762,82 @@ body.graphical-network-active main{padding-top:0!important;padding-bottom:0!impo
 }
 
 #ppvBalance .ppv-excess{display:inline-flex;align-items:center;margin-left:5px;padding:3px 7px;border:1px solid #efd6a5;border-radius:999px;background:#fff7e8;color:#95600d;font-size:10px;font-weight:800;line-height:1.2;white-space:nowrap;vertical-align:middle}
+
+/* Earnings overview and the compact history used on narrow screens. */
+.earning-premium-overview{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(210px,1fr);gap:12px;margin:22px 0 4px}
+.earning-premium-overview button{font:inherit;text-align:left;cursor:pointer}
+.earning-overview-total{display:grid;grid-template-columns:1fr auto;align-items:center;gap:7px 16px;min-width:0;padding:22px 24px;border:1px solid #147d56;border-radius:16px;background:linear-gradient(130deg,#0e8057,#086440);color:#fff;box-shadow:0 12px 26px rgba(10,105,67,.15)}
+.earning-overview-total>span{font-size:13px;font-weight:750}
+.earning-overview-total>small{font-size:11px;color:#d9f2e4;white-space:nowrap}
+.earning-overview-total>small i{display:inline-block;width:7px;height:7px;margin-right:5px;border-radius:50%;background:#9ee5b7}
+.earning-overview-total>strong{grid-column:1/-1;font-size:clamp(25px,3vw,35px);font-variant-numeric:tabular-nums;line-height:1.15}
+.earning-overview-total>strong em{font-size:14px;font-style:normal;font-weight:600}
+.earning-overview-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}
+.earning-overview-stats>div,.earning-overview-stats>button{display:flex;flex-direction:column;justify-content:center;gap:8px;min-width:0;padding:17px;border:1px solid #dbe8de;border-radius:14px;background:#fff;color:#294a38}
+.earning-overview-stats span{font-size:12px;color:#5b7564}
+.earning-overview-stats b{font-size:18px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.earning-premium-overview button:focus-visible,.mobile-earning-cycles button:focus-visible,.mobile-custom-dates summary:focus-visible{outline:3px solid #80caa0;outline-offset:2px}
+.mobile-earning-cycles,.earning-mobile-legacy{display:none}
+
+@media(max-width:760px){
+  #page-earnings .earning-premium-overview{grid-template-columns:1fr;margin:16px 0 0}
+  #page-earnings .earning-overview-total{padding:18px}
+  #page-earnings .earning-overview-stats{gap:8px}
+  #page-earnings .earning-overview-stats>div,#page-earnings .earning-overview-stats>button{padding:12px}
+  #page-earnings .earning-overview-stats b{font-size:15px}
+  #page-earnings .earning-source-tabs,#page-earnings .earning-level-tabs{display:none!important}
+  #earningsTable .earning-desktop-controls,#earningsTable .earning-desktop-history,#earningsTable .earning-desktop-pagination,#earningsTable .earning-mobile-legacy,#earningsTable>.history-day-detail{display:none!important}
+  #earningsTable .mobile-earning-cycles{display:grid;gap:14px;min-width:0}
+  .mobile-cycle-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .mobile-cycle-tabs button{min-height:42px;padding:8px 6px;border:1px solid #dbe7de;border-radius:10px;background:#fff;color:#335943;font-size:11px;font-weight:750;cursor:pointer}
+  .mobile-cycle-tabs button.active{border-color:#167b51;background:#167b51;color:#fff}
+  .mobile-custom-dates{border:1px solid #dfe9e1;border-radius:11px;background:#fff;overflow:hidden}
+  .mobile-custom-dates summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;color:#315640;font-size:12px;font-weight:700;cursor:pointer}
+  .mobile-custom-dates summary small{font-size:11px;font-weight:500;color:#6b8073;text-align:right}
+  .mobile-custom-dates[open] .history-date-form{margin:0!important;border:0!important;border-top:1px solid #edf2ee!important;border-radius:0!important;box-shadow:none!important}
+  .mobile-earning-cycle{padding:17px;border-radius:15px;background:linear-gradient(145deg,#0e8057,#0a6343);color:#fff}
+  .mobile-cycle-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .mobile-cycle-heading small,.mobile-cycle-heading>span{font-size:10px;color:#d4eddf}
+  .mobile-cycle-heading h3{margin:5px 0 0;font-size:17px;line-height:1.3;color:#fff}
+  .mobile-cycle-total{margin-top:19px;padding-top:15px;border-top:1px solid rgba(255,255,255,.24)}
+  .mobile-cycle-total>span{font-size:11px;color:#d4eddf}
+  .mobile-cycle-total>strong{display:block;margin-top:3px;font-size:29px;line-height:1.15;font-variant-numeric:tabular-nums}
+  .mobile-cycle-total strong small{font-size:13px}
+  .mobile-cycle-total p{margin:8px 0 0;font-size:11px;color:#e0f2e7}
+  .mobile-category-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+  .mobile-category-heading h3{margin:0 0 4px;font-size:15px}
+  .mobile-category-heading p,.mobile-category-heading>span{margin:0;color:#647a6a;font-size:11px}
+  .mobile-category-heading>span{white-space:nowrap}
+  .mobile-earning-category-list,.earning-mobile-entries,.earning-mobile-ledger{display:grid;gap:9px;min-width:0}
+  .mobile-earning-category{display:grid;grid-template-columns:36px minmax(0,1fr) auto 8px;align-items:center;gap:10px;width:100%;padding:12px;border:1px solid #dfebe2;border-radius:12px;background:#fff;color:#244334;text-align:left;cursor:pointer}
+  .mobile-category-icon,.earning-mobile-icon{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:10px;background:#e7f5ec;color:#167b51;font-size:11px;font-weight:800}
+  .mobile-earning-category strong,.mobile-earning-category small{display:block;overflow-wrap:anywhere}
+  .mobile-earning-category strong{font-size:12px}.mobile-earning-category small{margin-top:3px;color:#688072;font-size:10px}
+  .mobile-earning-category>b{color:#165d42;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .mobile-earning-category>b small{font-size:9px;font-weight:500}
+  .mobile-earning-category i{color:#82998a;font-style:normal;font-size:19px}
+  .mobile-earning-detail-head{display:flex;align-items:center;gap:10px}
+  .mobile-earning-detail-head>button{width:34px;height:34px;flex:none;border:1px solid #dce8df;border-radius:9px;background:#fff;color:#176947;cursor:pointer}
+  .mobile-earning-detail-head>div{flex:1;min-width:0}.mobile-earning-detail-head small{color:#6c8274;font-size:10px}
+  .mobile-earning-detail-head h3{margin:3px 0 0;font-size:16px}.mobile-earning-detail-head>strong{font-size:13px;color:#176947;white-space:nowrap}
+  .mobile-earning-detail-head>strong small{font-size:10px}
+  .earning-mobile-day{padding:12px;border:1px solid #e0eae3;border-radius:13px;background:#fff}
+  .earning-mobile-day>header{display:flex;justify-content:space-between;gap:8px;padding-bottom:10px;border-bottom:1px solid #edf2ee;color:#315640;font-size:12px;font-weight:750}
+  .earning-mobile-day>header small{color:#728579;font-size:10px;font-weight:500}
+  .earning-mobile-entries{margin-top:10px}
+  .earning-mobile-entry{display:flex;gap:10px;min-width:0;padding:9px 0;border-bottom:1px solid #edf2ee}
+  .earning-mobile-entry:last-child{border-bottom:0;padding-bottom:0}
+  .earning-mobile-icon{width:32px;height:32px;border-radius:50%}
+  .earning-mobile-icon.hold{background:#fff2d8;color:#986615}
+  .earning-mobile-main{min-width:0;flex:1}
+  .earning-mobile-title{display:flex;justify-content:space-between;align-items:start;gap:8px}
+  .earning-mobile-title strong{font-size:12px}.earning-mobile-title>b{font-size:12px;color:#17764d;white-space:nowrap}
+  .earning-mobile-title b small{font-size:9px}
+  .earning-mobile-main p{margin:4px 0;color:#617769;font-size:10px;overflow-wrap:anywhere}
+  .earning-mobile-main footer{display:flex;gap:5px 9px;flex-wrap:wrap;color:#6a8072;font-size:10px}
+  .earning-mobile-main em{font-style:normal;color:#176947}.earning-mobile-main em.hold{color:#9b6416}
+  .earning-mobile-empty{text-align:center;padding:22px 12px;color:#617769}
+  .earning-mobile-empty>span{font-size:23px;color:#26815a}.earning-mobile-empty h3{margin:5px 0;color:#244334;font-size:14px}.earning-mobile-empty p{margin:0;font-size:11px}
+  #earningsTable .mobile-earning-cycles .history-pagination{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+}
+@media(max-width:380px){.mobile-earning-category{grid-template-columns:32px minmax(0,1fr) auto;gap:7px;padding:10px}.mobile-earning-category i{display:none}.mobile-earning-category>b{font-size:11px}}

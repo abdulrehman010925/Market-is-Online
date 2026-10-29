@@ -3,7 +3,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.57.4';
 const SUPABASE_URL='https://vdkhqqhonpnsqugoadke.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_HBgMuH0myDEM28pmufR3Fg_91prui_w';
 const db=createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
-const guestDb=createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
+const guestDb=createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{storageKey:'mio-guest-session',persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
 const packages=[
  {code:'BASIC_1',name:'Starter',base:10,fee:1,payable:11,ppv:11,bv:10,dp:10,gp:5,bp:5,brp:5,generations:2,direct:20,entitlement:50},
  {code:'BASIC_2',name:'Basic',base:20,fee:2,payable:22,ppv:22,bv:20,dp:20,gp:10,bp:10,brp:10,generations:4,direct:22,entitlement:60},
