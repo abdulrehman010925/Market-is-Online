@@ -49,6 +49,10 @@
  }
 }
 
+/* Keep usable PPV capped while showing the separately tracked excess amount. */
+.dashboard-ppv-balance strong{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 6px}
+.dashboard-ppv-excess{display:inline-flex;align-items:center;padding:3px 7px;border:1px solid #efd6a5;border-radius:999px;background:#fff7e8;color:#95600d;font-size:10px;font-style:normal;font-weight:800;line-height:1.2;white-space:nowrap}
+
 #page-admin>.card,#page-admin>.layout{display:none!important}.welcome-bonus-rate-form{display:flex;flex-wrap:wrap;align-items:end;gap:10px;margin:16px 0}.welcome-bonus-rate-form label{display:grid;gap:6px;color:#2b5d44;font-size:12px;font-weight:700}.welcome-bonus-rate-form input{width:130px;min-height:42px;border:1px solid #b8cec0;border-radius:9px;padding:8px 11px;font-variant-numeric:tabular-nums}.welcome-bonus-rate-form input:focus-visible{outline:2px solid #1d6a49;outline-offset:2px}
 /* Member code stays alongside the identity and can be copied without opening Profile. */
 .dashboard-member-code{display:inline-flex;align-items:center;gap:7px;max-width:100%;flex-wrap:wrap}

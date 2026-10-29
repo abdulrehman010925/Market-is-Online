@@ -2760,3 +2760,5 @@ body.graphical-network-active main{padding-top:0!important;padding-bottom:0!impo
   .top-main>.logo{max-width:46vw}
   .top-main>.logo img{width:164px;height:44px;max-width:100%}
 }
+
+#ppvBalance .ppv-excess{display:inline-flex;align-items:center;margin-left:5px;padding:3px 7px;border:1px solid #efd6a5;border-radius:999px;background:#fff7e8;color:#95600d;font-size:10px;font-weight:800;line-height:1.2;white-space:nowrap;vertical-align:middle}
