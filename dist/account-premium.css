@@ -240,6 +240,28 @@
 #page-admin .control-panel .card-body{padding:19px}
 #page-admin #control-home>.card{border:0;background:transparent}
 #page-admin #control-home>.card>.card-body{padding:0}
+#page-admin .admin-membership-summary{display:grid;gap:12px;min-width:0;margin:0 0 22px}
+#page-admin .admin-membership-total{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 16px;width:100%;min-width:0;padding:17px 19px;border:1px solid #bedbc9;border-radius:12px;background:#eaf6ee;color:#244f36;text-align:left;font:inherit;cursor:pointer;box-shadow:none}
+#page-admin .admin-membership-total span{font-size:13px;font-weight:650}
+#page-admin .admin-membership-total strong{grid-column:2;grid-row:1 / span 2;font-size:29px;line-height:1;font-variant-numeric:tabular-nums}
+#page-admin .admin-membership-total small{grid-column:1;font-size:11px;line-height:1.5;color:#52725c}
+#page-admin .admin-membership-tiers{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;min-width:0}
+#page-admin .admin-membership-tier{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:8px;min-width:0;min-height:82px;padding:13px 15px;border:1px solid #dce8df;border-radius:11px;background:#fff;color:#355d43;text-align:left;font:inherit;cursor:pointer;box-shadow:none}
+#page-admin .admin-membership-tier span{font-size:12px;font-weight:600;overflow-wrap:anywhere}
+#page-admin .admin-membership-tier b{font-size:22px;line-height:1;font-weight:650;font-variant-numeric:tabular-nums;color:#24563a}
+#page-admin .admin-membership-total:hover,#page-admin .admin-membership-tier:hover{border-color:#74ae89;background:#f4faf6}
+#page-admin .admin-membership-total.active,#page-admin .admin-membership-tier.active{border-color:#087c51;background:#0c8054;color:#fff}
+#page-admin .admin-membership-total.active :is(strong,small),#page-admin .admin-membership-tier.active b{color:#fff}
+#page-admin .admin-membership-summary [data-member-tier]:focus-visible{outline:2px solid #087c51;outline-offset:3px}
+#page-admin .admin-membership-summary>.helper{margin:0;font-size:11px;line-height:1.5;color:#617969}
+#page-admin .admin-membership-details{min-width:0;padding:17px;border:1px solid #dce8df;border-radius:12px;background:#fff}
+#page-admin .membership-details-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+#page-admin .membership-details-heading h3{margin:0;font-size:15px;color:#244f36}
+#page-admin .admin-membership-details .table-wrap{max-width:100%;overflow-x:auto}
+#page-admin .admin-membership-details table{width:100%;min-width:630px}
+#page-admin .admin-membership-details .membership-date th{background:#edf6ef;color:#365e42;font-weight:650}
+@media(max-width:1150px){#page-admin .admin-membership-tiers{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:620px){#page-admin .admin-membership-tiers{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#page-admin .admin-membership-tier{min-height:72px;padding:12px}#page-admin .admin-membership-total{padding:14px 15px}#page-admin .admin-membership-total small{max-width:30ch}}
 #page-admin #masterAccounting>.section-head{padding:18px 20px;border:1px solid #dbe7de;border-radius:12px;background:#fff;margin-bottom:13px}
 #page-admin #masterAccounting>.section-head h3{font-size:17px;font-weight:650;color:#234c34;letter-spacing:-.02em}
 #page-admin #masterAccounting>.section-head p{font-size:11px;color:#657a6a;line-height:1.55;margin-top:4px}
